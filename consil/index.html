@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Consilium</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+     <link href="http://allfont.ru/allfont.css?fonts=roboto-thin-italic" rel="stylesheet" type="text/css" />    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+    
+  </head>
+  <body>
+  <!-- Авторизация -->
+    <div id="myModal" class="modal fade js_modal_close_not_blur">        
+      <div class="modal-dialog">        
+        <div class="modal-content">
+          <!-- Заголовок модального окна -->
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><img src="img/cancel.png" alt="">Закрыть</button>            
+          </div>
+          <!-- Основное содержимое модального окна -->
+          <div class="modal-body">
+            <input class="login" type="text" name="login" id="login" value='' placeholder="Логин">
+            <input class="pass" type="password" name="pass" id="pass" value='' placeholder="Пароль">
+
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" id="blankCheckbox" value="option1" aria-label=""><p>Не запоминать</p>
+              </label>
+            </div>
+            <div class="butt_enter">
+              <a href="#" data-toggle="modal"><p>Войти</p></a>
+            </div>
+            <hr>
+            <div class="butt_reg">
+              <a href="javascript:void(0)" class="js_modal_open_with_blur" modal_name="registr"><p>Регистрация</p></a>
+            </div>
+          </div>
+          <!-- Футер модального окна -->
+          
+        </div>
+      </div>
+    </div>
+
+    <!-- Регистрация -->
+
+    <div id="registr" class="modal fade js_modal_close_not_blur">
+      <p class="top_search">УДОБНЫЙ ПОИСК<br> 
+  ЛЕЧЕНИЯ</p>        
+      <div class="modal-dialog">
+
+        <div class="modal-content">
+          <!-- Заголовок модального окна -->
+          <div class="modal-header">
+            <div class="reg"><p>Регистрация</p></div>
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><img src="img/cancel.png" alt="">Закрыть</button>            
+          </div>
+          <!-- Основное содержимое модального окна -->
+          <div class="modal-body">
+            <input class="login" type="text" name="login" id="login" value='' placeholder="Логин">
+            <input class="pass" type="password" name="pass" id="pass" value='' placeholder="Пароль">
+            <input class="repass" type="password" name="repass" id="repass" value='' placeholder="Повторите пароль">
+            <div class="checkbox">
+            
+              <label>
+                <input type="checkbox" id="blankCheckbox" value="option1" aria-label=""><p>Согласиться с офертой</p>
+              </label>
+            </div>
+            <div class="butt_enter">
+              <a href="#" data-toggle="modal"><p>Отправить</p></a>
+            </div>
+            
+          </div>
+          <!-- Футер модального окна -->
+          
+        </div>
+      </div>
+    </div>
+
+
+<!-- Нижнее модальное окно -->
+
+
+
+
+
+
+
+    <div id="myModal2" class="modal fade js_modal_close_not_blur">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          
+          <!-- Основное содержимое модального окна -->
+          <div class="modal-body">
+            <div class="bord">
+              <img src="img/555.png" alt="" width="100%">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><img src="img/cancel.png" alt=""> Закрыть</button>
+              <p class="to_mail">Ответ будет направлен на указанный вами адрес</p> 
+            </div>                     
+            
+            
+          </div>
+          <!-- Футер модального окна -->
+          
+        </div>
+      </div>
+    </div>
+
+
+    <div class="global-container">
+      <div class="top_menu">
+
+            <div class="logo">
+                <a href="/" class="a_logo"><img class="img_logo" src="img/LogoVC.png" alt="logo"></a>
+            </div>
+            <a href="javascript:void(0)">
+                <div class="main-menu_button">
+                    <span class="main-menu_button__item"></span>
+                    <span class="main-menu_button__item"></span>
+                    <span class="main-menu_button__item"></span>
+                </div>
+            </a>
+
+            <div class="text-center top_link">
+                <a href="/ru/page/clinics.html">Клиники</a>
+                <a href="/ru/page/promo.html">Акции</a>
+                <a href="/ru/page/partners.html">Партнерам</a>
+
+            </div>
+            <div class="enter pull-right">
+
+
+                                    <a href="javascript:void(0)" class="">
+                        <div class="butt_enter pull-left  cursor_pointer" modal_name="">
+                            <p>Войти</p>
+                        </div>
+                    </a>
+                
+
+                <div class="lang pull-left">
+    <div class="" data-toggle="collapse" data-target="#hide-me" aria-hidden="true">
+        <a href="javascript:void(0)" class="lang_a"><i class="fa fa-fw fa-sort-desc"></i><img class="lang_select" src="img/ru.png" alt="" width="100%">
+        </a>
+    </div>
+    <div class="collapse" id="hide-me" aria-hidden="true">
+                    <a href="/en/" class="lang_a "><img class="lang_select_bottom " src="img/en.png" alt="" width="100%"> </a> 
+         
+    </div>   
+</div>                        
+            </div>          
+
+        </div>
+
+      <div class="header_background">
+         <video class="header_background-video js_video_block" autoplay loop >
+              <source src="video/10.mp4" type="video/mp4">
+              <source src="video/999.webm" type="video/webm">
+          </video>
+          <div class="header__background-inner-shadow"></div>
+      </div>
+      <div class="center_content">
+        <div class="p_text">
+          <div class="content_iner">
+            <p class="tour">Тур по сайту</p>
+            <p class="sistem">МЕЖДУНАРОДНАЯ СИСТЕМА ПОИСКА КЛИНИК И КУРОРТОВ </p>
+            <p class="video_clinic">Video Clinic - это быстрый выбор лучших клиник и курортов без посредников.</p>
+          </div>
+          
+        </div>
+      
+
+        <div class="page_content">
+          <section class="page_section">
+            <div class="text_div pull-left">
+              <p class="clinic">Лечение за рубежом еще доступнее</p>
+              <p class="coll_clinic">БЕСПЛАТНЫЙ ВИДЕО-ЗВОНОК В КЛИНИКУ</p>
+              <p class="text-bottom">К Вашим услугам - клиники Германии, Израиля, Финляндии, 
+Чехии, Китая, Таиланда, Индии, Турции, Южной Кореи, 
+Швейцарии, Канады, Великобритании, Сингапура и 
+других стран мира.</p>              
+            </div>
+            <div class="text_inp pull-right">
+              <input class="diagn" type="text" name="diagnos" id="diagnos" value='' placeholder="Введите диагноз">
+              <input class="specialn" type="text" name="spec" id="spec" value='' placeholder="Введите специальность или ID">
+              <input class="country" type="text" name="country" id="country" value='' placeholder="Страна">
+              <input class="sity" type="text" name="sity" id="sity" value='' placeholder="Город">
+              <div class="find_clinic">
+                <a href="">
+                  <p>Найти клинику</p>
+                </a>
+              </div>
+            </div>
+            <div class="clearfix"></div>               
+          </section>
+
+
+          <section class="time">
+            <p class="automatiz">Автоматизация всех процессов</p>
+            <p class="econom">ЭКОНОМИТ ВАШЕ ВРЕМЯ</p>
+            <div class="vid_block">
+              <div class="vid pull-left">
+                <video class="" poster="img/video-fon.png" width="563" height="390" autoplay loop >
+                  <source src="video/11.mp4" type="video/mp4">
+                  <source src="video/888.webm" type="video/webm">
+              </video>
+              </div>
+              <div class="vid_text pull_right">
+                <p class="text">Введите в строку поставленный вам врачами 
+диагноз или выберите из выпадающего 
+перечня. Введите страну или город и 
+выбирайте из множества клиник и курортов
+ с высокой репутацией. Выбрав  тут же 
+сделайте бесплатный видео-звонок в клинику. 
+Не прерывая беседу с клиникой  вы сможете 
+передать любые файлы и в кратчайшие сроки 
+получить приглашение.</p>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+          </section>
+
+          <section class="analiz">
+            <div class="analiz_text">
+              <p class="clinic">Многое зависит от точности поставленного 
+диагноза</p>
+        <p class="coll_clinic">РАСШИФРОВКА 
+РЕЗУЛЬТАТОВ 
+АНАЛИЗОВ</p>
+        <p class="text text_bott">Нет необходимости в предварительных визитах в 
+клинику передайте результаты анализов на сайте 
+в клинику и получите квалифицированную оценку 
+и заключение. Инвестируйте в здоровье сэкономленные на 
+авиабилетах и гостиницах средства!</p>
+            </div>
+            <div class="div_doctor">
+              <img class="doctor" src="img/Doctor.png" alt="" >
+            </div>
+            <div class="clearfix"></div>
+          </section>
+
+
+          <section class="rekl">
+            <div class="rekl_text">
+              <p class="clinic white">Реклама спасающая жизни</p>
+                <p class="coll_clinic white">СЛЕДИТЕ ЗА 
+РЕКЛАМНЫМИ 
+АКЦИЯМИ</p>
+                <p class="text-bottom white">Следите за  рекламными акциями в  личном кабинете. 
+Лечение и операции в лучших клиниках мира бесплатно!  
+Пользуйтесь  скидками в клиниках, аптеках, лабораториях 
+и магазинах медицинской техники.</p>
+            </div>
+            <a href="">
+              <div class="rekl_img text-center">              
+                <p class="med">Клиника SAANA MED (Израиль, Хайфа)</p>
+                <p class="med_akciya">проведет бесплатную хирургическую операцию в рамках рекламной акции  зарегистрированному пользователю сайта www.video-clinic.com</p> 
+                <div class="butt_enter">
+                  <a href="#" data-toggle="modal"><p>Подробнее</p></a>
+                </div>             
+              </div>
+            </a>
+            <div class="clearfix"></div>
+          </section>
+
+          <section class="credit">
+            <div class="credit_text">
+              <p class="credit_clinic">Очень удобно при<br>планировании поездки</p>
+        <p class="coll_clinic">ОПЛАТА УСЛУГ НА САЙТЕ</p>
+        <p class="text text_bott">Предварительный расчет стоимости услуг с фиксацией 
+цены до момента оплаты избавит вас от финансовых 
+неожиданностей в другой стране. Необходимые платежи вы  
+можете совершить на сайте в своей валюте и  
+путешествовать налегке!</p>
+            </div>
+            <div class="div_credit">
+              <img class="cards" src="img/cards.png" alt="">
+            </div>
+            <div class="clearfix"></div>
+            
+          </section>
+          <section class="termin">
+            <div class="termin_text">
+              <p class="clinic white">Важна точность перевода медицинских терминов</p>
+                <p class="coll_clinic white">МЕДИЦИНСКИЙ ПЕРЕВОДЧИК</p>
+                <p class="text-bottom white">Не огорчайтесь тому, что в некоторых  клиниках не говорят на понятном вам языке - пригласите в видео-чат с врачом нашего переводчика. Переводчик  правильно и достоверно донесет нужную информацию.
+                </p>
+            </div>
+            <div class="termin_img">
+              <img src="img/convert.png" alt="">
+            </div>
+            <div class="clearfix"></div>
+          </section>
+          <section class="help">
+          <div class="help_input">
+            <p class="clinic_help">Нужна помощь?</p>
+            <p class="help_clinic2">МЫ ВСЕГДА С ВАМИ</p>
+            <p class="text-bottom">Круглосуточная служба поддержки ответит на  Ваши вопросы</p>    
+            <input class="count" type="text" name="count" id="count" value='' placeholder="Страна">
+            <input class="name_clinic" type="text" name="name_clinic" id="name_clinic" value='' placeholder="Ваше имя или название клиники">
+            <input class="email" type="text" name="email" id="email" value='' placeholder="Ваш e-mail">
+            <textarea class="problem" type="text" name="problem" id="problem" value='' placeholder="Ваш вопрос"></textarea>
+            <div class="subm">
+              <a href="javascript:void(0)" class="js_modal_open_with_blur" modal_name="myModal2" >
+                <p>Отправить</p>
+              </a>
+            </div>
+            <p class="treaty">Нажимая  эту кнопку вы соглашаетесь на<br> 
+обработку сайтом введенных вами 
+персональных данных.</p>
+
+          </div>
+          <div class="help_img">
+            <!--<img src="img/Girl.png" alt="">-->
+          </div>
+          <div class="clearfix"></div>  
+          </section>
+
+        </div>
+
+        <footer class="text-center">
+          <a href="#"><img src="img/youtube.png" alt=""></a>
+          <a href="#"><img src="img/facebook.png" alt=""></a>
+          <a href="#"><img src="img/B.png" alt=""></a>
+          <a href="#"><img src="img/ok.png" alt=""></a>
+          <div class="supp"> Напишите нам <a href="#"> support@video-clinic.com</a>
+          </div>
+        </footer>
+
+   
+
+      </div>
+      
+
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="1js/superplaceholder.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

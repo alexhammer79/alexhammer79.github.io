@@ -12,8 +12,13 @@
 }
 .logo_block{
 	height: 534px;
-	background-image: url("https://alexhammer79.github.io/animat/assets/img/baner.png");
+	/*background-image: url(../img/baner.png);*/
 
+}
+.baner{
+	position:absolute;
+	left: 0;
+	width:100%;
 }
 .like{
 	font-size: 53px;
@@ -23,10 +28,7 @@
 	color: #fff;
 	position: absolute;
 	left: 200px;
-	text-shadow: #cad5e2 1px 1px 0, #cad5e2 2px 2px 0, 
-                 #cad5e2 3px 3px 0, #cad5e2 4px 4px 0, 
-                 #cad5e2 5px 5px 0;
-	animation: movetext 2s 1 ease-in-out;
+	animation: movetext 4s 2 ease-in-out;
 }
 a{
 	text-decoration: none;
@@ -55,7 +57,7 @@ a{
 }
 .block2{
 	margin-top: 55px;
-	animation: move  6s 1s 1 ease-in-out;
+	animation: move  6s 3s 2 ease-in-out;
 }
 
 .row-text{

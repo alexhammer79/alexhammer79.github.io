@@ -493,7 +493,7 @@ html{
     width: 485px;
     height: 485px;
     border: 5px solid #D2E6F0;
-    /*background-image: url(../img/Banners-VC-Vet.jpg);*/
+    background-image: url(../img/bn_0.jpg);
     background-position: 50% 50%;
     background-size: 100%;
     position: relative;
@@ -5936,7 +5936,7 @@ a.button1:hover {
     background: #006F9F;
     border: 1px solid #62b4db;
     border-radius: 0px;
-    margin-top: 13px;
+    margin-top: 390px;
     cursor: pointer;
 }
 .rekl_img .butt_enter:hover {
@@ -9805,7 +9805,7 @@ html:first-child #blankCheckbox, #blankCheckbox1{
         background-size: 101%;
     }
     .help_input textarea{
-        margin-right: 90px;
+        margin-right: 140px;
     }
     .modal-body input:first-child {
         width: 100%;

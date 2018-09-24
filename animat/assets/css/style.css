@@ -58,7 +58,7 @@ a{
 }
 .block2{
 	margin-top: 55px;
-	animation: move  6s 3s 2 ease-in-out;
+	animation: move  6s 3s 1 ease-in-out;
 }
 
 .row-text{

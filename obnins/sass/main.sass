@@ -1,0 +1,655 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+html, body
+	height: 100%
+
+*
+	margin: 0
+	padding: 0
+	outline: none
+
+h1, h2, h3, h4, h5, h6
+	font-family: "IntroBold"
+	margin: 0
+	padding: 0
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.4
+	font-family: $default-font
+	overflow-x: hidden
+	opacity: 1
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+.btn
+	font-size: 16px
+	font-weight: 600
+	text-align: center
+	cursor: pointer
+	&.red
+		color: white
+		background-color: #fd1e55
+		box-shadow: 0 15px 57px rgba(255, 0, 96, 0.33)
+		&:hover
+			background-color: #fd1e55
+			background-image: linear-gradient(180deg, rgba(55, 59, 106, 0.06) 0%, rgba(0, 0, 0, 0.06) 0%, transparent 100%)
+			box-shadow: 0 15px 57px rgba(255, 0, 96, 0.33)
+	&.blue
+		background-color: #009cd5
+		box-shadow: 0 23px 87px rgba(0, 156, 213, 0.38)
+		&:hover
+			background-color: #087fab
+
+
+// ------------------------------------
+
+.section
+	position: relative
+	background-size: cover
+	background-position: center
+	background-repeat: no-repeat
+	&__text
+		font-size: 18px
+		color: white
+		line-height: 1.75
+
+.header
+	margin-bottom: 144px
+	color: #fff
+	line-height: 42px
+	&__mail 
+		text-align: center
+		& a
+			color: #fff
+	&__phone
+		border: 1px solid #fff
+		text-align: center
+		box-sizing: padding-box
+
+.intro
+	padding: 35px 0 110px 0
+	background-image: url("../img/bg/bg__intro.png")
+	&__title
+		margin: 80px 0 0 0
+		color: white
+		font-size: 40px
+		line-height: 1.4
+		text-transform: uppercase
+		span
+			color: #fd1e55
+	&__micro-line
+		width: 107px
+		height: 1px
+		background-color: white
+		margin: 40px 0
+	&__text
+		font-size: 18px
+		color: white
+		line-height: 1.75
+	&__btn
+		width: 328px
+		height: 61px
+		margin-top: 80px
+		line-height: 61px
+	&__statistic
+		height: 594px
+		background-color: rgba(0, 0, 0, 0.22)
+		border: 13px solid #fd1e55
+		box-shadow: 48.2px 77.2px 131px rgba(0, 0, 0, 0.41)
+	&__statistic-item
+		width: 150px
+		margin: auto
+		margin-top: 40px
+	&__statistic-number
+		font-family: "GeometriaLight"
+		font-size: 80px
+		color: #fd1e55
+		line-height: 1
+	&__statistic-text
+		color: white
+		font-size: 18px
+		font-weight: 300
+		font-family: "GeometriaLight"
+	&__arrow
+		margin-top: 190px
+	&__num
+		position: absolute
+		top: 90px
+		left: -140px
+
+.info
+	background-color: #0c1c2f
+	padding: 130px 0
+	&__title
+		font-size: 30px
+		text-transform: uppercase
+		color: white
+		margin-bottom: 20px
+		span
+			color: #fd1e55
+	&__text
+		color: #fff
+	&__btn
+		width: 328px
+		height: 61px
+		margin-top: 50px
+		line-height: 61px
+		color: #fff
+		position: relative
+	&__arrow
+		position: absolute
+		left: 500px
+		top: 5px
+	&__num
+		position: absolute
+		top: 10px
+		left: -140px
+
+.autor
+	padding-top: 50px
+	background-image: url("../img/bg/dot.png")
+	background-repeat: repeat
+	background-size: initial
+	&__photo
+		margin-left: -100px
+	&__num
+		position: absolute
+		top: 10px
+		right: -140px
+
+.tool
+	padding: 140px 0 60px
+	background-image: url("../img/bg/bg__tool.png")
+	&__item
+		height: 270px
+		margin: 30px 0
+	&__title
+		font-size: 30px
+		text-transform: uppercase
+		color: #fff
+		padding-bottom: 50px
+		span
+			color: #fd1e55
+	&__name
+		color: white
+		font-size: 16px
+		font-weight: 700
+		text-transform: uppercase
+		padding: 32px 0 25px 0
+	&__text
+		color: #909cab
+		font-size: 18px
+		font-weight: 300
+		width: 80%
+	&__btn
+		width: 328px
+		height: 61px
+		margin-top: 80px
+		line-height: 61px
+		color: #fff
+		position: relative
+	&__num
+		position: absolute
+		top: 10px
+		left: -140px
+
+.sli
+	padding: 0
+	&__title
+		color: #cecece
+		font-size: 18px
+		padding: 20px 15px 80px 15px
+	&__card-title
+		font-size: 36px
+		text-transform: uppercase
+		padding: 0 15px
+	&__slider
+		margin-bottom: 50px
+	&__zoom
+		position: absolute
+		bottom: 30px
+		left: 0
+	&__list
+		color: #000
+		font-size: 18px
+		box-sizing: border-box
+		li
+			margin: 30px 0
+			list-style: square
+			cursor: pointer
+		li.active
+			color: #fd1e55
+	&__item
+		background-position: center
+		background-size: cover
+		background-color: #f2f2f2
+		&-big
+			height: 454px
+			background-color: #f2f2f2
+			margin-bottom: 20px
+			position: relative
+		&-mini
+			height: 138px
+			margin-bottom: 20px
+	&__info-title
+		color: black
+		font-weight: 700
+		text-transform: uppercase
+		font-size: 18px
+		line-height: 25px
+		margin-bottom: 40px
+		margin-top: 60px
+	&__info-text
+		color: #a1a1a1
+		font-weight: 300
+		font-size: 18px
+		padding-bottom: 20px
+	
+.work
+	background-image: url("../img/bg/dot.png")
+	background-repeat: repeat
+	background-size: initial
+	padding: 100px 0
+	&__title
+		font-size: 36px
+		text-transform: uppercase
+	&__card
+		padding: 130px 120px 110px 120px
+		background-color: white
+		box-shadow: -45.6px 82.2px 111px rgba(19, 39, 64, 0.14)
+		margin-bottom: 200px
+		margin-top: 100px
+	&__card-title
+		font-size: 36px
+		text-transform: uppercase
+		padding-bottom: 50px
+	&__card-text
+		padding-bottom: 80px
+	&__form-item
+		vertical-align: bottom
+	&__form-text
+		color: #6c6c6c
+		font-size: 17px
+		padding-bottom: 20px
+	&__form-btn
+		border: none
+		width: 100%
+		height: 61px
+		line-height: 61px
+	&__form-input
+		width: 100%
+		height: 61px
+		line-height: 61px
+		background-color: #f6f6f6
+		border: none
+		text-indent: 20px
+	&__graph
+		transform: translateX(-45px)
+
+.maps
+	height: 770px
+	background-image: url("../img/bg/bg__maps.png")
+	.row
+		position: relative
+	&__our
+		position: absolute
+		top: 0
+		left: 0px
+		width: 53px
+		height: 53px
+		cursor: pointer
+		&-1
+			top: 230px
+			left: 300px
+			.maps__item-text
+				transform: translateX(-40%)
+		&-2
+			top: 440px
+			left: 110px
+		&-3
+			top: 550px
+			left: 600px
+		&-4
+			top: 520px
+			left: 930px
+			.maps__item-text
+				transform: translateX(-80%)
+		&-5
+			top: 260px
+			left: 990px
+			.maps__item-text
+				transform: translateX(-80%)
+	&__our-item
+		width: 53px
+		height: 53px
+		position: relative
+		background-position: center
+		background-repeat: no-repeat
+		background-image: url("../img/icon/our-red.png")
+		&:hover
+			background-image: url("../img/icon/our-blue.png")
+	&__item-text
+		width: 350px
+		padding: 25px
+		background-color: rgba(10, 22, 38, 0.88)
+		border-radius: 5px
+		box-shadow: 15px 33.8px 49px rgba(13, 26, 42, 0.74)
+		font-size: 18px
+		font-weight: 300
+		color: #fff
+		margin-top: 20px
+		display: none
+
+.sert
+	padding-top: 100px
+	background-image: url("../img/bg/dot.png")
+	background-repeat: repeat
+	background-size: initial
+	&__item
+		margin-top: 130px
+	&__title
+		font-size: 25px
+		font-weight: 700
+		text-transform: uppercase
+		span
+			color: #fd1e55
+	&__btn
+		width: 340px
+		height: 61px
+		line-height: 61px
+		margin-top: 30px
+		color: #fff
+	&__cover
+		transform: translateX(-45px)
+
+.numpad
+	padding: 140px 0
+	background-image: url("../img/bg/bg__numpad.png")
+	&__title
+		font-size: 30px
+		line-height: 38px
+		text-transform: uppercase
+		color: white
+		margin-bottom: 70px
+		span
+			color: #fd1e55
+	&__item
+		margin: 20px 0
+	&__number
+		font-family: "GeometriaLight"
+		font-size: 80px
+		color: #fd1e55
+		line-height: 1
+		padding-bottom: 10px
+	&__text
+		color: white
+		font-size: 18px
+		font-weight: 300
+		font-family: "GeometriaLight"
+
+.lic
+	padding: 140px 0px
+	background-image: url("../img/bg/dot.png")
+	background-repeat: repeat
+	background-size: initial
+	&__title
+		font-size: 36px
+		font-weight: 700
+		text-transform: uppercase
+		text-align: center
+		padding-bottom: 30px
+		padding: 0 15px
+		span
+			color: #fd1e55
+	&__slider
+		margin: auto
+		box-sizing: content-box
+		.slick-list
+			margin: auto
+			padding: 25px 0
+			max-width: 1170px
+	&__item
+		text-align: center
+		& img
+			margin: 0 10px
+			box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)
+			position: relative
+			z-index: 5
+	&__btn
+		margin: auto
+		width: 100%
+		max-width: 430px
+		height: 66px
+		line-height: 66px
+		margin-top: 40px
+
+.company
+	padding: 125px 15px
+	width: 100%
+	background-color: rgba(0,0,0,.05)
+	background-image: url("../img/bg/dot.png")
+	background-repeat: repeat
+	background-size: initial
+	&__title
+		font-size: 36px
+		font-weight: 700
+		text-transform: uppercase
+		text-align: center
+		padding: 0 15px 125px 15px
+	&__slider
+		margin: auto
+		box-sizing: content-box
+		.slick-list
+			margin: auto
+			padding: 25px 0
+			max-width: 1170px
+	&__item
+		text-align: center
+		img
+			margin: auto
+			display: block
+			-webkit-filter: grayscale(1)
+			filter: grayscale(1)
+			&:hover
+				-webkit-filter: grayscale(0)
+				filter: grayscale(0)
+
+.team
+	padding: 125px 15px
+	width: 100%
+	background-image: url("../img/bg/dot.png")
+	background-repeat: repeat
+	background-size: initial
+	&__title
+		font-size: 36px
+		font-weight: 700
+		text-transform: uppercase
+		text-align: center
+		padding: 0 15px 100px 15px
+	&__slider
+		margin: auto
+		box-sizing: content-box
+		.slick-list
+			margin: auto
+			padding: 25px 0
+			max-width: 1170px
+	&__item
+		text-align: center
+		img
+			margin: auto
+			display: block
+			margin-bottom: 50px
+		&-name
+			color: #3c3c3c
+			font-weight: 700
+			text-transform: uppercase
+			font-size: 16px
+			padding-bottom: 10px
+		&-work
+			color: #999
+			font-family: Geometria
+			font-style: italic
+		&-line
+			width: 34px
+			height: 1px
+			background-color: #b0b6bd
+			margin: 25px auto
+		&-text
+			color: #7a8087
+			font-family: Geometria
+			font-size: 16px
+			line-height: 25px
+	&__btn
+		margin: auto
+		width: 100%
+		max-width: 430px
+		height: 66px
+		line-height: 66px
+		margin-top: 70px
+
+.faq
+	padding: 125px 15px
+	width: 100%
+	background-color: rgba(0,0,0,.05)
+	background-image: url("../img/bg/dot.png")
+	background-repeat: repeat
+	background-size: initial
+	.row
+		position: relative
+	&__title
+		font-size: 36px
+		font-weight: 700
+		text-transform: uppercase
+		text-align: center
+		padding: 0 15px 125px 15px
+	&__item
+		max-width: 760px
+		margin: auto
+		width: 100%
+		background-color: white
+		box-shadow: 0 13px 27px rgba(0, 0, 0, 0.13)
+		box-sizing: padding-box
+		margin-bottom: 20px
+		padding: 20px
+		background-position: right 25px top 25px
+		background-image: url("../img/icon/arr-bot.png")
+		background-repeat: no-repeat
+		cursor: pointer
+		position: relative
+		z-index: 3
+		&:hover
+			outline: 1px solid rgba(253, 30, 85, 0.49)
+	&__text
+		padding-top: 25px
+		color: #cecece
+		display: none
+	&__faq
+		position: absolute
+		top: -100px
+		left: -200px
+		z-index: 2
+
+.gall
+	padding: 125px 15px
+	width: 100%
+	&__item
+		width: 100%
+		height: 274px
+		background-color: #e4e4e4
+		margin-bottom: 30px
+		position: relative
+		cursor: pointer
+		&:before
+			position: absolute
+			width: 100%
+			height: 100%
+			top: 0
+			left: 0
+			background-image: url("../img/gall__img-hover.png")
+			background-position: center
+			background-size: cover
+			opacity: 0
+			content: ' '
+		&:hover:before
+			opacity: .5
+		&:hover
+			outline: 1px solid rgba(253, 30, 85, 0.49)
+
+.maphov
+	width: 100%
+	height: 350px
+	background-image: url("../img/map1.png")
+	background-position: top
+	background-size: cover
+	&__box
+		max-width: 1170px
+		min-height: 379px
+		background-color: #132740
+		margin: auto
+		position: relative
+		bottom: -250px
+		z-index: 2
+		box-shadow: -30.2px 36px 65px rgba(0, 0, 0, 0.19)
+		box-sizing: border-box
+		padding: 100px 130px
+		overflow-x: hidden
+		&-name
+			color: white
+			font-size: 16px
+			font-weight: 500
+			text-transform: uppercase
+		&-text
+			color: #808487
+			font-size: 16px
+			font-weight: 300
+			padding: 5px 0
+		&-tel
+			color: white
+			font-size: 16px
+			font-weight: 300
+	&__form
+		input
+			width: 296px
+			height: 61px
+			background-color: #1b3453
+			color: #889ab1
+			font-size: 16px
+			font-weight: 400
+			text-indent: 25px
+			border: none
+		button
+			width: 296px
+			height: 61px
+			background-color: #fd1e55
+			border: none
+			margin-top: 20px
+			box-shadow: 0 23px 87px rgba(255, 0, 96, 0.39)
+
+.maphov2
+	width: 100%
+	height: 350px
+
+.footer
+	width: 100%
+	height: 100px
+	line-height: 100px
+	text-align: center
+	background-color: #07131c
+	// opacity: 0.5
+	color: #757a95
+	font-size: 16px
+	font-weight: 300
+	text-transform: uppercase
+
+// ------------------------------------
+
+@import "media" // Всегда в конце
+

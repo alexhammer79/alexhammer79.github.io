@@ -33,8 +33,8 @@ $(document).ready(function() {
 
     $("#slider").slider({
         range: "min",
-        value: 3,
-        max: 4,
+        value: 60,
+        max: 99,
         change: updateData
     });
 

@@ -1,0 +1,1375 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>BigKey</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500&amp;display=swap&amp;subset=cyrillic" rel="stylesheet">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">    
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+    <link href="css/slick-theme.css" rel="stylesheet">
+    <link href="css/slick.css" rel="stylesheet">   
+    <link href="css/lightslider.css" rel="stylesheet"> 
+    <link href="css/lightgallery.css" rel="stylesheet"> 
+    <link href="css/jquery.fancybox.css" rel="stylesheet">
+    <link href="css/screen.css" rel="stylesheet">
+    <link href="css/screen2.css" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] +
+        ':35729/livereload.js?snipver=1"></' + 'script>')
+    </script>
+   
+  </head>
+  <body >
+    <div class="global_cont">
+
+      <div class="modal fade" id="menu">
+        <div class="modal-dialog" >
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <img src="img/novostroy/close.svg" alt="">
+                <!-- <span aria-hidden="true">&times;</span> -->
+              </button>
+              <h4 class="modal-title">Меню</h4>
+            </div>
+            <div class="modal-body">
+              <ul class="burg_menu">
+                <li><a href="#">Избранное</a></li> 
+                <li><a href="#">Новостройки </a></li>
+                <li><a href="#">Карта</a></li>
+                <li><a href="#">Застройщики</a></li>
+                <li><a href="#">Акции</a></li>
+                <li><a href="#">Кредиты</a></li>
+                <li><a href="#">Партнёры</a></li>                 
+              </ul>
+            </div>           
+          </div><!-- /.модальное окно-Содержание -->
+        </div><!-- /.модальное окно-диалог -->
+      </div><!-- /.модальное окно -->
+
+
+      <div class="modal fade" id="calc">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <h4 class="modal-title text-center">Рассчитать стоимость</h4>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-md-6">
+                  <input type="text" placeholder="Площадь квартиры">
+                </div>
+                <div class="col-md-6">
+                  <input type="text" placeholder="Количество комнат">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <input type="text" placeholder="ЖК или адрес">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <input type="text" placeholder="Имя">
+                </div>
+                <div class="col-md-6">
+                  <input type="text" placeholder="Телефон">
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer text-center">
+              <button type="button" class="butt_bott calculate_btn js_modal_open" data-toggle="modal" data-target="#thank">
+                Рассчитать стоимость
+              </button>
+            </div>
+          </div><!-- /.модальное окно-Содержание -->
+        </div><!-- /.модальное окно-диалог -->
+      </div><!-- /.модальное окно -->
+
+      <div class="modal fade" id="thank">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <h4 class="modal-title text-center">Благодарим!</h4>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-md-12">
+                  <p class="notification">Менеджер <span>Desnovation</span> в ближайшее время свяжется с Вами.</p>
+                </div>
+                
+              </div>
+              
+              
+            </div>            
+          </div><!-- /.модальное окно-Содержание -->
+        </div><!-- /.модальное окно-диалог -->
+      </div><!-- /.модальное окно -->
+
+      <header>
+        <div class="container">
+          <nav class="navbar navbar-default">
+            <div class="container-fluid">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed"    data-toggle="modal" data-target="#menu">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                  <img src="img/novostroy/logo.svg" alt="" class="logo">
+                </a>
+              </div>
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                
+                                
+                <ul class="nav navbar-nav navbar-right">
+                  <li><a href="#">Избранное</a></li> 
+                  <li><a href="#">Новостройки </a></li>
+                  <li><a href="#">Карта</a></li>
+                  <li><a href="#">Застройщики</a></li>
+                  <li><a href="#">Акции</a></li>
+                  <li><a href="#">Кредиты</a></li>
+                  <li><a href="#">Партнёры</a></li>                 
+                </ul>
+              </div>
+            </div>
+          </nav>          
+        </div>
+      </header>
+      <section class="top_section">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <p class="adres">ул. Академика Заболотного,  1</p>              
+            </div>
+            <div class="col-md-6">
+              <ol class="breadcrumb">
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Продажа</a></li>
+                <li><a href="#">Новостройки</a></li>
+                <li><a href="#">Киев </a></li>
+                <li class="active">р-н Голосеевский </li>
+              </ol>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 col-sm-6">
+              <div class="info_block">
+                <p class="name_p">ЖК Метрополис</p>
+                <p class="DIM">DIM</p>
+                <img src="img/novostroy/logo_GK.svg" alt="">
+                <hr>
+                <p class="pull-left cost">Цена</p>
+                <p class="pull-right cost">м²</p>
+                <div class="clearfix"></div>
+                <div class="row cost_row">
+                  <div class="col-md-4 text-right col-xs-4">
+                    <p>1999</p>
+                    
+                  </div>
+                  <div class="col-md-4 text-center col-xs-4">
+                    <p class="currency">USD</p>
+                    
+                  </div>
+                  <div class="col-md-4 text-right col-xs-4">
+                    <p>1999</p>
+                    
+                  </div>
+                  <div class="col-md-4 text-right col-xs-4">
+                    
+                    <p>53000</p>
+                  </div>
+                  <div class="col-md-4 text-center col-xs-4">
+                    
+                    <p class="currency">UAH</p>
+                  </div>
+                  <div class="col-md-4 text-right col-xs-4">
+                    
+                    <p>53000</p>
+                  </div>
+                </div>
+                <hr>
+                <p class="cost">Консультация </p>
+                <p class="tel">+380443244186</p>
+                <p class="mess">Обсудить в мессенджере</p>
+                <button type="button" class="butt_bott white_btn">
+                  Кредит
+                </button>
+                <button type="button" class="butt_bott blue_btn">
+                  <img src="img/novostroy/favorites2.svg" alt="">
+                  В избранное
+                </button>                
+              </div>
+            </div>
+            <div class="col-md-8 col-sm-6">
+              <div class="slider_block">
+                <div class="slider_houses">
+                  <div>
+                    <img src="img/novostroy/slider/1.png" alt="">
+                    <img src="img/novostroy/camera.svg" alt="" class="cam">
+                    <p>1 | 20</p>
+                  </div>
+                  <div>
+                    <img src="img/novostroy/slider/1.png" alt="">
+                    <img src="img/novostroy/camera.svg" alt="" class="cam">
+                    <p>2 | 20</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="descr_sect">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <p class="head_descr">Описание</p>
+              <p class="descr_p">Новый жилой комплекс «Метрополис» в Киеве находится в Голосеевском районе по адресу улица Академика Заболотного, 1. В трех минутах ходьбы расположена остановка троллейбуса и автобуса, 
+чуть дальше станция метро. Рядом развязка, позволяющая добраться в любую часть столицы.
+              </p>
+              <ul class="nav nav-pills myTabNew" role="tablist" >
+                <li class="js_open_pans active" data-id='about'>
+                  <div class="planka"></div>
+                  <a href="javascript:void(0)" ><span>О комплексе</span></a>
+                  <div class="www"></div>
+                </li>
+                <li class="js_open_pans" data-id='layout'>
+                  <div class="planka"></div>
+                  <a href="javascript:void(0)" ><span>Планировки</span></a>
+                </li> 
+                <li class="js_open_pans" data-id='documents'>
+                  <div class="planka"></div>
+                  <a href="javascript:void(0)" ><span>Документы</span></a>
+                </li> 
+                <li class="js_open_pans" data-id='stroke'>
+                  <div class="planka"></div>
+                  <a href="javascript:void(0)" ><span>Ход 
+строительства</span></a>
+                </li> 
+                <li class="js_open_pans" data-id='design'>
+                  <div class="planka"></div>
+                  <a href="javascript:void(0)" ><span>Дизайн 
+и ремонт</span></a>
+                </li> 
+                <li class="js_open_pans" data-id='partners'>
+                  <div class="planka"></div>
+                  <a href="javascript:void(0)" ><span>Партнёры</span></a>
+                </li> 
+                <li class="js_open_pans" data-id='banks'>
+                  <div class="planka"></div>
+                  <a href="javascript:void(0)"><span>Банки</span></a>
+                </li> 
+              </ul>              
+              <div class="tab-content" >                
+                <div class="tab-pane " id="about"  style="display: block;">
+                  <p class="name_head">Расположение</p>
+                  <p class="adres_bott">ул. Академика Заболотного,  1</p>
+                  <a href="#" class="marsh_a"><span class="marsh">Построить маршрут</span></a>
+                  <div class="map">
+                    <img src="img/novostroy/Map.png" alt="">
+                  </div>
+                  <p class="name_head">Инфаструктура</p>
+                  <div class="slider_infrastructure">
+                    <div class="descr_div">
+                      <div>
+                        <div class="block_infr">
+                          <div class="blue_div">
+                            <img src="img/novostroy/Metro.svg" alt="">
+                          </div>
+                          <p class="top_p">Метро</p>
+                          <p class="bott_p">649 м</p>
+                        </div>                         
+                      </div>  
+                      <div>                        
+                        <div class="block_infr">
+                          <div class="blue_div">
+                            <img src="img/novostroy/Expanded.svg" alt="">
+                          </div>
+                          <p class="top_p">Садик</p>
+                          <p class="bott_p">613 м</p>
+                        </div>  
+                      </div>
+                      <div>                        
+                        <div class="block_infr">
+                          <div class="blue_div">
+                            <img src="img/novostroy/school.svg" alt="">
+                          </div>
+                          <p class="top_p">Школа</p>
+                          <p class="bott_p">519 м</p>
+                        </div>  
+                      </div>
+                      <div>                        
+                        <div class="block_infr">
+                          <div class="blue_div">
+                            <img src="img/novostroy/Expanded.svg" alt="">
+                          </div>
+                          <p class="top_p">Магазин</p>
+                          <p class="bott_p">89 м</p>
+                        </div>  
+                      </div>
+                      <div>                        
+                        <div class="block_infr">
+                          <div class="blue_div">
+                            <img src="img/novostroy/23-medicine.svg" alt="">
+                          </div>
+                          <p class="top_p">Аптека</p>
+                          <p class="bott_p">208 м</p>
+                        </div>  
+                      </div>
+                      <div>                        
+                        <div class="block_infr">
+                          <div class="blue_div">
+                            <img src="img/novostroy/hospital.svg" alt="">
+                          </div>
+                          <p class="top_p">Больница</p>
+                          <p class="bott_p">1 221 м</p>
+                        </div>  
+                      </div>
+                      <div>                        
+                        <div class="block_infr">
+                          <div class="blue_div">
+                            <img src="img/novostroy/Water.svg" alt="">
+                          </div>
+                          <p class="top_p">Водоём</p>
+                          <p class="bott_p">501 м</p>
+                        </div>  
+                      </div>  
+                    </div>
+                  </div>
+                  <div class="plan_div">
+                    <p class="plan_kvart">Планировки квартир</p>
+                    <div class="row">
+                      <div class="col-md-4">                        
+                        <fieldset class="alex_switch js_switch">
+                            <input type="radio" name="on_off" tabindex="0">
+                        </fieldset>
+                      </div>
+                      <div class="col-md-4">
+                        <p class="cost_metr">53 000 - 74 000 грн | м²</p>
+                      </div>
+                      <div class="col-md-4">
+                        <p class="cost_info">Цены указаны при 100% оплате</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="info_kv">
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th>Планировки</th>
+                          <th>Количество комнат</th>
+                          <th>Цена за квартиру</th>
+                          <th>Площадь квартиры</th>
+                          <th>Цена за метр</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row"><img src="img/novostroy/plan1.png" alt=""></th>
+                          <td>1-комнатные</td>
+                          <td>от 999 999 999 UAH</td>
+                          <td>47...48 м² </td>
+                          <td>26 500 — 27 000 грн</td>
+                        </tr>
+                        <tr>
+                          <th scope="row"><img src="img/novostroy/plan2.png" alt=""></th>
+                          <td>2-комнатные</td>
+                          <td>от 999 999 999 UAH</td>
+                          <td>47...48 м² </td>
+                          <td>26 500 — 27 000 грн</td>
+                        </tr>
+                        <tr>
+                          <th scope="row"><img src="img/novostroy/plan2.png" alt=""></th>
+                          <td>3-комнатные</td>
+                          <td>от 999 999 999 UAH</td>
+                          <td>47...48 м² </td>
+                          <td>26 500 — 27 000 грн</td>
+                        </tr>
+                        <tr>
+                          <th scope="row"><img src="img/novostroy/plan2.png" alt=""></th>
+                          <td>Двухуровневые</td>
+                          <td>от 999 999 999 UAH</td>
+                          <td>47...48 м² </td>
+                          <td>26 500 — 27 000 грн</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <p class="name_head">Документы</p>
+                  <a href="#"  class="documents"><span>Смотреть все документы</span></a>
+                  <div class="doc_div">
+                    <div class="block_infr">
+                      <div class="blue_div">
+                        <div class="planka2"></div>
+                        <img src="img/novostroy/plot.svg" alt="">
+                      </div>
+                      <p class="top_p">Документы на участок</p>
+                      <p class="bott_p">Есть</p>
+                    </div> 
+                    <div class="block_infr">
+                      <div class="blue_div">
+                        <div class="planka2"></div>
+                        <img src="img/novostroy/building.svg" alt="">
+                      </div>
+                      <p class="top_p">Документы на строительство</p>
+                      <p class="bott_p">Есть</p>
+                    </div>
+                    <div class="block_infr">
+                      <div class="blue_div">
+                        <div class="planka2"></div>
+                        <img src="img/novostroy/license.svg" alt="">
+                      </div>
+                      <p class="top_p">Лицензия генподрядчика</p>
+                      <p class="bott_p">Есть</p>
+                    </div>
+                  </div>
+                  <p class="name_head">Характеристики ЖК</p>
+                  
+                  <div class="doc_div">
+                    <div class="block_infr">
+                      <div class="blue_div">
+                        <div class="planka2"></div>
+                        <img src="img/novostroy/specifications/specific1.svg" alt="">
+                      </div>
+                      <p class="top_p">Класс</p>
+                      <p class="bott_p">Комфорт</p>
+                    </div> 
+                    <div class="block_infr">
+                      <div class="blue_div">
+                        <div class="planka2"></div>
+                        <img src="img/novostroy/specifications/specific2.svg" alt="">
+                      </div>
+                      <p class="top_p">Домов</p>
+                      <p class="bott_p">4</p>
+                    </div>
+                    <div class="block_infr">
+                      <div class="blue_div">
+                        <div class="planka2"></div>
+                        <img src="img/novostroy/specifications/specific3.svg" alt="">
+                      </div>
+                      <p class="top_p">Этажность</p>
+                      <p class="bott_p">10, 34</p>
+                    </div>
+                    <div class="block_infr">
+                      <div class="blue_div">
+                        <div class="planka2"></div>
+                        <img src="img/novostroy/specifications/specific4.svg" alt="">
+                      </div>
+                      <p class="top_p">Технология строительства</p>
+                      <p class="bott_p">Монолитно-каркасная</p>
+                    </div> 
+                    <div class="block_infr">
+                      <div class="blue_div">
+                        <div class="planka2"></div>
+                        <img src="img/novostroy/specifications/specific5.svg" alt="">
+                      </div>
+                      <p class="top_p">Стены</p>
+                      <p class="bott_p">Кирпич, пеноблок</p>
+                    </div>
+                    <div class="block_infr">
+                      <div class="blue_div">
+                        <div class="planka2"></div>
+                        <img src="img/novostroy/specifications/specific6.svg" alt="">
+                      </div>
+                      <p class="top_p">Утепление</p>
+                      <p class="bott_p">Минеральная вата</p>
+                    </div>
+                    <div class="block_infr">
+                      <div class="blue_div">
+                        <div class="planka2"></div>
+                        <img src="img/novostroy/specifications/specific7.svg" alt="">
+                      </div>
+                      <p class="top_p">Отопление</p>
+                      <p class="bott_p">Индивидуальное </p>
+                    </div> 
+                    <div class="block_infr">
+                      <div class="blue_div">
+                        <div class="planka2"></div>
+                        <img src="img/novostroy/specifications/specific8.svg" alt="">
+                      </div>
+                      <p class="top_p">Высота потолков</p>
+                      <p class="bott_p">2,7 - 3 м (от - до потолка)</p>
+                    </div>
+                    <div class="block_infr">
+                      <div class="blue_div">
+                        <div class="planka2"></div>
+                        <img src="img/novostroy/specifications/specific9.svg" alt="">
+                      </div>
+                      <p class="top_p">Количество квартир</p>
+                      <p class="bott_p">2857</p>
+                    </div>
+                    <div class="block_infr">
+                      <div class="blue_div">
+                        <div class="planka2"></div>
+                        <img src="img/novostroy/specifications/specific10.svg" alt="">
+                      </div>
+                      <p class="top_p">Состояние квартиры</p>
+                      <p class="bott_p">Под ремонт, с ремонтом</p>
+                    </div> 
+                    <div class="block_infr">
+                      <div class="blue_div">
+                        <div class="planka2"></div>
+                        <img src="img/novostroy/specifications/specific11.svg" alt="">
+                      </div>
+                      <p class="top_p">Закрытая територия</p>
+                      <p class="bott_p">От автомобилей</p>
+                    </div>
+                    <div class="block_infr">
+                      <div class="blue_div">
+                        <div class="planka2"></div>
+                        <img src="img/novostroy/specifications/specific12.svg" alt="">
+                      </div>
+                      <p class="top_p">Паркинг</p>
+                      <p class="bott_p">Стоянка, подземный</p>
+                    </div>
+                  </div>
+                  <p class="name_head">Новости</p>
+                  <p class="little_p">Новостройка состоит из четырех многоквартирных домов, спроектированных в едином архитектурном стиле. «Метрополис» – жилой комплекс для современных людей, который сооружается из экологически безвредных материалов с применением перспективных технологий.</p>
+                  <p class="little_p">В ходе строительства используются методы повышения энергоэффективности, обеспечивающие небольшую стоимость отопления и высокий уровень комфорта. Несущие конструкции домов выполняются из монолитного железобетона, наружные стены надежно утепляются плитами минеральной ваты. Многочисленные отзывы на столичных форумах подтверждают отличное качество работ.</p>
+                  <p class="name_head">Особенности возведения</p>
+                  <p class="little_p">Новостройка состоит из четырех многоквартирных домов, спроектированных в едином архитектурном стиле. «Метрополис» – жилой комплекс для современных людей, который сооружается из экологически безвредных материалов с применением перспективных технологий.</p>
+                  <p class="little_p">В ходе строительства используются методы повышения энергоэффективности, обеспечивающие небольшую стоимость отопления и высокий уровень комфорта. Несущие конструкции домов выполняются из монолитного железобетона, наружные стены надежно утепляются плитами минеральной ваты. Многочисленные отзывы на столичных форумах подтверждают отличное качество работ.</p>
+                  <p class="name_head">Реализация жилья</p>
+                  <p class="little_p">Новостройка состоит из четырех многоквартирных домов, спроектированных в едином архитектурном стиле. «Метрополис» – жилой комплекс для современных людей, который сооружается из экологически безвредных материалов с применением перспективных технологий.</p>
+                  <p class="little_p">В ходе строительства используются методы повышения энергоэффективности, обеспечивающие небольшую стоимость отопления и высокий уровень комфорта. Несущие конструкции домов выполняются из монолитного железобетона, наружные стены надежно утепляются плитами минеральной ваты. Многочисленные отзывы на столичных форумах подтверждают отличное качество работ.</p>
+                  <p class="name_head">Похожие объекты</p>
+                  <div class="similar_div">
+                    <a href="#">
+                      <div class="similar">
+                        <img src="img/novostroy/zk1.png" alt="">
+                        <p class="head_object">КАН Девелопмент</p>
+                        <p class="name_object">ЖК Respublika</p>
+                        <p class="cost">от 1 млн грн</p>
+                      </div>
+                    </a>
+                    <a href="#">
+                      <div class="similar">
+                        <img src="img/novostroy/zk2.png" alt="">
+                        <p class="head_object">Интергал-Буд</p>
+                        <p class="name_object">ЖК Теремки</p>
+                        <p class="cost">от 947 тыс. грн</p>
+                      </div>
+                    </a>
+                    <a href="#">
+                      <div class="similar">
+                        <img src="img/novostroy/zk3.png" alt="">
+                        <p class="head_object">NOVBUD</p>
+                        <p class="name_object">ЖК Новые Теремки</p>
+                        <p class="cost">от 347 тыс. грн</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <!-- Содержимое 2 вкладки -->
+                <div class="tab-pane " id="layout" > 
+                  <div class="filter_div">
+                    <p class="filter_p white_p hidden-sm hidden-xs head_descr">Выбор планировки квартиры</p>
+                    <p class="head_descr white_p hidden-md hidden-lg">Фильтры</p>
+                    <div class="row">
+                      <div class="col-md-6 col-lg-4"> 
+                        <form class="form-horizontal">
+                          <div class="form-group">
+                            <label for="" class="col-sm-4 control-label label_p col-xs-3">Дата ввода</label>
+                            <div class="col-sm-8 col-xs-9">
+                              <a href="#" class="sel_a"><span>2 кв. 2020</span></a>
+                              <a href="#" class="sel_a active"><span>3 кв. 2021</span></a>
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label for="" class="col-sm-4 control-label label_p col-xs-3">Дом</label>
+                            <div class="col-sm-8 col-xs-9">
+                              <a href="#" class="sel_a"><span>Дом 1</span></a>
+                              <a href="#" class="sel_a "><span>Дом 2</span></a>
+                              <a href="#" class="sel_a "><span>Дом 3</span></a>
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label for="" class="col-sm-4 control-label label_p col-xs-3">Комнатность</label>
+                            <div class="col-sm-8 col-xs-9">
+                              <a href="#" class="sel_a"><span class="room">1</span></a>
+                              <a href="#" class="sel_a "><span class="room">2</span></a>
+                              <a href="#" class="sel_a "><span class="room">3</span></a>
+                              <a href="#" class="sel_a "><span class="room">4+</span></a>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                      <div class="col-md-6 col-lg-4">
+                        <p class="top_label">Площадь от 30 до 204 м²</p>
+                        <div class="filter">
+                          <div>
+                            <!-- <span>Фильтр</span> -->
+                            <div>
+                              <!-- Вывод спрятал в css -->
+                              <number>0</number><number>10000000</number>
+                            </div>
+                            <div id="rating3" class="slider">
+                              <div class="block-min" onMouseDown="moveRange( this);" onTouchStart="moveRange( this);"></div>
+                            <div class="color-range">
+                            </div>
+                            <div class="block-max" onMouseDown="moveRange(this)" onTouchStart="moveRange( this);" ></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6 col-md-offset-6 col-lg-4 col-lg-offset-0">
+                        <p class="top_label mt">Этаж от 6 до 32</p>
+                        <div class="filter">
+                          <div>
+                            <!-- <span>Фильтр</span> -->
+                            <div>
+                              <!-- Вывод спрятал в css -->
+                              <number>0</number><number>10000000</number>
+                            </div>
+                            <div id="rating4" class="slider">
+                              <div class="block-min" onMouseDown="moveRange( this);" onTouchStart="moveRange( this);"></div>
+                            <div class="color-range">
+                            </div>
+                            <div class="block-max" onMouseDown="moveRange(this)" onTouchStart="moveRange( this);" ></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>                      
+                    </div>
+                    <div class="row">
+                      <div class="col-md-8">
+                        <form class="form-horizontal">
+                          <div class="form-group">
+                            <label for="" class="col-sm-2 control-label label_p col-xs-12 osob">Особенности</label>
+                            <div class="col-sm-10 col-xs-12">
+                              <a href="#" class="sel_a"><span>Многоуровневая</span></a>
+                              <a href="#" class="sel_a active"><span>Студия</span></a>
+                              <a href="#" class="sel_a "><span>Балкон</span></a>
+                              <a href="#" class="sel_a "><span>Панорамные окна</span></a>
+                              <a href="#" class="sel_a "><span>Гардероб</span></a>
+                            </div>
+                          </div>
+                        </form>
+                      </div>                      
+                      <div class="col-md-4">
+                        <label class="lab_check">
+                          <input type="checkbox" checked="checked">
+                          <span>Показать проданные</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12">
+                        <a href="#" class="reset_a">СБРОСИТЬ ФИЛЬТР</a>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="head_descr">Планировки 1-комнатных квартир от 948 тыс. грн</p>
+                  <p class="littl_info">1 планировка 45.28 м²</p>
+                  <div class="row_plan">
+                    <div class="plan_kv">
+                      <img src="img/novostroy/plan_kv.png" alt="">
+                      <div class="row_info_bottom">
+                        <span class="cub_m">45.28 м² </span>
+                        <span>40 950 грн|м²</span>
+                        <span><img src="img/novostroy/favorites.svg" alt=""></span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <p class="head_descr">Планировки 2-комнатных квартир от 1.75 млн грн</p>
+                  <p class="littl_info">8 планировок от 66 м² до 80 м²</p>
+                  <div class="row_plan">
+                    <div class="plan_kv">
+                      <img src="img/novostroy/plan_kv.png" alt="">
+                      <div class="row_info_bottom">
+                        <span class="cub_m">42.39-46.22 м²</span>
+                        <span>(25 подобных)</span>
+                        <span><img src="img/novostroy/favorites.svg" alt=""></span>
+                      </div>
+                    </div>
+                    <div class="plan_kv">
+                      <img src="img/novostroy/plan_kv.png" alt="">
+                      <div class="row_info_bottom">
+                        <span class="cub_m">42.39-46.22 м²</span>
+                        <span>(25 подобных)</span>
+                        <span><img src="img/novostroy/favorites.svg" alt=""></span>
+                      </div>
+                    </div>
+                    <div class="plan_kv">
+                      <img src="img/novostroy/plan_kv.png" alt="">
+                      <div class="row_info_bottom">
+                        <span class="cub_m">42.39-46.22 м²</span>
+                        <span>(25 подобных)</span>
+                        <span><img src="img/novostroy/favorites.svg" alt=""></span>
+                      </div>
+                    </div>
+                    <div class="plan_kv">
+                      <img src="img/novostroy/plan_kv.png" alt="">
+                      <div class="row_info_bottom">
+                        <span class="cub_m">42.39-46.22 м²</span>
+                        <span>(25 подобных)</span>
+                        <span><img src="img/novostroy/favorites.svg" alt=""></span>
+                      </div>
+                    </div>
+                    <div class="plan_kv">
+                      <img src="img/novostroy/plan_kv.png" alt="">
+                      <div class="row_info_bottom">
+                        <span class="cub_m">42.39-46.22 м²</span>
+                        <span>(25 подобных)</span>
+                        <span><img src="img/novostroy/favorites.svg" alt=""></span>
+                      </div>
+                    </div>
+                    <div class="plan_kv">
+                      <img src="img/novostroy/plan_kv.png" alt="">
+                      <div class="row_info_bottom">
+                        <span class="cub_m">42.39-46.22 м²</span>
+                        <span>(25 подобных)</span>
+                        <span><img src="img/novostroy/favorites.svg" alt=""></span>
+                      </div>
+                    </div>
+                    <div class="plan_kv">
+                      <img src="img/novostroy/plan_kv.png" alt="">
+                      <div class="row_info_bottom">
+                        <span class="cub_m">42.39-46.22 м²</span>
+                        <span>(25 подобных)</span>
+                        <span><img src="img/novostroy/favorites.svg" alt=""></span>
+                      </div>
+                    </div>
+                    <div class="plan_kv">
+                      <img src="img/novostroy/plan_kv.png" alt="">
+                      <div class="row_info_bottom">
+                        <span class="cub_m">42.39-46.22 м²</span>
+                        <span>(25 подобных)</span>
+                        <span><img src="img/novostroy/favorites.svg" alt=""></span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <p class="head_descr">Планировки 3-комнатных квартир от 2.44 млн грн</p>
+                  <p class="littl_info">4 планировки от 90 м² до 120 м²</p>
+                  <div class="row_plan">
+                    <div class="plan_kv">
+                      <img src="img/novostroy/plan_kv.png" alt="">
+                      <div class="row_info_bottom">
+                        <span class="cub_m">45.28 м² </span>
+                        <span>40 950 грн|м²</span>
+                        <span><img src="img/novostroy/favorites.svg" alt=""></span>
+                      </div>
+                    </div>
+                    <div class="plan_kv">
+                      <img src="img/novostroy/plan_kv.png" alt="">
+                      <div class="row_info_bottom">
+                        <span class="cub_m">45.28 м² </span>
+                        <span>40 950 грн|м²</span>
+                        <span><img src="img/novostroy/favorites.svg" alt=""></span>
+                      </div>
+                    </div>
+                    <div class="plan_kv">
+                      <img src="img/novostroy/plan_kv.png" alt="">
+                      <div class="row_info_bottom">
+                        <span class="cub_m">45.28 м² </span>
+                        <span>40 950 грн|м²</span>
+                        <span><img src="img/novostroy/favorites.svg" alt=""></span>
+                      </div>
+                    </div>
+                    <div class="plan_kv">
+                      <img src="img/novostroy/plan_kv.png" alt="">
+                      <div class="row_info_bottom">
+                        <span class="cub_m">45.28 м² </span>
+                        <span>40 950 грн|м²</span>
+                        <span><img src="img/novostroy/favorites.svg" alt=""></span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <p class="head_descr">Планировки 4-комнатных квартир от 3.42 млн грн</p>
+                  <p class="littl_info">2 планировки от 117 м² до 173 м²</p>
+                  <div class="row_plan">                   
+                    <div class="plan_kv">
+                      <img src="img/novostroy/plan_kv.png" alt="">
+                      <div class="row_info_bottom">
+                        <span class="cub_m">45.28 м² </span>
+                        <span>40 950 грн|м²</span>
+                        <span><img src="img/novostroy/favorites.svg" alt=""></span>
+                      </div>
+                    </div>
+                    <div class="plan_kv">
+                      <img src="img/novostroy/plan_kv.png" alt="">
+                      <div class="row_info_bottom">
+                        <span class="cub_m">45.28 м² </span>
+                        <span>40 950 грн|м²</span>
+                        <span><img src="img/novostroy/favorites.svg" alt=""></span>
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+                <!-- Содержимое 3 вкладки -->
+                <div class="tab-pane  faq" id="documents" > 
+                  <div class="doc_div_top">
+                    <p class="head_descr white_p">Документы ЖК Метрополис</p>
+                  </div>
+                  <div class="questions">
+                    <div class="panel-group" id="collapse-group">
+                      <div class="panel panel-default">
+                          <div class="panel-heading">
+                              <h4 class="panel-title">
+                                <div id="fix"></div>
+                                <a data-toggle="collapse" data-parent="#collapse-group" href="#land_plot1"><span>Документы на земельный участок</span></a>
+                              </h4>
+                          </div>
+                          <div id="land_plot1" class="panel-collapse collapse ">
+                              <div class="panel-body">                                
+                                <ul class="nav nav-pills land_plot" role="tablist" >
+                                  <li class="active">
+                                    <a href="#plot" role="tab" data-toggle="tab">Земельный участок</a>
+                                  </li>
+                                  <li class="">
+                                    <a href="#cad_numm" role="tab" data-toggle="tab">Кадастровый номер земельного участка</a>
+                                  </li> 
+                                </ul>              
+                                <div class="tab-content">                
+                                  <div class="tab-pane children active" id="plot"> 
+                                    <ul>
+                                      <li>Решение Киевсовета от 08.10.2015 года № 151/2054 «О передаче ЧП «ВЕРОНА-9» земельных участков для строительства и эксплуатации жилого комплекса с объектами общественного назначения и детским дошкольным учреждением, объектами инженерно-транспортной инфраструктуры и создание озелененных территорий общего пользования на ул. Академика Заболотного, 1»;
+                                        <a href="#" class="look_doc">Смотреть документ</a>
+                                      </li>  
+                                      <li>Выписку из реестра прав собственности № 66441203 от 23.08.2016 года.
+                                      </li>                                      
+                                      <li>Решение Киевсовета от 26.07.2007 года № 92/1926 «О передаче ЧП «ВЕРОНА-9» земельного участка для строительства, обслуживания и эксплуатации гостинично-офисного центра по торгово-развлекательными заведениями на пересечении ул. Академика Глушкова и Академика Заболотного»;
+                                        <a href="#" class="look_doc">Смотреть документ</a>
+                                      </li>                
+                                    </ul>
+                                  </div>
+                                  <!-- Содержимое 2 вкладки -->
+                                  <div class="tab-pane children" id="cad_numm"> 
+                                    <p>Кадастровый номер земельного участка</p>
+                                  </div>
+                                </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="panel panel-default">
+                          <div class="panel-heading">
+                              <h4 class="panel-title">
+                                <div id="fix"></div>
+                                <a data-toggle="collapse" data-parent="#collapse-group" href="#land_plot2"><span>Документы на строительство</span></a>
+                              </h4>
+                          </div>
+                          <div id="land_plot2" class="panel-collapse collapse">
+                            <div class="panel-body">                                
+                              <ul class="nav nav-pills land_plot" role="tablist" >
+                                <li class="active">
+                                  <a href="#pravo" role="tab" data-toggle="tab">Право на выполнение строительных работ</a>
+                                </li>
+                                <li class="">
+                                  <a href="#klass" role="tab" data-toggle="tab">Класс последствий</a>
+                                </li> 
+                              </ul>              
+                              <div class="tab-content">                
+                                <div class="tab-pane active children" id="pravo">
+                                  <p>Сообщение об изменении данных в разрешении на строительные работы серии ІУ №123192210780 от августа 2019 года (1 очередь строительства);</p>
+                                  <a href="#" class="look_doc">Смотреть документ</a>
+                                  <p>Сообщение об изменении данных в разрешении на строительные работы серии ІУ №123192210780 от августа 2019 года (1 очередь строительства);</p>
+                                  <a href="#" class="look_doc">Смотреть документ</a> 
+                                  <ul>                                      
+                                    <li>Разрешение на строительные работы серия ІУ №113181871586 от 06.07.2018 года (2 очередь строительства);
+                                      <a href="#" class="look_doc">Смотреть документ</a>
+                                    </li>  
+                                    <li>Сообщение об изменении данных в разрешении на строительные работы серии ІУ №123180611052 от марта 2018 года;
+                                      <a href="#" class="look_doc">Смотреть документ</a>
+                                    </li>                                      
+                                    <li>Разрешение на строительные работы серия ІУ №113172651312 от сентября 2017 года (1 очередь строительства);
+                                      <a href="#" class="look_doc">Смотреть документ</a>
+                                    </li>                                                                          
+                                  </ul>
+                                </div>
+                                <!-- Содержимое 2 вкладки -->
+                                <div class="tab-pane children" id="klass"> 
+                                  <p>Класс последствий</p>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+
+                      <div class="panel panel-default">
+                          <div class="panel-heading">
+                              <h4 class="panel-title">
+                                <div id="fix"></div>
+                                <a data-toggle="collapse" data-parent="#collapse-group" href="#land_plot3"><span>Участники строительства </span></a>
+                              </h4>
+                          </div>
+                          <div id="land_plot3" class="panel-collapse collapse">
+                            <div class="panel-body">                                
+                              <ul class="nav nav-pills land_plot" role="tablist" >
+                                <li class="active">
+                                  <a href="#genpodrjad" role="tab" data-toggle="tab">Генподрядчик</a>
+                                </li>
+                                <li class="">
+                                  <a href="#order" role="tab" data-toggle="tab">Заказчик</a>
+                                </li> 
+                                <li class="">
+                                  <a href="#zastroy" role="tab" data-toggle="tab">Застройщик</a>
+                                </li>
+                              </ul>              
+                              <div class="tab-content">                
+                                <div class="tab-pane active children" id="genpodrjad">
+                                  <p>Лицензия на право проведения хозяйственной деятельности, связанной с созданием объектов архитектуры №2013056376 от 14.11.2018 года, выдана ООО АРСАН-БУД</p>
+                                  <a href="#" class="look_link">Проверить компанию</a>
+                                  <a href="#" class="look_link">Смотреть лицензию</a>
+                                </div>
+                                <!-- Содержимое 2 вкладки -->
+                                <div class="tab-pane children" id="order"> 
+                                  <p>Заказчик</p>
+                                </div>
+                                <!-- Содержимое 3 вкладки -->
+                                <div class="tab-pane children" id="zastroy"> 
+                                  <p>Застройщик</p>
+                                </div>
+                              </div>
+                            </div>
+                        </div>                        
+                      </div>
+
+                      <div class="panel panel-default">
+                          <div class="panel-heading">
+                              <h4 class="panel-title">
+                                <div id="fix"></div>
+                                <a data-toggle="collapse" data-parent="#collapse-group" href="#land_plot4"><span>Принятие ЖК в эксплуатацию </span></a>
+                              </h4>
+                          </div>
+                          <div id="land_plot4" class="panel-collapse collapse">
+                            <div class="panel-body">
+                             <p>Комплекс еще строится, сдача запланирована позже.</p>  
+                            </div>
+                        </div>                        
+                      </div>
+
+                      <div class="panel panel-default">
+                          <div class="panel-heading">
+                              <h4 class="panel-title">
+                                <div id="fix"></div>
+                                <a data-toggle="collapse" data-parent="#collapse-group" href="#land_plot5"><span>Досудебные производства</span></a>
+                              </h4>
+                          </div>
+                          <div id="land_plot5" class="panel-collapse collapse">
+                            <div class="panel-body">
+                             <p>На данный момент ничего нет.</p>  
+                            </div>
+                        </div>                        
+                      </div>
+
+                      <div class="panel panel-default">
+                          <div class="panel-heading">
+                              <h4 class="panel-title">
+                                <div id="fix"></div>
+                                <a data-toggle="collapse" data-parent="#collapse-group" href="#land_plot6"><span>Паспорт объекта</span></a>
+                              </h4>
+                          </div>
+                          <div id="land_plot6" class="panel-collapse collapse">
+                            <div class="panel-body">
+                              <img src="img/novostroy/pasport.png" alt="">
+                              <a href="#" class="look_link hidden-md hidden-lg">Открыть в полном размере</a>
+                            </div>
+                        </div>                        
+                      </div>
+
+                      <div class="panel panel-default">
+                          <div class="panel-heading">
+                              <h4 class="panel-title">
+                                <div id="fix"></div>
+                                <a data-toggle="collapse" data-parent="#collapse-group" href="#land_plot7"><span>Схемы финансирования </span></a>
+                              </h4>
+                          </div>
+                          <div id="land_plot7" class="panel-collapse collapse">
+                            <div class="panel-body">
+                              <p class="white_top">Договор покупки-продажи дериватива + договор покупки-продажи имущественных прав</p>
+                              <p>Для привлечения средств на строительство покупатель заключает 2 договора: договор купли-продажи ценных бумаг (дериватива) с инвестиционным фондом или компанией по управлению активами и договор купли-продажи имущественных прав с заказчиком строительства.</p>
+                              <p>Договор купли-продажи имущественных прав заключают после выполнения покупателем денежных обязательств по договору купли-продажи ценных бумаг или других финансовых документов (дериватива). Дериватив — стандартный документ, который удостоверяет право и/или обязательство приобрести или продать в будущем ценные бумаги, материальные или нематериальные активы, а также средства на определенных им условиях согласно пп. 14.1.45 Налогового Кодекса Украины.</p>
+                              <p>Предмет договора купли-продажи ценных бумаг или других финансовых документов — это форвардный контракт. Форвардный контракт — это двухсторонняя гражданско-правовая сделка по стандартной (типовой) форме, которая обязывает лицо в будущем приобрести или продать базовый акт в определенное время и на определенных условиях с фиксацией цены продажи при заключении контракта.</p>
+                              <p> Продажу форвардного контракта заверяют (регистрируют) в товарной бирже. Согласно ч.2, ст. 656 Гражданского кодекса, форма договора должна быть обязательно письменная, а вот у нотариуса можно не заверять. Договор купли-продажи имущественных прав на объект недвижимости, который покупатель заключает с заказчиком строительства — это основание для вступления в собственность имущественных прав по соответствующему акту. Когда дом введут в эксплуатацию и присвоят почтовый адрес, покупатель получит то, за что заплатил по договору.</p>
+                              <p style="color: #232323;">Особенности</p>
+                              <ul>                                      
+                                <li>сложная в создании и обслуживании схема привлечения средств дает дополнительные гарантии покупателю;
+                                </li>  
+                                <li>инвестору не нужно платить третьим лицам для реализации проекта;
+                                </li>                                      
+                                <li>уменьшенная налоговая нагрузка на застройщика отражается на цене объекта инвестиций;
+                                </li>        
+                                <li>минимизируется риск двойных продаж объектов недвижимости;</li> 
+                                <li>в случае расторжения договора купли-продажи имущественных прав существует риск не возврата инвестиций в полном объеме — например могут не вернуться средства, которые были потрачены по договору купли-продажи дериватива;</li> 
+                                <li>застройщик может тратить деньги для строительства до получения необходимой разрешительной документации;</li> 
+                                <li>нет контроля над финансовыми потоками привлеченных денег инвесторов со стороны государства или управляющих;</li> 
+                                <li>деньги могут тратить не по назначению.</li>  
+                              </ul>
+                              <p style="color: #232323;">На что обратить внимание</p>
+                              <ul>                                      
+                                <li>На условия договора: материальная ответственность сторон, четкие сроки завершения строительства и заключения основного договора, порядок и основания расторжения договора и возврата средств, права и обязанности сторон и др. В основном, максимально защищены права застройщика, но не инвестора, поэтому необходимо внимательно изучить договор и внести соответствующие изменения.
+                                </li>  
+                                <li>На наличие необходимого пакета разрешительной документации на строительство;
+                                </li>                                      
+                                <li>На репутацию субъектов строительства;
+                                </li>        
+                                <li>На опыт строительства подобных объектов;</li> 
+                                <li>На полномочия подписантов;</li> 
+                                <li>На отсутствия ограничений на подписание договоров.</li>
+                              </ul>
+                            </div>
+                        </div>                        
+                      </div>
+                      
+                      <div class="panel panel-default">
+                          <div class="panel-heading">
+                              <h4 class="panel-title">
+                                <div id="fix"></div>
+                                <a data-toggle="collapse" data-parent="#collapse-group" href="#land_plot8"><span>Комментарии юристов</span></a>
+                              </h4>
+                          </div>
+                          <div id="land_plot8" class="panel-collapse collapse">
+                            <div class="panel-body">
+                              <p style="color: #232323;">Рекомендуем запросить следующие документы для детального изучения</p>
+                              <ul>                                      
+                                <li>Есть ли ограничение в пользовании земельным участком, арест, запрет на отчуждение или ипотека;
+                                </li>  
+                                <li>Полномочия продавца отчуждать права на объекты;
+                                </li>                                      
+                                <li>Судебные и/или досудебные уголовные производства участников строительного процесса;
+                                </li>        
+                                <li>Градостроительные условия и ограничения застройки земельного участка;</li> 
+                                <li>Технические условия на подключение коммуникаций;</li> 
+                                <li>Экспертный отчёт проектной документации на строительство (в случае необходимости его получения);</li>
+                                <li>Договорные отношения между субъектами реализации объекта строительства;</li>
+                                <li>Предложенные к подписанию условия договора.</li>
+                              </ul>
+                            </div>
+                        </div>                        
+                      </div>
+                      
+                      
+                      
+                    </div>
+                  </div>
+                </div>
+                <!-- Содержимое 4 вкладки -->
+                <div class="tab-pane " id="stroke"> 
+                  <div class="obnova">
+                    <p>Обновлено 14 мая: все новые фотографии получены от застройщика</p>
+                  </div>
+                  <form class="form-horizontal">
+                    <div class="form-group">                      
+                      <div class="col-sm-12">
+                        <a href="#" class="sel_a_house active"><span>1 дом</span></a>
+                        <a href="#" class="sel_a_house "><span>2 дом</span></a>
+                        <a href="#" class="sel_a_house "><span>3 дом</span></a>
+                        <a href="#" class="sel_a_house "><span>1-3 дом</span></a>
+                        <a href="#" class="sel_a_house "><span>2, 3 дома</span></a>
+                      </div>
+                    </div>
+                  </form>
+                  <p>Заявленный ввод в эксплуатацию: 2 кв. 2020</p>
+                  <div class="chod_slider">
+                    <div class="demo">
+                      <div class="item">            
+                          <div class="clearfix" >
+                              <ul id="image-gallery" class="gallery list-unstyled cS-hidden">
+                                  <li data-thumb="img/novostroy/chod1.png"> 
+                                      <img src="img/novostroy/chod1.png" />
+                                  </li>
+                                  <li data-thumb="img/novostroy/chod2.png"> 
+                                      <img src="img/novostroy/chod2.png" />
+                                  </li>
+                                  <li data-thumb="img/novostroy/chod3.png"> 
+                                      <img src="img/novostroy/chod3.png" />
+                                  </li>
+                                  <li data-thumb="img/novostroy/chod4.png"> 
+                                      <img src="img/novostroy/chod4.png" />
+                                  </li>                  
+                              </ul>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="head_descr">ЖК Метрополис: ход строительства на фото</p>
+                  <p style="max-width: 714px; margin-bottom: 41px; margin-top:20px;">Новый жилой комплекс «Метрополис» в Киеве находится в Голосеевском районе по адресу улица Академика Заболотного, 1. В трех минутах ходьбы расположена остановка троллейбуса и автобуса, чуть дальше станция метро. Рядом развязка, позволяющая добраться в любую часть столицы.</p>
+
+                </div>
+                <!-- Содержимое 5 вкладки -->
+                <div class="tab-pane " id="design" > 
+                  <div class="obnova des_obn">
+                    <p>Дизайн и ремонт выбранной квартиры от нашего партнёра DESNOVATION</p>
+                  </div>
+                  <div class="company_info">
+                    <img src="img/novostroy/Desnovation_logo.svg" alt="">
+                    <p class="start_up">Украинский стартап и команда профессионалов, маркетплейс по дизайну и ремонту. Получая международную поддержку в развитии, Desnovation ставит первоочередную цель:</p>
+                    <p class="green_p">Владельцы жилья гарантированно получают квартиру с готовым профессиональным дизайном и качественным ремонтом по лучшей цене на рынке.</p>
+                    <p>Desnovation - это</p>
+                    <ul>
+                      <li>Ремонт квартир с гарантией</li>
+                      <li>Оплата за результат</li>
+                      <li>Технический надзор</li>
+                      <li>Покупка материалов и мебели</li>
+                    </ul>
+                  </div>
+                  <p class="head_descr" style="margin-bottom: 30px">Готовые дизайны квартир</p>
+                  <p class="dis">Ознакомьтесь с уже готовыми дизайнерскими решениями, разработанными командой Desnovation, которые можно воплотить в вашей новой квартире.</p>
+                  <div class="design_kv">
+                    <p class="green_planka">Кухня-гостиная в современном стиле</p>
+                    <div class="design_info">
+                      <div class="img_div "> 
+                        
+                        <a  href="img/novostroy/kv1-1.png"  data-fancybox="gallery" ><img src="img/novostroy/Play.png" alt="" class="play"><img src="img/novostroy/kv1.png" /></a>
+                        <a  href="img/novostroy/chod3.png"  data-fancybox="gallery" ></a>               
+                      </div>
+                      <div class="info_div">
+                        <p class="head_p">Кухня-гостиная</p>
+                        <p class="right_p">Стиль Современный</p>
+                        <p class="descr">Очень уютная кухня-гостиная что объединила в себе кухню, обеденную и барную зоны. Отделка кухонных фасадов исполнена в шпоне на основе МДФ, и крашеного МДФ, а столешница из акрила с каменной крошкой. Мягкие стулья позволят отлично проводить время за обеденным столом. Зона кухни имеет отделку полов из керамогранита, а обеденная из паркетной доски.</p>
+                        <p class="cost">Стоимость | м²</p>
+                        <div class="row add_data">
+                          <div class="col-md-4 col-xs-4">
+                            <p class="materials">Материалы</p>
+                          </div>
+                          <div class="col-md-8 col-xs-8">
+                            <p>от 50 000 грн до 70 000 грн</p>
+                          </div>
+                        </div>
+                        <div class="row add_data">
+                          <div class="col-md-4 col-xs-4">
+                            <p class="repairs">Ремонт</p>
+                          </div>
+                          <div class="col-md-8 col-xs-8">
+                            <p>от 50 000 грн до 70 000 грн</p>
+                          </div>
+                        </div>
+                        <div class="row add_data">
+                          <div class="col-md-4 col-xs-4">
+                            <p class="furniture">Мебель</p>
+                          </div>
+                          <div class="col-md-8 col-xs-8">
+                            <p>от 50 000 грн до 70 000 грн</p>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-12">
+                            <button type="button" class="butt_bott calculate_btn" data-toggle="modal" data-target="#calc">
+                              Рассчитать стоимость
+                            </button>
+                          </div>  
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="design_kv">
+                    <p class="green_planka">Проект спальни в классике</p>
+                    <div class="design_info">
+                      <div class="img_div "> 
+                        
+                        <a  href="img/novostroy/kv1-1.png"  data-fancybox="gallery" ><img src="img/novostroy/Play.png" alt="" class="play"><img src="img/novostroy/kv2.png" /></a>
+                        <a  href="img/novostroy/chod3.png"  data-fancybox="gallery" ></a>               
+                      </div>
+                      <div class="info_div">
+                        <p class="head_p">Кухня-гостиная</p>
+                        <p class="right_p">Стиль Современный</p>
+                        <p class="descr">Нежная и изысканная классика в интерьере не теряет своей актуальности до сегодняшних дней. Это пространство которое успокаивает, делает уютным любое помещение и благодаря своей необычно богатой на декор мебели может удивлять и восхищать. Такой интерьер выглядит дорого и презентабельно. </p>
+                        <p class="cost">Стоимость | м²</p>
+                        <div class="row add_data">
+                          <div class="col-md-4 col-xs-4">
+                            <p class="materials">Материалы</p>
+                          </div>
+                          <div class="col-md-8 col-xs-8">
+                            <p>от 50 000 грн до 70 000 грн</p>
+                          </div>
+                        </div>
+                        <div class="row add_data">
+                          <div class="col-md-4 col-xs-4">
+                            <p class="repairs">Ремонт</p>
+                          </div>
+                          <div class="col-md-8 col-xs-8">
+                            <p>от 50 000 грн до 70 000 грн</p>
+                          </div>
+                        </div>
+                        <div class="row add_data">
+                          <div class="col-md-4 col-xs-4">
+                            <p class="furniture">Мебель</p>
+                          </div>
+                          <div class="col-md-8 col-xs-8">
+                            <p>от 50 000 грн до 70 000 грн</p>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-12">
+                            <button type="button" class="butt_bott calculate_btn" data-toggle="modal" data-target="#calc">
+                              Рассчитать стоимость
+                            </button>
+                          </div>  
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="design_kv">
+                    <p class="green_planka">Гостиная в стиле минимализм</p>
+                    <div class="design_info">
+                      <div class="img_div "> 
+                        
+                        <a  href="img/novostroy/kv1-1.png"  data-fancybox="gallery" ><img src="img/novostroy/Play.png" alt="" class="play"><img src="img/novostroy/kv3.png" /></a>
+                        <a  href="img/novostroy/chod4.png"  data-fancybox="gallery" ></a>               
+                      </div>
+                      <div class="info_div">
+                        <p class="head_p">Кухня-гостиная</p>
+                        <p class="right_p">Стиль Современный</p>
+                        <p class="descr">Гостиная со всеми удобствами в спокойной цветовой гамме подойдет почти в каждую квартиру. С такой гостиной легко сочетать открытую кухню или прихожую. Она не захламленная и здесь будет приятно проводить время не только с друзьями, но и за любимой книгой.</p>
+                        <p class="cost">Стоимость | м²</p>
+                        <div class="row add_data">
+                          <div class="col-md-4 col-xs-4">
+                            <p class="materials">Материалы</p>
+                          </div>
+                          <div class="col-md-8 col-xs-8">
+                            <p>от 50 000 грн до 70 000 грн</p>
+                          </div>
+                        </div>
+                        <div class="row add_data">
+                          <div class="col-md-4 col-xs-4">
+                            <p class="repairs">Ремонт</p>
+                          </div>
+                          <div class="col-md-8 col-xs-8">
+                            <p>от 50 000 грн до 70 000 грн</p>
+                          </div>
+                        </div>
+                        <div class="row add_data">
+                          <div class="col-md-4 col-xs-4">
+                            <p class="furniture">Мебель</p>
+                          </div>
+                          <div class="col-md-8 col-xs-8">
+                            <p>от 50 000 грн до 70 000 грн</p>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-12">
+                            <button type="button" class="butt_bott calculate_btn" data-toggle="modal" data-target="#calc">
+                              Рассчитать стоимость
+                            </button>
+                          </div>  
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-12 text-center">
+                      <button type="button" class="butt_bott more_btn" >
+                        <img src="img/novostroy/more.svg" alt="">
+                        Больше дизайн-проектов
+                      </button>
+                    </div>
+                  </div>
+                  
+                </div>
+                <!-- Содержимое 6 вкладки -->
+                <div class="tab-pane" id="partners" > 
+                  <div class="plan_div partn">
+                    <p class="plan_kvart">Наши партнёры</p>                    
+                  </div>
+                  <div class="info_kv info_partn">
+                    <div class="row">
+                      <div class="col-md-9 col-md-offset-3">
+                        <p class="head_partn">НЭБ является партнером <span>RPC</span></p>                                
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-3 logo_img">
+                        <img src="img/novostroy/logo_neb.svg" alt="">
+                        <img src="img/novostroy/privatbank.svg" alt="">
+                        <img src="img/novostroy/tin.svg" alt="">
+                      </div>
+                      <div class="col-md-9">
+                        <a href="#" class="rusneb"><span>rusneb.ru</span></a>
+                        <p class="object_descr">Все объекты недвижимости, которые выставлены на приватизацию или продаются государством, 
+юстицией проверяются нашим партнером и после попадают в базу данных объектов RPC.
+Если Вас или Ваших Клиентов заинтересует такой объект, НЭБ организует сделку и выберет наиболее эффективную стратегию для победы в аукционе</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Содержимое 7 вкладки -->
+                <div class="tab-pane" id="banks" > 
+                  <div class="plan_div partn">
+                    <p class="plan_kvart">Банки с которыми мы сотрудничаем</p>
+                  </div>
+                  <div class="info_kv info_partn">
+                    <div class="row">
+                      <div class="col-md-9 col-md-offset-3">
+                        <p class="head_partn">ПриватБанк является партнером <span>RPC</span></p>                                
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-3 logo_img">
+                        <img src="img/novostroy/privatbank.svg" alt="">
+                        <img src="img/novostroy/tin.svg" alt="">
+                        <img src="img/novostroy/mdm.svg" alt="">
+                      </div>
+                      <div class="col-md-9">
+                        <p class="object_descr">Более трех лет назад при участии RPC был создан сайт </p>
+                        <img src="img/novostroy/PlanetEstate.svg" alt="" style="margin-right: 15px">
+                        <a href="#" class="rusneb"><span>planetestate.com.ua</span></a>
+                        <p class="object_descr">На данном Сайте Вы можете разместить объявления используя CRM RPC. Посетители сайта могут разместить заявку на получение кредита на покупку размещенного объекта и в случае положительного решения банка о кредитовании Вы получаете уведомление в CRM о том, что клиенту одобрен кредит и Вы можете организовывать сделку по продаже, а банк организует процесс получения кредитных средств клиенту . Фиксация Клиента за Вами 90 дней. Оплата за клиента. Инструкция</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <img src="img/novostroy/logo.svg" alt="">
+            </div>
+            <div class="col-md-5 col-md-offset-4 col-xs-12">
+              <div class="info_bott">
+                <a href="#"><span>Агенствам</span></a>
+                <a href="#"><span>Застройщикам</span></a>
+                <a href="#"><span>Риелторам</span></a>
+                <a href="#"><span>Общие вопросы</span></a>
+              </div>   
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <a href="#"><p class="Developed">Developed by Stubbs</p></a>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <div id = "toTop" >
+        <img src="img/novostroy/top.png" alt="" class="top_arr">        
+      </div >
+    </div>
+
+    <script src="js/lightslider.js"></script>
+    <script src="js/lightgallery.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.fancybox.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -331,12 +331,14 @@ $("[href='#land_plot1']").trigger("click");
 
 
 
-
+try{
 $().fancybox({
-  selector : '.imglist a:visible',
-  
+  selector : '.imglist a:visible', 
   
 });
+}catch(e){
+	
+}
 
 
 

@@ -1,0 +1,1428 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Cazila</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+    <link href="css/slick.css" rel="stylesheet">
+    <link href="css/slick-theme.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link href="css/screen.css" rel="stylesheet">
+
+    <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] +
+        ':35729/livereload.js?snipver=1"></' + 'script>')
+    </script>
+
+  </head>
+  <body>
+    <div class="message_al hidden-xs ">     
+      <p>Уведомления</p>
+      <button type="button" class="btn ">Смотреть</button>
+      <img src="img/conv.png" alt="">
+    </div>
+    <div class="tabs_right hidden-xs">
+      <button type="button" class="btn btn-default but_prof">Профиль</button>
+      <button type="button" class="btn btn-default but_bank ">Банк</button>
+      <button type="button" class="btn btn-default but_friends">Друзья</button>
+      <button type="button" class="btn btn-default but_network">Нетворкинг</button>
+      <button type="button" class="btn btn-default but_restor is_active">Рестораны</button>
+      <button type="button" class="btn btn-default but_prigl">Приглашения</button>
+    </div>
+    <div class="global_container">
+      <header>
+        <div class="container">
+          <div class="row">    
+            <div class="col-md-2 col-xs-12  min_mob col-sm-2">
+              <a href=""><img src="img/logo.png" alt="" class="logo"></a>
+            </div>
+            <div class="col-md-3 col-md-offset-5 col-xs-10 col-xs-offset-0 col-sm-4 col-sm-offset-3 marg_mob">
+              <div class="soc_links pull-left">
+                <a href="">
+                  <img src="img/f.png" alt="">                
+                </a>
+                <a href="">
+                  <img src="img/i.png" alt="">                
+                </a>
+                <a href="">
+                  <img src="img/tel.png" alt="">                
+                </a>
+                <a href="">
+                  <img src="img/in.png" alt="">                
+                </a>
+                <a href="">
+                  <img src="img/vk.png" alt="">                
+                </a>
+              </div>
+              <div class="but_enter pull-right">
+                <a href="">
+                  <img src="img/enter.png" alt="" class="text-center">
+                </a>
+                <a href="" style="display: none;">
+                  <img src="img/exit.png" alt="">
+                </a>
+              </div>
+              <!-- <div class="clearfix"></div> -->
+
+            </div>
+            <div class="col-md-1 col-md-offset-1 col-sm-offset-1 col-xs-2 col-xs-offset-0 min_mob col-sm-2">
+              <a href=""><p class="valuta"><span>&#8381;</span> 2500</p></a>
+            </div>
+            <div class="col-xs-10 hidden-md hidden-lg hidden-sm">
+              <div class="message_al_mob">
+                <p>Уведомления</p>                
+                <a href=""><img src="img/conv.png" alt=""></a>
+                <div class="quantity_mess">
+                  2
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 hidden-md hidden-lg hidden-sm">
+              <nav class="navbar navbar-default ">
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                  </button>
+                  <div class="clearfix"></div>
+              </div>
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <div class="menu_page">
+                  <ul>
+                    <li><a href="">Профиль</a></li>
+                    <li><a href="">Банк</a></li>
+                    <li><a href="">Друзья</a></li>
+                    <li><a href="">Нетворкинг</a></li>
+                    <li><a href="">Рестораны</a></li>
+                    <li><a href="">Приглашения</a></li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+            </div>
+            <div class="col-md-12">
+              <!-- <hr> -->
+            </div>
+            
+          </div>
+
+        </div>        
+      </header>
+       <section>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12">
+              <hr class="hr_top">
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <div class="section center_sect">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12" >
+              <p class="text-center name_page_al">Ресторан</p>
+              <ul class="nav nav-pills text-center myTabs"  >
+                <li  >
+                  <a href="#restorans" aria-controls="restorans"  data-toggle="tab">Рестораны</a>
+                </li>
+                <li  >
+                  <a href="#engagement" aria-controls="engagement"  data-toggle="tab">Свидания</a>
+                </li>
+                <li  class="active">
+                  <a href="#travels" aria-controls="travels"  data-toggle="tab">Путешествия</a>
+                </li>
+                <li role="presentation" >
+                  <a href="#rent" aria-controls="rent" data-toggle="tab">Аренда</a>
+                </li>
+              </ul>
+              <hr class="hr_payment">
+              <div class="tab-content" > 
+                <div class="tab-pane "  id="restorans" >
+                  <p class="text-center name_page_al">Чайхана №1</p>
+                  <div class="row">
+                    <div class="col-md-5 col-md-offset-1 col-sm-6 col-xs-12">
+                      <div class="" style="border: 1px solid; margin: 0px auto; height: 296px;">
+                        календарь<br> датапикер
+                      </div>
+                    </div>
+                    <div class="col-md-5 col-sm-6 col-xs-12">
+                      <div class="slider-tables" id="slider-tables">
+                          <div class="slider-item">
+                            <img src="img/plan1.png" alt="">
+                          </div>
+                          <div class="slider-item">
+                            <img src="img/plan1.png" alt="">
+                          </div>
+                        </div>
+                    </div>                    
+                  </div>     
+                  <div class="row marg_t34 marg_bot">
+                    <div class="col-md-2 col-md-offset-1 col-sm-12 col-xs-12">
+                      <p class="free_tables">СВОБОДНЫЕ СТОЛЫ</p>
+                    </div>
+                    <div class="col-md-9 col-sm-12 col-xs-12">
+                      <div class="table_al">
+                        5
+                      </div>
+                      <div class="table_al">
+                        10
+                      </div>
+                      <div class="table_al">
+                        15
+                      </div>
+                      <div class="table_al">
+                        18
+                      </div>
+                      <div class="table_al">
+                        19
+                      </div>
+                      <div class="table_al busy">
+                        21
+                      </div>
+                      <div class="table_al">
+                        22
+                      </div>
+                      <div class="table_al">
+                        2
+                      </div>
+                      <div class="table_al">
+                        5
+                      </div>
+                      <div class="table_al">
+                        10
+                      </div>
+                      <div class="table_al">
+                        15
+                      </div>
+                      <div class="table_al busy">
+                        18
+                      </div>
+                      <div class="table_al">
+                        2
+                      </div>
+                      <div class="table_al">
+                        5
+                      </div>
+                      <div class="table_al">
+                        10
+                      </div>
+                      <div class="table_al">
+                        15
+                      </div>
+                      <div class="table_al">
+                        18
+                      </div>
+                    </div>
+                  </div>    
+                  <div class="row marg_bot">
+                    <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12 ">
+                      <div class="row">
+                        <div class="col-md-4 col-sm-4 col-xs-10 col-xs-offset-1 col-md-offset-0 col-sm-offset-0">
+                          <input type="text"  class="paym_input w100" placeholder="Название события">
+                        </div>
+                        <div class="col-md-5 col-sm-5 col-xs-10 col-xs-offset-1 col-md-offset-0 col-sm-offset-0">
+                          <input type="text"  class="paym_input " placeholder="Лимит на 1 чел." style="max-width: 215px;">
+                          <p class="payment_p">Руб.</p>
+                        </div>
+                        <div class="col-md-3 col-sm-3 col-xs-8 col-xs-offset-2 col-md-offset-0 col-sm-offset-0">
+                          <div class="form-group status_al"> 
+                            <label>                 
+                              <input type="radio" name="reward">
+                              <span class="span_big" style="font-weight: 400;">Угощаю</span> 
+                            </label>
+                            <label>
+                              <input type="radio" name="reward">
+                              <span class="span_big" style="font-weight: 400;">Раздельный счет</span>                 
+                            </label> 
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>   
+                  <div class="row select_direction">
+                    <div class="col-md-3 col-md-offset-3 col-sm-4 col-sm-offset-1">
+                      <button type="button" class="btn btn-default invitation_btn">Пригласить друзей</button>
+                    </div>
+                    <div class="col-md-3 col-md-offset-0 col-sm-4 col-sm-offset-2">
+                      <button type="button" class="btn btn-default sel_menu">Выбрать меню</button>
+                    </div>
+                  </div>
+                  <div class="row marg_top">
+                    <div class="col-md-12">
+                      <div class="slider-invitation" id="slider-invitation">
+                        <div class="slider-item">
+                          <div class="row">
+                            <div class="col-md-12">
+                              <div class="inner_slide">
+                                <div class="row">
+                                  <div class="col-md-4 col-sm-4">
+                                    <div class="content_div_slider">
+                                      <div class="div1">
+                                        <img src="img/f1.png" alt="">
+                                      </div>
+                                      <div class="div2">
+                                        <a href=""><p class="name_user" data-title="Евгения Тарасова">Евгения Тарасова</p></a>
+                                        <a href=""><p class="nik">Zeneva</p></a>
+                                      </div>
+                                      <div class="div3">
+                                        <button type="button" class="btn btn-primary to_invite">Пригласить</button>
+                                      </div>
+                                    </div>        
+                                  </div>
+                                  <div class="col-md-4 col-sm-4">
+                                    <div class="content_div_slider">
+                                      <div class="div1">
+                                        <!-- <img src="img/f1.png" alt=""> -->
+                                      </div>
+                                      <div class="div2">
+                                        <a href=""><p class="name_user" data-title="Евгения Тарасова">Евгения Тарасова</p></a>
+                                        <a href=""><p class="nik">Zeneva</p></a>
+                                      </div>
+                                      <div class="div3">
+                                        <button type="button" class="btn btn-primary to_invite">Пригласить</button>
+                                      </div>
+                                    </div> 
+                                  </div>
+                                  <div class="col-md-4 col-sm-4">
+                                    <div class="content_div_slider">
+                                      <div class="div1">
+                                        <img src="img/f1.png" alt="">
+                                      </div>
+                                      <div class="div2">
+                                        <a href=""><p class="name_user" data-title="Евгения Тарасова">Евгения Тарасова</p></a>
+                                        <a href=""><p class="nik">Zeneva</p></a>
+                                      </div>
+                                      <div class="div3">
+                                        <button type="button" class="btn btn-primary to_invite">Пригласить</button>
+                                      </div>
+                                    </div> 
+                                  </div>
+                                  <div class="col-md-4 col-sm-4">
+                                    <div class="content_div_slider">
+                                      <div class="div1">
+                                        <img src="img/f1.png" alt="">
+                                      </div>
+                                      <div class="div2">
+                                        <a href=""><p class="name_user" data-title="Евгения Тарасова">Евгения Тарасова</p></a>
+                                        <a href=""><p class="nik">Zeneva</p></a>
+                                      </div>
+                                      <div class="div3">
+                                        <button type="button" class="btn btn-primary to_invite">Пригласить</button>
+                                      </div>
+                                    </div> 
+                                  </div>
+                                  <div class="col-md-4 col-sm-4">
+                                    <div class="content_div_slider">
+                                      <div class="div1">
+                                        <img src="img/f1.png" alt="">
+                                      </div>
+                                      <div class="div2">
+                                        <a href=""><p class="name_user" data-title="Евгения Тарасова">Евгения Тарасова</p></a>
+                                        <a href=""><p class="nik">Zeneva</p></a>
+                                      </div>
+                                      <div class="div3">
+                                        <button type="button" class="btn btn-primary to_invite">Пригласить</button>
+                                      </div>
+                                    </div> 
+                                  </div>
+                                  <div class="col-md-4 col-sm-4">
+                                    <div class="content_div_slider">
+                                      <div class="div1">
+                                        <!-- <img src="img/f1.png" alt=""> -->
+                                      </div>
+                                      <div class="div2">
+                                        <a href=""><p class="name_user" data-title="Евгения Тарасова">Евгения Тарасова</p></a>
+                                        <a href=""><p class="nik">Zeneva</p></a>
+                                      </div>
+                                      <div class="div3">
+                                        <button type="button" class="btn btn-primary to_invite">Пригласить</button>
+                                      </div>
+                                    </div> 
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="slider-item">
+                          <div class="row">
+                            <div class="col-md-12">
+                              <div class="inner_slide">
+                                <div class="row">
+                                  <div class="col-md-4">
+                                    <div class="content_div_slider">
+                                      <div class="div1">
+                                        <img src="img/f1.png" alt="">
+                                      </div>
+                                      <div class="div2">
+                                        <a href=""><p class="name_user" data-title="Евгения Тарасова">Евгения Тарасова</p></a>
+                                        <a href=""><p class="nik">Zeneva</p></a>
+                                      </div>
+                                      <div class="div3">
+                                        <button type="button" class="btn btn-primary to_invite">Пригласить</button>
+                                      </div>
+                                    </div>        
+                                  </div>
+                                  <div class="col-md-4">
+                                    <div class="content_div_slider">
+                                      <div class="div1">
+                                        <!-- <img src="img/f1.png" alt=""> -->
+                                      </div>
+                                      <div class="div2">
+                                        <a href=""><p class="name_user" data-title="Евгения Тарасова">Евгения Тарасова</p></a>
+                                        <a href=""><p class="nik">Zeneva</p></a>
+                                      </div>
+                                      <div class="div3">
+                                        <button type="button" class="btn btn-primary to_invite">Пригласить</button>
+                                      </div>
+                                    </div> 
+                                  </div>
+                                  <div class="col-md-4">
+                                    <div class="content_div_slider">
+                                      <div class="div1">
+                                        <img src="img/f1.png" alt="">
+                                      </div>
+                                      <div class="div2">
+                                        <a href=""><p class="name_user" data-title="Евгения Тарасова">Евгения Тарасова</p></a>
+                                        <a href=""><p class="nik">Zeneva</p></a>
+                                      </div>
+                                      <div class="div3">
+                                        <button type="button" class="btn btn-primary to_invite">Пригласить</button>
+                                      </div>
+                                    </div> 
+                                  </div>
+                                  <div class="col-md-4">
+                                    <div class="content_div_slider">
+                                      <div class="div1">
+                                        <img src="img/f1.png" alt="">
+                                      </div>
+                                      <div class="div2">
+                                        <a href=""><p class="name_user" data-title="Евгения Тарасова">Евгения Тарасова</p></a>
+                                        <a href=""><p class="nik">Zeneva</p></a>
+                                      </div>
+                                      <div class="div3">
+                                        <button type="button" class="btn btn-primary to_invite">Пригласить</button>
+                                      </div>
+                                    </div> 
+                                  </div>
+                                  <div class="col-md-4">
+                                    <div class="content_div_slider">
+                                      <div class="div1">
+                                        <img src="img/f1.png" alt="">
+                                      </div>
+                                      <div class="div2">
+                                        <a href=""><p class="name_user" data-title="Евгения Тарасова">Евгения Тарасова</p></a>
+                                        <a href=""><p class="nik">Zeneva</p></a>
+                                      </div>
+                                      <div class="div3">
+                                        <button type="button" class="btn btn-primary to_invite">Пригласить</button>
+                                      </div>
+                                    </div> 
+                                  </div>
+                                  <div class="col-md-4">
+                                    <div class="content_div_slider">
+                                      <div class="div1">
+                                        <!-- <img src="img/f1.png" alt=""> -->
+                                      </div>
+                                      <div class="div2">
+                                        <a href=""><p class="name_user" data-title="Евгения Тарасова">Евгения Тарасова</p></a>
+                                        <a href=""><p class="nik">Zeneva</p></a>
+                                      </div>
+                                      <div class="div3">
+                                        <button type="button" class="btn btn-primary to_invite">Пригласить</button>
+                                      </div>
+                                    </div> 
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="slider-item">
+                          <div class="row">
+                            <div class="col-md-12">
+                              <div class="inner_slide">
+                                <div class="row">
+                                  <div class="col-md-4">
+                                    <div class="content_div_slider">
+                                      <div class="div1">
+                                        <img src="img/f1.png" alt="">
+                                      </div>
+                                      <div class="div2">
+                                        <a href=""><p class="name_user" data-title="Евгения Тарасова">Евгения Тарасова</p></a>
+                                        <a href=""><p class="nik">Zeneva</p></a>
+                                      </div>
+                                      <div class="div3">
+                                        <button type="button" class="btn btn-primary to_invite">Пригласить</button>
+                                      </div>
+                                    </div>        
+                                  </div>
+                                  <div class="col-md-4">
+                                    <div class="content_div_slider">
+                                      <div class="div1">
+                                        <!-- <img src="img/f1.png" alt=""> -->
+                                      </div>
+                                      <div class="div2">
+                                        <a href=""><p class="name_user" data-title="Евгения Тарасова">Евгения Тарасова</p></a>
+                                        <a href=""><p class="nik">Zeneva</p></a>
+                                      </div>
+                                      <div class="div3">
+                                        <button type="button" class="btn btn-primary to_invite">Пригласить</button>
+                                      </div>
+                                    </div> 
+                                  </div>
+                                  <div class="col-md-4">
+                                    <div class="content_div_slider">
+                                      <div class="div1">
+                                        <img src="img/f1.png" alt="">
+                                      </div>
+                                      <div class="div2">
+                                        <a href=""><p class="name_user" data-title="Евгения Тарасова">Евгения Тарасова</p></a>
+                                        <a href=""><p class="nik">Zeneva</p></a>
+                                      </div>
+                                      <div class="div3">
+                                        <button type="button" class="btn btn-primary to_invite">Пригласить</button>
+                                      </div>
+                                    </div> 
+                                  </div>
+                                  <div class="col-md-4">
+                                    <div class="content_div_slider">
+                                      <div class="div1">
+                                        <img src="img/f1.png" alt="">
+                                      </div>
+                                      <div class="div2">
+                                        <a href=""><p class="name_user" data-title="Евгения Тарасова">Евгения Тарасова</p></a>
+                                        <a href=""><p class="nik">Zeneva</p></a>
+                                      </div>
+                                      <div class="div3">
+                                        <button type="button" class="btn btn-primary to_invite">Пригласить</button>
+                                      </div>
+                                    </div> 
+                                  </div>
+                                  <div class="col-md-4">
+                                    <div class="content_div_slider">
+                                      <div class="div1">
+                                        <img src="img/f1.png" alt="">
+                                      </div>
+                                      <div class="div2">
+                                        <a href=""><p class="name_user" data-title="Евгения Тарасова">Евгения Тарасова</p></a>
+                                        <a href=""><p class="nik">Zeneva</p></a>
+                                      </div>
+                                      <div class="div3">
+                                        <button type="button" class="btn btn-primary to_invite">Пригласить</button>
+                                      </div>
+                                    </div> 
+                                  </div>
+                                  <div class="col-md-4">
+                                    <div class="content_div_slider">
+                                      <div class="div1">
+                                        <!-- <img src="img/f1.png" alt=""> -->
+                                      </div>
+                                      <div class="div2">
+                                        <a href=""><p class="name_user" data-title="Евгения Тарасова">Евгения Тарасова</p></a>
+                                        <a href=""><p class="nik">Zeneva</p></a>
+                                      </div>
+                                      <div class="div3">
+                                        <button type="button" class="btn btn-primary to_invite">Пригласить</button>
+                                      </div>
+                                    </div> 
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>                    
+                  </div>
+                     
+                </div> 
+                <div class="tab-pane "  id="engagement" >
+                  <p class="text-center name_page_al">Свидания</p>
+                  <form action="">
+                    <div class="row">
+                      <div class="col-md-5 col-md-offset-1 col-sm-6 col-xs-12">
+                        <div class="" style="border: 1px solid; margin: 0px auto; height: 296px;">
+                          календарь<br> датапикер
+                        </div>
+                      </div>
+                      <div class="col-md-5 col-sm-6 col-xs-12">
+                        <div class="slider-tables" id="slider-tables2">
+                            <div class="slider-item">
+                              <img src="img/plan1.png" alt="">
+                            </div>
+                            <div class="slider-item">
+                              <img src="img/plan1.png" alt="">
+                            </div>
+                          </div>
+                      </div>                    
+                    </div>     
+                    <div class="row marg_t34 marg_bot">
+                      <div class="col-md-2 col-md-offset-1 col-sm-12 col-xs-12">
+                        <p class="free_tables">СВОБОДНЫЕ СТОЛЫ</p>
+                      </div>
+                      <div class="col-md-9 col-sm-12 col-xs-12">
+                        <div class="table_al">
+                          5
+                        </div>
+                        <div class="table_al">
+                          10
+                        </div>
+                        <div class="table_al">
+                          15
+                        </div>
+                        <div class="table_al">
+                          18
+                        </div>
+                        <div class="table_al">
+                          19
+                        </div>
+                        <div class="table_al busy">
+                          21
+                        </div>
+                        <div class="table_al">
+                          22
+                        </div>
+                        <div class="table_al">
+                          2
+                        </div>
+                        <div class="table_al">
+                          5
+                        </div>
+                        <div class="table_al">
+                          10
+                        </div>
+                        <div class="table_al">
+                          15
+                        </div>
+                        <div class="table_al busy">
+                          18
+                        </div>
+                        <div class="table_al">
+                          2
+                        </div>
+                        <div class="table_al">
+                          5
+                        </div>
+                        <div class="table_al">
+                          10
+                        </div>
+                        <div class="table_al">
+                          15
+                        </div>
+                        <div class="table_al">
+                          18
+                        </div>
+                      </div>
+                    </div> 
+                    
+                    <div class="row">
+                      <div class="col-md-3 col-md-offset-2 col-sm-6 col-xs-12">
+                        <p class="rare_p text-left">Загрузить изображения</p>
+                        <div class="form-group">
+                          <label for="exampleInputFile">File input</label>
+                          <input type="file" id="exampleInputFile">
+                          <label for="exampleInputFile">File input</label>
+                          <input type="file" id="exampleInputFile">
+                          <label for="exampleInputFile">File input</label>
+                          <input type="file" id="exampleInputFile">
+                          
+                        </div>
+                      </div>
+                      <div class="col-md-4 col-md-offset-1 col-sm-6 col-sm-offset-0 col-xs-12">
+                      <p class="rare_p text-left">Выбрать дату и время</p>
+                        <div class="form-group">
+                            <div class='input-group date' id='datetimepicker5'>
+                                <input type='text' class="form-control" >
+                                <span class="input-group-addon">
+                                    <span class="glyphicon glyphicon-calendar"></span>
+                                </span>
+                            </div>
+                        </div>   
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-10 col-md-offset-1">
+                        <hr class="hr_top">
+                      </div>
+                    </div>
+                    <div class="row prof_row marg_bot">
+                      <div class="col-md-2 col-sm-4 col-xs-12">
+                        <div class="form-group status_al">
+                          <label class="span_big ml">Событие</label> 
+                          <label>                 
+                            <input type="radio" name="reward">
+                            <span>Свидание с выбором</span> 
+                          </label>
+                          <label>
+                            <input type="radio" name="reward">
+                            <span>Свидание вслепую</span>                  
+                          </label>            
+                        </div>
+                        <div class="form-group status_al">
+                          <label class="span_big ml">Где</label> 
+                          <select class="form-control timezone_al">
+                            <option selected="selected">Страна</option>
+                            <option>Россия</option>
+                            <option>Казахстан</option>                        
+                          </select>                                
+                        </div>
+                        <div class="form-group marg_b30">
+                          <input type="text" class="paym_input w100" placeholder="Город">
+                        </div> 
+                      </div>
+                      <div class="col-md-2 col-md-offset-3 col-sm-4 col-xs-12">
+                        <div class="form-group status_al">
+                          <label class="span_big ml">Пол</label> 
+                          <label>                 
+                            <input type="radio" name="reward">
+                            <span>Девушка</span> 
+                          </label>
+                          <label>
+                            <input type="radio" name="reward">
+                            <span>Парень</span>
+                          </label>                         
+                        </div>
+                        <div class="form-group status_al">
+                          <label class="span_big ml">Образование</label> 
+                          <label>                 
+                            <input type="radio" name="reward">
+                            <span>Среднее</span> 
+                          </label>
+                          <label>
+                            <input type="radio" name="reward">
+                            <span>Студент/Высшее</span>                  
+                          </label>  
+                          <!-- <label>
+                            <input type="radio" name="reward">
+                            <span>Высшее</span>                  
+                          </label> -->          
+                        </div>
+                        <div class="form-group status_al">
+                          <label class="span_big ml">Семейный статус</label> 
+                          <label>                 
+                            <input type="radio" name="reward">
+                            <span>В отношениях</span> 
+                          </label>
+                          <label>
+                            <input type="radio" name="reward">
+                            <span>Без пары</span>                  
+                          </label>            
+                        </div>
+                      </div>
+                      <div class="col-md-3 col-md-offset-2 age_al col-sm-4 col-xs-12">
+                        <div class="form-group status_al">
+                          <label class="span_big ml">Курение</label> 
+                          <label>                 
+                            <input type="radio" name="reward">
+                            <span>Да</span> 
+                          </label>
+                          <label>
+                            <input type="radio" name="reward">
+                            <span>нет</span>                  
+                          </label>            
+                        </div>
+                        <div class="form-group status_al">
+                          <label class="span_big ml">Алкоголь</label> 
+                          <label>                 
+                            <input type="radio" name="reward">
+                            <span>Нет</span> 
+                          </label>
+                          <label>
+                            <input type="radio" name="reward">
+                            <span>Иногда</span>                  
+                          </label>            
+                        </div>
+                        <p>
+                          <label for="amount" class="head_age">Возраст:</label>
+                          <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold; text-align: center; margin: 10px 0;">
+                        </p>
+ 
+                        <div id="slider-range"></div>
+                        <p>
+                          <label for="amount" class="head_age">Рост:</label>
+                          <input type="text" id="amount4" readonly style="border:0; color:#f6931f; font-weight:bold; text-align: center; margin: 10px 0;">
+                        </p>
+ 
+                        <div id="slider-range4"></div>
+                      </div>
+                    </div>
+                    
+                    
+                    <div class="row">
+                      <div class="col-md-3 col-md-offset-9 col-sm-4 col-sm-offset-8 col-xs-12">
+                        <button type="button" class="btn btn-default paym green_paym">Выбрать меню</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <div class="tab-pane active"  id="travels" >
+                  <p class="text-center name_page_al">Путешествия</p>
+                  <form action="">
+
+                    <div class="row">
+                      <div class="col-md-5 col-md-offset-1 col-sm-6 col-xs-12">
+                        <div class="" style="border: 1px solid; margin: 0px auto; height: 296px;">
+                          календарь<br> датапикер
+                        </div>
+                      </div>
+                      <div class="col-md-5 col-sm-6 col-xs-12">
+                        <div class="slider-tables" id="slider-tables3">
+                            <div class="slider-item">
+                              <img src="img/plan1.png" alt="">
+                            </div>
+                            <div class="slider-item">
+                              <img src="img/plan1.png" alt="">
+                            </div>
+                          </div>
+                      </div>                    
+                    </div>     
+                    <div class="row marg_t34 marg_bot">
+                      <div class="col-md-2 col-md-offset-1 col-sm-12 col-xs-12">
+                        <p class="free_tables">СВОБОДНЫЕ СТОЛЫ</p>
+                      </div>
+                      <div class="col-md-9 col-sm-12 col-xs-12">
+                        <div class="table_al">
+                          5
+                        </div>
+                        <div class="table_al">
+                          10
+                        </div>
+                        <div class="table_al">
+                          15
+                        </div>
+                        <div class="table_al">
+                          18
+                        </div>
+                        <div class="table_al">
+                          19
+                        </div>
+                        <div class="table_al busy">
+                          21
+                        </div>
+                        <div class="table_al">
+                          22
+                        </div>
+                        <div class="table_al">
+                          2
+                        </div>
+                        <div class="table_al">
+                          5
+                        </div>
+                        <div class="table_al">
+                          10
+                        </div>
+                        <div class="table_al">
+                          15
+                        </div>
+                        <div class="table_al busy">
+                          18
+                        </div>
+                        <div class="table_al">
+                          2
+                        </div>
+                        <div class="table_al">
+                          5
+                        </div>
+                        <div class="table_al">
+                          10
+                        </div>
+                        <div class="table_al">
+                          15
+                        </div>
+                        <div class="table_al">
+                          18
+                        </div>
+                      </div>
+                    </div> 
+
+                    <!-- <div class="row marg_b5">
+                      <div class="col-md-1 col-md-offset-8">
+                        <input type="text" class="paym_input w100" >
+                      </div>
+                      <div class="col-md-2">
+                        <p class="after_p">Кол-во ночей</p>
+                      </div>
+                    </div> -->
+                    <div class="row">
+                      <div class="col-md-3 col-md-offset-1 col-sm-4 col-xs-12">
+                        <p class="rare_p text-left">Загрузить изображения</p>
+                        <div class="form-group">
+                          <label for="exampleInputFile">File input</label>
+                          <input type="file" id="exampleInputFile">
+                          <label for="exampleInputFile">File input</label>
+                          <input type="file" id="exampleInputFile">
+                          <label for="exampleInputFile">File input</label>
+                          <input type="file" id="exampleInputFile">
+                          
+                        </div>
+                      </div>
+                      <div class="col-md-3 col-md-offset-1 col-sm-4 col-xs-12">
+                        <div class="grey_head marg_b5">
+                          Отъезд
+                        </div>
+                        <div class="form-group">
+                            <div class='input-group date' id='datetimepicker6'>
+                                <input type='text' class="form-control" >
+                                <span class="input-group-addon">
+                                    <span class="glyphicon glyphicon-calendar"></span>
+                                </span>
+                            </div>
+                        </div>   
+                      </div>
+                      <div class="col-md-3 col-md-offset-0 age_al col-sm-4 col-xs-12">
+                       <p>
+                          <label for="amount" class="head_age">Период (кол-во ночей)</label>
+                          <input type="text" id="amount5" readonly style="border:0; color:#f6931f; font-weight:bold; text-align: center; margin: 10px 0;">
+                        </p>
+ 
+                        <div id="slider-range5"></div>   
+                      </div>
+                    </div>
+                    <div class="row ">
+                      <div class="col-md-10 col-md-offset-1">
+                        <hr class="hr_top">                        
+                      </div>
+                    </div>
+                    <div class="row prof_row">
+                      <div class="col-md-2 col-sm-4 col-xs-10">
+                        <div class="form-group status_al">
+                          <label class="span_big ml">Страна</label> 
+                          <select class="form-control timezone_al">
+                            <option selected="selected">Испания</option>
+                            <option>Италия</option>
+                            <option>Казахстан</option>                        
+                          </select>                                
+                        </div>
+                        <div class="form-group status_al">
+                          <label class="span_big ml">Город</label> 
+                          <select class="form-control timezone_al">
+                            <option selected="selected">Барселона</option>
+                            <option>Рим</option>                         
+                          </select>                                
+                        </div>
+                        <div class="form-group status_al">
+                          <label class="span_big ml">Место</label> 
+                          <select class="form-control timezone_al">
+                            <option selected="selected">Коста Браво</option>
+                            <option>Коллизей</option>                         
+                          </select>                                
+                        </div>
+                        <div class="form-group status_al">
+                          <label class="span_big ml">Размещение</label> 
+                          <select class="form-control timezone_al">
+                            <option selected="selected">Гостиница</option>
+                            <option>Хостел</option>                         
+                          </select>                                
+                        </div>
+                        <div class="form-group">
+                          <label>Стоимость тура</label>
+                          <input type="text" class="paym_input w100" placeholder="руб.">
+                        </div>
+                        
+                        <div class="form-group status_al marg_top">
+                          <label class="span_big ml">Вид отдыха</label> 
+                          <label>                 
+                            <input type="radio" name="reward">
+                            <span>Пляжный</span> 
+                          </label>
+                          <!-- <label>
+                            <input type="radio" name="reward">
+                            <span>Туризм</span>                  
+                          </label> -->  
+                          <label>
+                            <input type="radio" name="reward">
+                            <span>Поход</span>                  
+                          </label>
+                          <label>
+                            <input type="radio" name="reward">
+                            <span>Путешествие</span>                  
+                          </label> 
+                          <label>
+                            <input type="radio" name="reward">
+                            <span>Горный</span>                  
+                          </label>          
+                        </div>
+                      </div>
+                      <div class="col-md-1 col-sm-1 col-xs-2">
+                        <button type="button" class="btn btn-default add_restor marg_t29 marg_b33">+</button>
+                        <button type="button" class="btn btn-default add_restor marg_t29 marg_b33">+</button> 
+                        <button type="button" class="btn btn-default add_restor marg_t29 marg_b33">+</button> 
+                      </div>
+                      <div class="col-md-3 col-md-offset-2 age_al col-sm-3 col-xs-12">
+                        <div class="form-group">
+                          <label>Ищу</label>
+                          <input type="text" class="paym_input w100" placeholder="Кол-во/чел">
+                        </div>
+                        
+                        <div class="form-group status_al">
+                          <label class="span_big ml">Депозит</label> 
+                          <label>                 
+                            <input type="radio" name="reward">
+                            <span>Да</span> 
+                          </label>
+                          <label>
+                            <input type="radio" name="reward">
+                            <span>Нет</span>                  
+                          </label>            
+                        </div>
+                        <div class="form-group status_al">
+                          <label class="span_big ml">Питание</label> 
+                          <label>                 
+                            <input type="radio" name="reward">
+                            <span>Все включено</span> 
+                          </label>
+                          <label>
+                            <input type="radio" name="reward">
+                            <span>Завтрак</span>                  
+                          </label> 
+                          <label>
+                            <input type="radio" name="reward">
+                            <span>Обед и ужин</span>                  
+                          </label>  
+                          <label>
+                            <input type="radio" name="reward">
+                            <span>Без питания</span>                  
+                          </label>         
+                        </div>
+                        <div class="form-group status_al">
+                          <label class="span_big ml">Транспорт</label> 
+                          <label>                 
+                            <input type="radio" name="reward">
+                            <span>Трансфер</span> 
+                          </label>
+                          <label>
+                            <input type="radio" name="reward">
+                            <span>Перелет</span>                  
+                          </label> 
+                          <label>
+                            <input type="radio" name="reward">
+                            <span>Поезд</span>                  
+                          </label>  
+                          <label>
+                            <input type="radio" name="reward">
+                            <span>Автомобиль/Автобус</span>                  
+                          </label>         
+                        </div>
+                        <div class="form-group status_al">
+                          <label class="span_big ml">Пол</label> 
+                          <label>                 
+                            <input type="radio" name="reward">
+                            <span>Девушка</span> 
+                          </label>
+                          <label>
+                            <input type="radio" name="reward">
+                            <span>Парень</span>                
+                          </label>        
+                          <label>                 
+                            <input type="radio" name="reward">
+                            <span>Все равно</span> 
+                          </label>    
+                        </div>
+                                               
+                        
+                      </div>
+                      <div class="col-md-2 col-md-offset-2 age_al col-sm-4 col-xs-12">
+                        <div class="form-group status_al">
+                          <label class="span_big ml">Образование</label> 
+                          <label>                 
+                            <input type="radio" name="reward">
+                            <span>Среднее</span> 
+                          </label>
+                          <label>
+                            <input type="radio" name="reward">
+                            <span>Студент/Высшее</span>                  
+                          </label>                                    
+                        </div> 
+                        <div class="form-group status_al">
+                          <label class="span_big ml">Семейный статус</label> 
+                          <label>                 
+                            <input type="radio" name="reward">
+                            <span>Без пары</span> 
+                          </label>
+                          <label>
+                            <input type="radio" name="reward">
+                            <span>В отношениях</span>                  
+                          </label>                                    
+                        </div> 
+                        <div class="form-group status_al">
+                          <label class="span_big ml">Курение</label> 
+                          <label>                 
+                            <input type="radio" name="reward">
+                            <span>Да</span> 
+                          </label>
+                          <label>
+                            <input type="radio" name="reward">
+                            <span>Нет</span>                  
+                          </label>                                    
+                        </div> 
+                        <div class="form-group status_al">
+                          <label class="span_big ml">Алкоголь</label> 
+                          <label>                 
+                            <input type="radio" name="reward">
+                            <span>Нет</span> 
+                          </label>
+                          <label>
+                            <input type="radio" name="reward">
+                            <span>Иногда</span>                  
+                          </label>                                    
+                        </div> 
+                        <p>
+                          <label for="amount" class="head_age">Возраст:</label>
+                          <input type="text" id="amount2" readonly="" style="border:0; color:#f6931f; font-weight:bold; text-align: center; margin: 10px 0;">
+                        </p>
+                        <div id="slider-range2"></div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-2 col-md-offset-10 col-sm-4 col-sm-offset-8">
+                        <button type="button" class="btn btn-default paym orange_paym">Выбрать меню</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <div class="tab-pane "  id="rent" >
+                  <p class="text-center name_page_al">Аренда жилья</p>
+                  <form action="">
+
+                    <div class="row">
+                      <div class="col-md-5 col-md-offset-1 col-sm-6 col-xs-12">
+                        <div class="" style="border: 1px solid; margin: 0px auto; height: 296px;">
+                          календарь<br> датапикер
+                        </div>
+                      </div>
+                      <div class="col-md-5 col-sm-6 col-xs-12">
+                        <div class="slider-tables" id="slider-tables4">
+                            <div class="slider-item">
+                              <img src="img/plan1.png" alt="">
+                            </div>
+                            <div class="slider-item">
+                              <img src="img/plan1.png" alt="">
+                            </div>
+                          </div>
+                      </div>                    
+                    </div>     
+                    <div class="row marg_t34 marg_bot">
+                      <div class="col-md-2 col-md-offset-1 col-sm-12 col-xs-12">
+                        <p class="free_tables">СВОБОДНЫЕ СТОЛЫ</p>
+                      </div>
+                      <div class="col-md-9 col-sm-12 col-xs-12">
+                        <div class="table_al">
+                          5
+                        </div>
+                        <div class="table_al">
+                          10
+                        </div>
+                        <div class="table_al">
+                          15
+                        </div>
+                        <div class="table_al">
+                          18
+                        </div>
+                        <div class="table_al">
+                          19
+                        </div>
+                        <div class="table_al busy">
+                          21
+                        </div>
+                        <div class="table_al">
+                          22
+                        </div>
+                        <div class="table_al">
+                          2
+                        </div>
+                        <div class="table_al">
+                          5
+                        </div>
+                        <div class="table_al">
+                          10
+                        </div>
+                        <div class="table_al">
+                          15
+                        </div>
+                        <div class="table_al busy">
+                          18
+                        </div>
+                        <div class="table_al">
+                          2
+                        </div>
+                        <div class="table_al">
+                          5
+                        </div>
+                        <div class="table_al">
+                          10
+                        </div>
+                        <div class="table_al">
+                          15
+                        </div>
+                        <div class="table_al">
+                          18
+                        </div>
+                      </div>
+                    </div> 
+                    <div class="row">
+                      <div class="col-md-3 col-md-offset-1 col-sm-4 col-xs-12">
+                        <p class="rare_p text-left">Загрузить изображения</p>
+                        <div class="form-group">
+                          <label for="exampleInputFile">File input</label>
+                          <input type="file" id="exampleInputFile">
+                          <label for="exampleInputFile">File input</label>
+                          <input type="file" id="exampleInputFile">
+                          <label for="exampleInputFile">File input</label>
+                          <input type="file" id="exampleInputFile">
+                          
+                        </div>
+                      </div>
+                      <div class="col-md-3 col-md-offset-1 col-sm-4 col-xs-12">
+                        <div class="grey_head marg_b5">
+                          Заселение
+                        </div>
+                        <div class="form-group">
+                            <div class='input-group date' id='datetimepicker8'>
+                                <input type='text' class="form-control" >
+                                <span class="input-group-addon">
+                                    <span class="glyphicon glyphicon-calendar"></span>
+                                </span>
+                            </div>
+                        </div>   
+                      </div>
+                      <div class="col-md-3 col-md-offset-0 age_al col-sm-4 col-xs-12">
+                        <p>
+                          <label for="amount" class="head_age">Период (кол-во месяцев)</label>
+                          <input type="text" id="amount6" readonly style="border:0; color:#f6931f; font-weight:bold; text-align: center; margin: 10px 0;">
+                        </p>
+ 
+                        <div id="slider-range6"></div>   
+                      </div>
+                    </div>
+                    <div class="row ">
+                      <div class="col-md-10 col-md-offset-1">
+                        <hr class="hr_top">                        
+                      </div>
+                    </div>
+                    <div class="row prof_row">
+                      <div class="col-md-2 col-sm-4 col-xs-12">
+                        <div class="form-group status_al">
+                          <label class="span_big ml">Объект</label> 
+                          <label>                 
+                            <input type="radio" name="reward">
+                            <span>Комната</span> 
+                          </label>
+                          <label>
+                            <input type="radio" name="reward">
+                            <span>Квартира</span>                  
+                          </label>
+                          <input type="text" class="paym_input w100" placeholder="Кол-во комнат"> 
+                          <label>
+                            <input type="radio" name="reward">
+                            <span>Дом</span>                  
+                          </label> 
+                          <label>
+                            <input type="radio" name="reward">
+                            <span>Дача</span>                  
+                          </label>            
+                        </div>
+                        <div class="form-group ">
+                          <label class="span_big ml">Адрес</label> 
+                          <select class="form-control timezone_al">
+                            <option selected="selected">Страна</option>
+                            <option>Италия</option>
+                            <option>Казахстан</option>                        
+                          </select>                                
+                        </div>
+                        <div class="form-group">                          
+                          <input type="text" class="paym_input w100" placeholder="Город">
+                        </div>
+                        <div class="form-group">                          
+                          <input type="text" class="paym_input w100" placeholder="Улица,№ дома">
+                        </div>
+                        <div class="form-group status_al">                          
+                          <input type="text" class="paym_input w100" placeholder="Метро">
+                        </div>
+                        <div class="form-group ">
+                          <label>Общая стоимость (руб.)</label>
+                          <input type="text" class="paym_input w100" placeholder="руб/чел">
+                        </div>
+                        <div class="form-group">
+                          <label>Бюджет на 1 человека (руб.)</label>
+                          <input type="text" class="paym_input w100" placeholder="руб/мес">
+                        </div>
+                        
+                      </div>
+                      <div class="col-md-3 col-md-offset-3 age_al col-sm-4 col-xs-12">
+                        <div class="form-group status_al">
+                          <label class="span_big ml">Оплата</label> 
+                          <label>                 
+                            <input type="radio" name="reward">
+                            <span>Договорная</span> 
+                          </label>
+                          <label>
+                            <input type="radio" name="reward">
+                            <span>В равных долях</span>                  
+                          </label>                                     
+                        </div>
+                        <div class="form-group status_al">
+                          <label class="span_big ml">Депозит</label> 
+                          <label>                 
+                            <input type="radio" name="reward">
+                            <span>Да</span> 
+                          </label>
+                          <label>
+                            <input type="radio" name="reward">
+                            <span>Нет</span>                  
+                          </label>                                              
+                        </div>
+                        <div class="form-group status_al">
+                          <label class="span_big ml">Комиссия агента</label> 
+                          <label>                 
+                            <input type="radio" name="reward">
+                            <span>Да</span> 
+                          </label>
+                          <label>
+                            <input type="radio" name="reward">
+                            <span>Нет</span>                  
+                          </label>                                              
+                        </div>
+                        <div class="form-group status_al">
+                          <label class="span_big ml">Коммунальные услуги</label> 
+                          <label>                 
+                            <input type="radio" name="reward">
+                            <span>Да</span> 
+                          </label>
+                          <label>
+                            <input type="radio" name="reward">
+                            <span>Нет</span>                  
+                          </label>                                     
+                        </div>
+                        <div class="form-group">
+                          <label>Ищу</label>
+                          <input type="text" class="paym_input w100" placeholder="Кол-во/чел">
+                        </div>
+                        <div class="form-group status_al">
+                          <label class="span_big ml">Пол</label> 
+                          <label>                 
+                            <input type="radio" name="reward">
+                            <span>Девушка</span> 
+                          </label>
+                          <label>
+                            <input type="radio" name="reward">
+                            <span>Парень</span>
+                          </label>
+                          <label>                 
+                            <input type="radio" name="reward">
+                            <span>Все равно</span> 
+                          </label>
+                        </div> 
+                        
+                        
+                      </div>
+                      <div class="col-md-2 col-md-offset-2 age_al col-sm-4 col-xs-12">
+                        <div class="form-group status_al">
+                          <label class="span_big ml">Образование</label> 
+                          <label>                 
+                            <input type="radio" name="reward">
+                            <span>Среднее</span> 
+                          </label>
+                          <label>
+                            <input type="radio" name="reward">
+                            <span>Студент/Высшее</span>                  
+                          </label>     
+                        </div>
+                        <div class="form-group status_al">
+                          <label class="span_big ml">Семейный статус</label> 
+                          <label>                 
+                            <input type="radio" name="reward">
+                            <span>Без пары</span> 
+                          </label>
+                          <label>
+                            <input type="radio" name="reward">
+                            <span>В отношениях</span>                  
+                          </label>                           
+                        </div>                        
+                        <div class="form-group status_al">
+                          <label class="span_big ml">Курение</label>
+                          <label>
+                            <input type="radio" name="reward">
+                            <span>Да</span>                  
+                          </label> 
+                          <label>
+                            <input type="radio" name="reward">
+                            <span>Нет</span>                  
+                          </label>                                     
+                        </div>
+                        <div class="form-group status_al">
+                          <label class="span_big ml">Алкоголь</label>
+                          <label>
+                            <input type="radio" name="reward">
+                            <span>Да</span>                  
+                          </label> 
+                          <label>
+                            <input type="radio" name="reward">
+                            <span>Нет</span>                  
+                          </label>                                     
+                        </div>
+                        <p>
+                          <label for="amount" class="head_age">Возраст</label>
+                          <input type="text" id="amount3" readonly="" style="border:0; color:#f6931f; font-weight:bold; text-align: center; margin: 10px 0;">
+                        </p>
+                        <div id="slider-range3"></div> 
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-2 col-md-offset-10 col-sm-4 col-sm-offset-8">
+                        <button type="button" class="btn btn-default paym orange_paym">Выбрать меню</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>          
+        </div>
+        <div class="container-fluid">
+          <div class="row banner_row">
+            
+              <a href=""><img src="img/banner-new1.png" alt=""></a>
+            
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 col-xs-12 min_mob">
+              <p>© 2019 CAZILA | All Rights Reserved</p>
+            </div>
+            <div class="col-md-2 col-md-offset-7 col-xs-12 col-xs-offset-0 min_mob">
+              <a href="">info@cazila.ru</a>
+            </div>
+          </div> 
+        </div>
+            
+      </footer>
+    </div>
+    <div id = "toTop" >
+      <img src="img/top.png" alt="">
+    </div >
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- <script src="js/moment-with-locales.min.js"></script> -->
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/slick.js"></script>
+    <!-- <script src="js/bootstrap-datetimepicker.js"></script> -->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/main_slider.js"></script>
+  </body>
+</html>

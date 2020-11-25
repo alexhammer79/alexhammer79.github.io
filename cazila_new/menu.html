@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Cazila</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/slick.css" rel="stylesheet">
+    <link href="css/slick-theme.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="css/screen.css" rel="stylesheet">
+
+    <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] +
+        ':35729/livereload.js?snipver=1"></' + 'script>')
+    </script>
+
+  </head>
+  <body>
+    <div class="message_al">     
+      <p>Уведомления</p>
+      <button type="button" class="btn ">Смотреть</button>
+      <img src="img/conv.png" alt="">
+    </div>
+    <div class="tabs_right">
+      <button type="button" class="btn btn-default but_prof ">Профиль</button>
+      <button type="button" class="btn btn-default but_bank ">Банк</button>
+      <button type="button" class="btn btn-default but_friends is_active">Друзья</button>
+      <button type="button" class="btn btn-default but_network">Нетворкинг</button>
+      <button type="button" class="btn btn-default but_restor">Рестораны</button>
+      <button type="button" class="btn btn-default but_prigl">Приглашения</button>
+    </div>
+    <div class="global_container">
+      <header>
+        <div class="container">
+          <div class="row">    
+            <div class="col-md-2 col-xs-12  min_mob col-sm-2">
+              <a href=""><img src="img/logo.png" alt="" class="logo"></a>
+            </div>
+            <div class="col-md-3 col-md-offset-5 col-xs-12 col-xs-offset-0 col-sm-4 col-sm-offset-3">
+              <div class="soc_links pull-left">
+                <a href="">
+                  <img src="img/f.png" alt="">                
+                </a>
+                <a href="">
+                  <img src="img/i.png" alt="">                
+                </a>
+                <a href="">
+                  <img src="img/tel.png" alt="">                
+                </a>
+                <a href="">
+                  <img src="img/in.png" alt="">                
+                </a>
+                <a href="">
+                  <img src="img/vk.png" alt="">                
+                </a>
+              </div>
+              <div class="but_enter pull-right">
+                <a href="">
+                  <img src="img/enter.png" alt="" class="text-center">
+                </a>
+                <a href="" style="display: none;">
+                  <img src="img/exit.png" alt="">
+                </a>
+              </div>
+              <div class="clearfix"></div>
+
+            </div>
+            <div class="col-md-1 col-md-offset-1 col-sm-offset-1 col-xs-12 col-xs-offset-0 min_mob col-sm-2">
+              <a href=""><p class="valuta"><span>&#8381;</span> 2500</p></a>
+            </div>
+            <div class="col-md-12">
+              <!-- <hr> -->
+            </div>
+            
+          </div>
+
+        </div>        
+      </header>
+       <section>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12">
+              <hr class="hr_top">
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <div class="section center_sect">
+        <div class="container">
+          <div class="row marg_t90">
+                    <div class="col-md-6 col-xs-12 over_menu">
+                      <p class="name_block">Меню</p>
+                      <div class="panel-group" id="accordion">
+                        <!-- 1 панель -->
+                        <div class="panel panel-default">
+                          <!-- Заголовок 1 панели -->
+                          <div class="panel-heading">
+                            <h4 class="panel-title">
+                              <a data-toggle="collapse" data-parent="#accordion" href="#salads">Салаты и закуски</a>
+                            </h4>
+                          </div>
+                          <div id="salads" class="panel-collapse collapse ">
+                            <!-- Содержимое 1 панели -->
+                            <div class="panel-body">
+                              <div class="row menu_restor">
+                                <div class="col-md-2 col-xs-2">
+                                  <img src="img/Salat_min.png" alt="">
+                                </div>
+                                <div class="col-md-6 col-xs-6">
+                                  <p class="name_dish">Салат “Центральный”</p>
+                                  <p class="descr_dish">из слабосоленой семги с красной икрой и йогуртовой заправкой (160 г)</p>
+                                  
+                                </div>
+                                <div class="col-md-2 col-xs-2">
+                                  <p class="cost_dish"><span>450</span>руб.</p>
+                                  <p class="cost_dish cost_discount"><span>400</span>руб.</p>
+                                </div>
+                                <div class="col-md-2 col-xs-2">
+                                  <div class="vert_inner">
+                                    <div class="number ">
+                                      <a href="" class="minus">-</a>
+                                      <input type="text" value="1" size="5" />
+                                      <a href="" class="plus">+</a>
+                                    </div>
+                                  </div>                                  
+                                </div>
+                              </div>
+                              <div class="row menu_restor">
+                                <div class="col-md-2 col-xs-2">
+                                  <img src="img/Salat_min.png" alt="">
+                                </div>
+                                <div class="col-md-6 col-xs-6">
+                                  <p class="name_dish">Салат “Центральный”</p>
+                                  <p class="descr_dish">из слабосоленой семги с красной икрой и йогуртовой заправкой (160 г)</p>
+                                  
+                                </div>
+                                <div class="col-md-2 col-xs-2">
+                                  <p class="cost_dish"><span>450</span>руб.</p>
+                                </div>
+                                <div class="col-md-2 col-xs-2">
+                                  <div class="vert_inner">
+                                    <div class="number ">
+                                      <a href="" class="minus">-</a>
+                                      <input type="text" value="1" size="5" />
+                                      <a href="" class="plus">+</a>
+                                    </div>
+                                  </div>                                  
+                                </div>
+                              </div>
+                              <div class="row menu_restor">
+                                <div class="col-md-2 col-xs-2">
+                                  <img src="img/Salat_min.png" alt="">
+                                </div>
+                                <div class="col-md-6 col-xs-6">
+                                  <p class="name_dish">Салат “Центральный”</p>
+                                  <p class="descr_dish">из слабосоленой семги с красной икрой и йогуртовой заправкой (160 г)</p>                                  
+                                </div> 
+                                <div class="col-md-2 col-xs-2">
+                                  <p class="cost_dish"><span>450</span>руб.</p>
+                                  
+                                </div>
+                                <div class="col-md-2 col-xs-2">
+                                  <div class="vert_inner">
+                                    <div class="number ">
+                                      <a href="" class="minus">-</a>
+                                      <input type="text" value="1" size="5" />
+                                      <a href="" class="plus">+</a>
+                                    </div>
+                                  </div>                                  
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- 2 панель -->
+                        <div class="panel panel-default">
+                          <!-- Заголовок 2 панели -->
+                          <div class="panel-heading">
+                            <h4 class="panel-title">
+                              <a data-toggle="collapse" data-parent="#accordion" href="#main_dishes">Основные блюда</a>
+                            </h4>
+                          </div>
+                          <div id="main_dishes" class="panel-collapse collapse">
+                            <!-- Содержимое 2 панели -->
+                            <div class="panel-body">
+                              <div class="row menu_restor">
+                                <div class="col-md-2 col-xs-2">
+                                  <img src="img/Salat_min.png" alt="">
+                                </div>
+                                <div class="col-md-6 col-xs-6">
+                                  <p class="name_dish">Салат “Центральный”</p>
+                                  <p class="descr_dish">из слабосоленой семги с красной икрой и йогуртовой заправкой (160 г)</p>
+                                  
+                                </div>
+                                <div class="col-md-2 col-xs-2">
+                                  <p class="cost_dish"><span>450</span>руб.</p>
+                                  <p class="cost_dish cost_discount"><span>400</span>руб.</p>
+                                </div>
+                                <div class="col-md-2 col-xs-2">
+                                  <div class="vert_inner">
+                                    <div class="number ">
+                                      <a href="" class="minus">-</a>
+                                      <input type="text" value="1" size="5" />
+                                      <a href="" class="plus">+</a>
+                                    </div>
+                                  </div>                                  
+                                </div>
+                              </div>
+                              <div class="row menu_restor">
+                                <div class="col-md-2 col-xs-2">
+                                  <img src="img/Salat_min.png" alt="">
+                                </div>
+                                <div class="col-md-6 col-xs-6">
+                                  <p class="name_dish">Салат “Центральный”</p>
+                                  <p class="descr_dish">из слабосоленой семги с красной икрой и йогуртовой заправкой (160 г)</p>
+                                  
+                                </div>
+                                <div class="col-md-2 col-xs-2">
+                                  <p class="cost_dish"><span>450</span>руб.</p>
+                                </div>
+                                <div class="col-md-2 col-xs-2">
+                                  <div class="vert_inner">
+                                    <div class="number ">
+                                      <a href="" class="minus">-</a>
+                                      <input type="text" value="1" size="5" />
+                                      <a href="" class="plus">+</a>
+                                    </div>
+                                  </div>                                  
+                                </div>
+                              </div>
+                              <div class="row menu_restor">
+                                <div class="col-md-2 col-xs-2">
+                                  <img src="img/Salat_min.png" alt="">
+                                </div>
+                                <div class="col-md-6 col-xs-6">
+                                  <p class="name_dish">Салат “Центральный”</p>
+                                  <p class="descr_dish">из слабосоленой семги с красной икрой и йогуртовой заправкой (160 г)</p>                                  
+                                </div> 
+                                <div class="col-md-2 col-xs-2">
+                                  <p class="cost_dish"><span>450</span>руб.</p>
+                                  
+                                </div>
+                                <div class="col-md-2 col-xs-2">
+                                  <div class="vert_inner">
+                                    <div class="number ">
+                                      <a href="" class="minus">-</a>
+                                      <input type="text" value="1" size="5" />
+                                      <a href="" class="plus">+</a>
+                                    </div>
+                                  </div>                                  
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- 3 панель -->
+                        <div class="panel panel-default">
+                          <!-- Заголовок 3 панели -->
+                          <div class="panel-heading">
+                            <h4 class="panel-title">
+                              <a data-toggle="collapse" data-parent="#accordion" href="#soups">Супы и выпечка</a>
+                            </h4>
+                          </div>
+                          <div id="soups" class="panel-collapse collapse">
+                            <!-- Содержимое 3 панели -->
+                            <div class="panel-body">
+                              <div class="row menu_restor">
+                                <div class="col-md-2 col-xs-2">
+                                  <img src="img/Salat_min.png" alt="">
+                                </div>
+                                <div class="col-md-6 col-xs-6">
+                                  <p class="name_dish">Салат “Центральный”</p>
+                                  <p class="descr_dish">из слабосоленой семги с красной икрой и йогуртовой заправкой (160 г)</p>
+                                  
+                                </div>
+                                <div class="col-md-2 col-xs-2">
+                                  <p class="cost_dish"><span>450</span>руб.</p>
+                                  <p class="cost_dish cost_discount"><span>400</span>руб.</p>
+                                </div>
+                                <div class="col-md-2 col-xs-2">
+                                  <div class="vert_inner">
+                                    <div class="number ">
+                                      <a href="" class="minus">-</a>
+                                      <input type="text" value="1" size="5" />
+                                      <a href="" class="plus">+</a>
+                                    </div>
+                                  </div>                                  
+                                </div>
+                              </div>
+                              <div class="row menu_restor">
+                                <div class="col-md-2 col-xs-2">
+                                  <img src="img/Salat_min.png" alt="">
+                                </div>
+                                <div class="col-md-6 col-xs-6">
+                                  <p class="name_dish">Салат “Центральный”</p>
+                                  <p class="descr_dish">из слабосоленой семги с красной икрой и йогуртовой заправкой (160 г)</p>
+                                  
+                                </div>
+                                <div class="col-md-2 col-xs-2">
+                                  <p class="cost_dish"><span>450</span>руб.</p>
+                                </div>
+                                <div class="col-md-2 col-xs-2">
+                                  <div class="vert_inner">
+                                    <div class="number ">
+                                      <a href="" class="minus">-</a>
+                                      <input type="text" value="1" size="5" />
+                                      <a href="" class="plus">+</a>
+                                    </div>
+                                  </div>                                  
+                                </div>
+                              </div>
+                              <div class="row menu_restor">
+                                <div class="col-md-2 col-xs-2">
+                                  <img src="img/Salat_min.png" alt="">
+                                </div>
+                                <div class="col-md-6 col-xs-6">
+                                  <p class="name_dish">Салат “Центральный”</p>
+                                  <p class="descr_dish">из слабосоленой семги с красной икрой и йогуртовой заправкой (160 г)</p>                                  
+                                </div> 
+                                <div class="col-md-2 col-xs-2">
+                                  <p class="cost_dish"><span>450</span>руб.</p>
+                                  
+                                </div>
+                                <div class="col-md-2 col-xs-2">
+                                  <div class="vert_inner">
+                                    <div class="number ">
+                                      <a href="" class="minus">-</a>
+                                      <input type="text" value="1" size="5" />
+                                      <a href="" class="plus">+</a>
+                                    </div>
+                                  </div>                                  
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="panel panel-default">
+                          <!-- Заголовок 4 панели -->
+                          <div class="panel-heading">
+                            <h4 class="panel-title">
+                              <a data-toggle="collapse" data-parent="#accordion" href="#sauces">Соусы и гарниры</a>
+                            </h4>
+                          </div>
+                          <div id="sauces" class="panel-collapse collapse">
+                            <!-- Содержимое 4 панели -->
+                            <div class="panel-body">
+                              <div class="row menu_restor">
+                                <div class="col-md-2 col-xs-2">
+                                  <img src="img/Salat_min.png" alt="">
+                                </div>
+                                <div class="col-md-6 col-xs-6">
+                                  <p class="name_dish">Салат “Центральный”</p>
+                                  <p class="descr_dish">из слабосоленой семги с красной икрой и йогуртовой заправкой (160 г)</p>
+                                  
+                                </div>
+                                <div class="col-md-2 col-xs-2">
+                                  <p class="cost_dish"><span>450</span>руб.</p>
+                                  <p class="cost_dish cost_discount"><span>400</span>руб.</p>
+                                </div>
+                                <div class="col-md-2 col-xs-2">
+                                  <div class="vert_inner">
+                                    <div class="number ">
+                                      <a href="" class="minus">-</a>
+                                      <input type="text" value="1" size="5" />
+                                      <a href="" class="plus">+</a>
+                                    </div>
+                                  </div>                                  
+                                </div>
+                              </div>
+                              <div class="row menu_restor">
+                                <div class="col-md-2 col-xs-2">
+                                  <img src="img/Salat_min.png" alt="">
+                                </div>
+                                <div class="col-md-6 col-xs-6">
+                                  <p class="name_dish">Салат “Центральный”</p>
+                                  <p class="descr_dish">из слабосоленой семги с красной икрой и йогуртовой заправкой (160 г)</p>
+                                  
+                                </div>
+                                <div class="col-md-2 col-xs-2">
+                                  <p class="cost_dish"><span>450</span>руб.</p>
+                                </div>
+                                <div class="col-md-2 col-xs-2">
+                                  <div class="vert_inner">
+                                    <div class="number ">
+                                      <a href="" class="minus">-</a>
+                                      <input type="text" value="1" size="5" />
+                                      <a href="" class="plus">+</a>
+                                    </div>
+                                  </div>                                  
+                                </div>
+                              </div>
+                              <div class="row menu_restor">
+                                <div class="col-md-2 col-xs-2">
+                                  <img src="img/Salat_min.png" alt="">
+                                </div>
+                                <div class="col-md-6 col-xs-6">
+                                  <p class="name_dish">Салат “Центральный”</p>
+                                  <p class="descr_dish">из слабосоленой семги с красной икрой и йогуртовой заправкой (160 г)</p>                                  
+                                </div> 
+                                <div class="col-md-2 col-xs-2">
+                                  <p class="cost_dish"><span>450</span>руб.</p>
+                                  
+                                </div>
+                                <div class="col-md-2 col-xs-2">
+                                  <div class="vert_inner">
+                                    <div class="number ">
+                                      <a href="" class="minus">-</a>
+                                      <input type="text" value="1" size="5" />
+                                      <a href="" class="plus">+</a>
+                                    </div>
+                                  </div>                                  
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="panel panel-default">
+                          <!-- Заголовок 5 панели -->
+                          <div class="panel-heading">
+                            <h4 class="panel-title">
+                              <a data-toggle="collapse" data-parent="#accordion" href="#dessert">Десерты</a>
+                            </h4>
+                          </div>
+                          <div id="dessert" class="panel-collapse collapse">
+                            <!-- Содержимое 5 панели -->
+                            <div class="panel-body">
+                              <div class="row menu_restor">
+                                <div class="col-md-2 col-xs-2">
+                                  <img src="img/Salat_min.png" alt="">
+                                </div>
+                                <div class="col-md-6 col-xs-6">
+                                  <p class="name_dish">Салат “Центральный”</p>
+                                  <p class="descr_dish">из слабосоленой семги с красной икрой и йогуртовой заправкой (160 г)</p>
+                                  
+                                </div>
+                                <div class="col-md-2 col-xs-2">
+                                  <p class="cost_dish"><span>450</span>руб.</p>
+                                  <p class="cost_dish cost_discount"><span>400</span>руб.</p>
+                                </div>
+                                <div class="col-md-2 col-xs-2">
+                                  <div class="vert_inner">
+                                    <div class="number ">
+                                      <a href="" class="minus">-</a>
+                                      <input type="text" value="1" size="5" />
+                                      <a href="" class="plus">+</a>
+                                    </div>
+                                  </div>                                  
+                                </div>
+                              </div>
+                              <div class="row menu_restor">
+                                <div class="col-md-2 col-xs-2">
+                                  <img src="img/Salat_min.png" alt="">
+                                </div>
+                                <div class="col-md-6 col-xs-6">
+                                  <p class="name_dish">Салат “Центральный”</p>
+                                  <p class="descr_dish">из слабосоленой семги с красной икрой и йогуртовой заправкой (160 г)</p>
+                                  
+                                </div>
+                                <div class="col-md-2 col-xs-2">
+                                  <p class="cost_dish"><span>450</span>руб.</p>
+                                </div>
+                                <div class="col-md-2 col-xs-2">
+                                  <div class="vert_inner">
+                                    <div class="number ">
+                                      <a href="" class="minus">-</a>
+                                      <input type="text" value="1" size="5" />
+                                      <a href="" class="plus">+</a>
+                                    </div>
+                                  </div>                                  
+                                </div>
+                              </div>
+                              <div class="row menu_restor">
+                                <div class="col-md-2 col-xs-2">
+                                  <img src="img/Salat_min.png" alt="">
+                                </div>
+                                <div class="col-md-6 col-xs-6">
+                                  <p class="name_dish">Салат “Центральный”</p>
+                                  <p class="descr_dish">из слабосоленой семги с красной икрой и йогуртовой заправкой (160 г)</p>                                  
+                                </div> 
+                                <div class="col-md-2 col-xs-2">
+                                  <p class="cost_dish"><span>450</span>руб.</p>
+                                  
+                                </div>
+                                <div class="col-md-2 col-xs-2">
+                                  <div class="vert_inner">
+                                    <div class="number ">
+                                      <a href="" class="minus">-</a>
+                                      <input type="text" value="1" size="5" />
+                                      <a href="" class="plus">+</a>
+                                    </div>
+                                  </div>                                  
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="panel panel-default">
+                          <!-- Заголовок 6 панели -->
+                          <div class="panel-heading">
+                            <h4 class="panel-title">
+                              <a data-toggle="collapse" data-parent="#accordion" href="#wine_map">Винная карта</a>
+                            </h4>
+                          </div>
+                          <div id="wine_map" class="panel-collapse collapse">
+                            <!-- Содержимое 6 панели -->
+                            <div class="panel-body">
+                              <div class="row menu_restor">
+                                <div class="col-md-2 col-xs-2">
+                                  <img src="img/Salat_min.png" alt="">
+                                </div>
+                                <div class="col-md-6 col-xs-6">
+                                  <p class="name_dish">Салат “Центральный”</p>
+                                  <p class="descr_dish">из слабосоленой семги с красной икрой и йогуртовой заправкой (160 г)</p>
+                                  
+                                </div>
+                                <div class="col-md-2 col-xs-2">
+                                  <p class="cost_dish"><span>450</span>руб.</p>
+                                  <p class="cost_dish cost_discount"><span>400</span>руб.</p>
+                                </div>
+                                <div class="col-md-2 col-xs-2">
+                                  <div class="vert_inner">
+                                    <div class="number ">
+                                      <a href="" class="minus">-</a>
+                                      <input type="text" value="1" size="5" />
+                                      <a href="" class="plus">+</a>
+                                    </div>
+                                  </div>                                  
+                                </div>
+                              </div>
+                              <div class="row menu_restor">
+                                <div class="col-md-2 col-xs-2">
+                                  <img src="img/Salat_min.png" alt="">
+                                </div>
+                                <div class="col-md-6 col-xs-6">
+                                  <p class="name_dish">Салат “Центральный”</p>
+                                  <p class="descr_dish">из слабосоленой семги с красной икрой и йогуртовой заправкой (160 г)</p>
+                                  
+                                </div>
+                                <div class="col-md-2 col-xs-2">
+                                  <p class="cost_dish"><span>450</span>руб.</p>
+                                </div>
+                                <div class="col-md-2 col-xs-2">
+                                  <div class="vert_inner">
+                                    <div class="number ">
+                                      <a href="" class="minus">-</a>
+                                      <input type="text" value="1" size="5" />
+                                      <a href="" class="plus">+</a>
+                                    </div>
+                                  </div>                                  
+                                </div>
+                              </div>
+                              <div class="row menu_restor">
+                                <div class="col-md-2 col-xs-2">
+                                  <img src="img/Salat_min.png" alt="">
+                                </div>
+                                <div class="col-md-6 col-xs-6">
+                                  <p class="name_dish">Салат “Центральный”</p>
+                                  <p class="descr_dish">из слабосоленой семги с красной икрой и йогуртовой заправкой (160 г)</p>                                  
+                                </div> 
+                                <div class="col-md-2 col-xs-2">
+                                  <p class="cost_dish"><span>450</span>руб.</p>
+                                  
+                                </div>
+                                <div class="col-md-2 col-xs-2">
+                                  <div class="vert_inner">
+                                    <div class="number ">
+                                      <a href="" class="minus">-</a>
+                                      <input type="text" value="1" size="5" />
+                                      <a href="" class="plus">+</a>
+                                    </div>
+                                  </div>                                  
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="panel panel-default">
+                          <!-- Заголовок 7 панели -->
+                          <div class="panel-heading">
+                            <h4 class="panel-title">
+                              <a data-toggle="collapse" data-parent="#accordion" href="#cocktails">Напитки и коктейли</a>
+                            </h4>
+                          </div>
+                          <div id="cocktails" class="panel-collapse collapse">
+                            <!-- Содержимое 7 панели -->
+                            <div class="panel-body">
+                              <div class="row menu_restor">
+                                <div class="col-md-2 col-xs-2">
+                                  <img src="img/Salat_min.png" alt="">
+                                </div>
+                                <div class="col-md-6 col-xs-6">
+                                  <p class="name_dish">Салат “Центральный”</p>
+                                  <p class="descr_dish">из слабосоленой семги с красной икрой и йогуртовой заправкой (160 г)</p>
+                                  
+                                </div>
+                                <div class="col-md-2 col-xs-2">
+                                  <p class="cost_dish"><span>450</span>руб.</p>
+                                  <p class="cost_dish cost_discount"><span>400</span>руб.</p>
+                                </div>
+                                <div class="col-md-2 col-xs-2">
+                                  <div class="vert_inner">
+                                    <div class="number ">
+                                      <a href="" class="minus">-</a>
+                                      <input type="text" value="1" size="5" />
+                                      <a href="" class="plus">+</a>
+                                    </div>
+                                  </div>                                  
+                                </div>
+                              </div>
+                              <div class="row menu_restor">
+                                <div class="col-md-2 col-xs-2">
+                                  <img src="img/Salat_min.png" alt="">
+                                </div>
+                                <div class="col-md-6 col-xs-6">
+                                  <p class="name_dish">Салат “Центральный”</p>
+                                  <p class="descr_dish">из слабосоленой семги с красной икрой и йогуртовой заправкой (160 г)</p>
+                                  
+                                </div>
+                                <div class="col-md-2 col-xs-2">
+                                  <p class="cost_dish"><span>450</span>руб.</p>
+                                </div>
+                                <div class="col-md-2 col-xs-2">
+                                  <div class="vert_inner">
+                                    <div class="number ">
+                                      <a href="" class="minus">-</a>
+                                      <input type="text" value="1" size="5" />
+                                      <a href="" class="plus">+</a>
+                                    </div>
+                                  </div>                                  
+                                </div>
+                              </div>
+                              <div class="row menu_restor">
+                                <div class="col-md-2 col-xs-2">
+                                  <img src="img/Salat_min.png" alt="">
+                                </div>
+                                <div class="col-md-6 col-xs-6">
+                                  <p class="name_dish">Салат “Центральный”</p>
+                                  <p class="descr_dish">из слабосоленой семги с красной икрой и йогуртовой заправкой (160 г)</p>                                  
+                                </div> 
+                                <div class="col-md-2 col-xs-2">
+                                  <p class="cost_dish"><span>450</span>руб.</p>
+                                  
+                                </div>
+                                <div class="col-md-2 col-xs-2">
+                                  <div class="vert_inner">
+                                    <div class="number ">
+                                      <a href="" class="minus">-</a>
+                                      <input type="text" value="1" size="5" />
+                                      <a href="" class="plus">+</a>
+                                    </div>
+                                  </div>                                  
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="panel panel-default">
+                          <!-- Заголовок 8 панели -->
+                          <div class="panel-heading">
+                            <h4 class="panel-title">
+                              <a data-toggle="collapse" data-parent="#accordion" href="#banquet_menu">Банкетное меню</a>
+                            </h4>
+                          </div>
+                          <div id="banquet_menu" class="panel-collapse collapse">
+                            <!-- Содержимое 8 панели -->
+                            <div class="panel-body">
+                              <div class="row menu_restor">
+                                <div class="col-md-2 col-xs-2">
+                                  <img src="img/Salat_min.png" alt="">
+                                </div>
+                                <div class="col-md-6 col-xs-6">
+                                  <p class="name_dish">Салат “Центральный”</p>
+                                  <p class="descr_dish">из слабосоленой семги с красной икрой и йогуртовой заправкой (160 г)</p>
+                                  
+                                </div>
+                                <div class="col-md-2 col-xs-2">
+                                  <p class="cost_dish"><span>450</span>руб.</p>
+                                  <p class="cost_dish cost_discount"><span>400</span>руб.</p>
+                                </div>
+                                <div class="col-md-2 col-xs-2">
+                                  <div class="vert_inner">
+                                    <div class="number ">
+                                      <a href="" class="minus">-</a>
+                                      <input type="text" value="1" size="5" />
+                                      <a href="" class="plus">+</a>
+                                    </div>
+                                  </div>                                  
+                                </div>
+                              </div>
+                              <div class="row menu_restor">
+                                <div class="col-md-2 col-xs-2">
+                                  <img src="img/Salat_min.png" alt="">
+                                </div>
+                                <div class="col-md-6 col-xs-6">
+                                  <p class="name_dish">Салат “Центральный”</p>
+                                  <p class="descr_dish">из слабосоленой семги с красной икрой и йогуртовой заправкой (160 г)</p>
+                                  
+                                </div>
+                                <div class="col-md-2 col-xs-2">
+                                  <p class="cost_dish"><span>450</span>руб.</p>
+                                </div>
+                                <div class="col-md-2 col-xs-2">
+                                  <div class="vert_inner">
+                                    <div class="number ">
+                                      <a href="" class="minus">-</a>
+                                      <input type="text" value="1" size="5" />
+                                      <a href="" class="plus">+</a>
+                                    </div>
+                                  </div>                                  
+                                </div>
+                              </div>
+                              <div class="row menu_restor">
+                                <div class="col-md-2 col-xs-2">
+                                  <img src="img/Salat_min.png" alt="">
+                                </div>
+                                <div class="col-md-6 col-xs-6">
+                                  <p class="name_dish">Салат “Центральный”</p>
+                                  <p class="descr_dish">из слабосоленой семги с красной икрой и йогуртовой заправкой (160 г)</p>                                  
+                                </div> 
+                                <div class="col-md-2 col-xs-2">
+                                  <p class="cost_dish"><span>450</span>руб.</p>
+                                  
+                                </div>
+                                <div class="col-md-2 col-xs-2">
+                                  <div class="vert_inner">
+                                    <div class="number ">
+                                      <a href="" class="minus">-</a>
+                                      <input type="text" value="1" size="5" />
+                                      <a href="" class="plus">+</a>
+                                    </div>
+                                  </div>                                  
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 select_menu col-xs-12">
+                      <p class="name_block">Выбрано</p>
+                      <div class="menu_table">
+                          <table class="table ">
+                            <thead>
+                              <tr>
+                                  <th>Наименование</th>
+                                  <th>Цена(<span>руб</span>)</th>
+                                  <th>Кол-во</th> 
+                                  <th><img src="img/basket.png" alt=""></th>                                 
+                              </tr>
+                          </thead>
+                          <tbody>
+                              <tr>
+                                  <td>
+                                    <div class="inner_td">
+                                      <p>Салат “Центральный”</p> из слабосоленой семги с красной икрой и йогуртовой заправкой (160 г)
+                                    </div>
+                                  </td>
+                                    
+                                  <td>450.00</td>
+                                  <td>1</td> 
+                                  <td><button type="button" class="btn"><img src="img/del.png" alt=""></button></td>                                 
+                              </tr>
+                              <tr>
+                                  <td>
+                                    <div class="inner_td">
+                                      <p>Салат “Центральный”</p> из слабосоленой семги с красной икрой и йогуртовой заправкой (160 г)
+                                    </div>
+                                  </td>
+                                  <td>450.00</td>
+                                  <td>1</td>  
+                                  <td><button type="button" class="btn"><img src="img/del.png" alt=""></button></td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                    <div class="inner_td">
+                                      <p>Салат “Центральный”</p> из слабосоленой семги с красной икрой и йогуртовой заправкой (160 г)
+                                    </div>
+                                  </td>
+                                  <td>450.00</td>
+                                  <td>1</td>  
+                                  <td><button type="button" class="btn"><img src="img/del.png" alt=""></button></td>
+                              </tr>
+                          </tbody>
+                          </table>
+                          <div class="bottom_div">
+                            <p class="text-left">Всего:</p>
+                            <p class="text-right">1350.00</p>
+                            <p class="text-left">Скидка:</p>
+                            <p class="text-right">50.00</p>
+                            <p class="text-left">Итого к оплате:</p>
+                            <p class="text-right red_summ">1300.00</p>
+                            <p class="danger_p">*минимальный заказ 400 рублей</p>
+                            <p class="danger_p">Превышен лимит, остальное за ваш счет</p>
+                          </div>
+                        </div>
+                        <div class="row marg_t34">
+                          <div class="col-md-4 col-md-offset-2 col-sm-4 col-sm-offset-2">
+                            <button type="button" class="btn btn-default paym">назад</button>
+                          </div>
+                          <div class="col-md-4 col-md-offset-0 col-sm-4 col-sm-offset-0">
+                            <button type="button" class="btn btn-default paym red_paym">Оплатить</button>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+        </div>
+      </div>
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 col-xs-12 min_mob">
+              <p>© 2019 CAZILA | All Rights Reserved</p>
+            </div>
+            <div class="col-md-2 col-md-offset-7 col-xs-12 col-xs-offset-0 min_mob">
+              <a href="">info@cazila.ru</a>
+            </div>
+          </div> 
+        </div>
+            
+      </footer>
+    </div>
+    <div id = "toTop" >
+      <img src="img/top.png" alt="">
+    </div >
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

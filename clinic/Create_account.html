@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>video-clinic</title>
+
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <link href="css/screen.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="js/jquery.parallax.js"></script>
+
+        <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] +
+                    ':35729/livereload.js?snipver=1"></' + 'script>')
+        </script>
+    </head>
+    <body>
+        <div class="global-container">
+            <div class="sign">
+                <div class="a-section a-padding-medium auth-workflow">
+                    <div class="a-section a-spacing-none auth-navbar">
+                        <div class="a-section a-spacing-medium a-text-center">
+                            <a class="a-link-nav-icon" tabindex="-1" href="javascript:void(0)">
+                                <i class="a-icon a-icon-logo" role="img" aria-label="Amazon"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div id="authportal-center-section" class="a-section">
+                        <div id="authportal-main-section" class="a-section">
+                            <div class="a-section a-spacing-base auth-pagelet-container">
+                                <div id="auth-cookie-warning-message" class="a-box a-alert a-alert-warning"><div class="a-box-inner a-alert-container"><h4 class="a-alert-heading">Please Enable Cookies to Continue</h4><i class="a-icon a-icon-alert"></i><div class="a-alert-content">
+                                            <p>
+                                                <a class="a-link-normal" href="javascript:void(0)">
+
+                                                </a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="a-section auth-pagelet-container">
+                                <div class="a-section">
+                                    <form id="ap_register_form" name="register" method="post" novalidate="" action="https://www.amazon.com/ap/register" data-enable-mobile-account-js="false" data-post-verification-action="https://www.amazon.com/ap/register" class="a-spacing-none auth-validate-form auth-real-time-validation fwcim-form" data-fwcim-id="652dbdb2">
+                                        <input type="hidden" name="appActionToken" value="AdGo6Abo1DhGfS1iLnfY0bpnHj2Bgj3D"><input type="hidden" name="appAction" value="REGISTER">
+                                        <input type="hidden" name="openid.return_to" value="ape:aHR0cHM6Ly93d3cuYW1hem9uLmNvbS8/cmVmXz1uYXZfc2lnbmlu">
+                                        <input type="hidden" name="prevRID" value="ape:NlRCRkU0OVRZWjdYN0tLNVRIWEo=">
+                                        <input type="hidden" name="workflowState" value="eyJ6aXAiOiJERUYiLCJlbmMiOiJBMjU2R0NNIiwiYWxnIjoiQTI1NktXIn0.AJKsVppwhYlCMgDRhUAyS67QDZIgjOQNWY1UITqUTEz4ZDyNCwTsUw.4ARROc-0S-Xun5_A.7u4ZuWOcsXpmOrjbe_6Z3jnShT51BuEa9XejZiV0xBrd8j660uwwM3nEX2uQRqy0JSH66KOlM2jIULne8MI7ci7QBOdXg-KxAhI8-K01jMtU6LXOMyZnk5MF8QyLZGyqljHWp0uDp38txFovijnnDL8s_H_5VfJNuZuYLCwf3MLv9HOLAA-yUsK-9-CtRTEru2EAA8LmBNGH9JRtcFIobDvAB-d4A8TQTWwuByu6aaU2Uyr2p4-UMAS6usluP0-wvgpJvuScnhSEpQidWUJykJLjUFOo0eqHaojBSWKHQcgDkeU1XZ37mQRlTJzNWF9PaqEH3q5FpGYNHg.8SDgHPQ8sxRRlJ0EyUd1Pw">
+                                        <input type="hidden" name="claimToken" class="auth-contact-verification-claim-token">
+                                        <div class="a-box a-spacing-extra-large"><div class="a-box-inner">
+                                                <h1 class="a-spacing-small">
+                                                    Create account
+                                                </h1>
+                                                <div class="a-row a-spacing-base">
+                                                    <label for="ap_customer_name" class="a-form-label">
+                                                        Your name
+                                                    </label>
+                                                    <input type="text" maxlength="50" id="ap_customer_name" autocomplete="off" name="customerName" tabindex="1" class="a-input-text a-span12 auth-autofocus auth-required-field auth-contact-verification-request-info">
+                                                    <div id="auth-customerName-missing-alert" class="a-box a-alert-inline a-alert-inline-error auth-inlined-error-message a-spacing-top-mini" aria-live="assertive" role="alert"><div class="a-box-inner a-alert-container"><i class="a-icon a-icon-alert"></i><div class="a-alert-content">
+                                                                Enter your name
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="auth-require-fields-match-group">
+                                                    <div class="a-row a-spacing-base">
+                                                        <label for="ap_email" class="a-form-label">
+                                                            Email
+                                                        </label>
+                                                        <input type="email" maxlength="64" id="ap_email" name="email" tabindex="3" class="a-input-text a-span12 auth-required-field auth-require-fields-match auth-require-email-validaton auth-require-reverify-on-change auth-contact-verification-request-info">
+
+                                                        <div id="auth-email-missing-alert" class="a-box a-alert-inline a-alert-inline-error auth-inlined-error-message a-spacing-top-mini" aria-live="assertive" role="alert"><div class="a-box-inner a-alert-container"><i class="a-icon a-icon-alert"></i><div class="a-alert-content">
+                                                                    Enter your email
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div id="auth-email-invalid-email-alert" class="a-box a-alert-inline a-alert-inline-error auth-inlined-error-message a-spacing-top-mini" aria-live="assertive" role="alert"><div class="a-box-inner a-alert-container"><i class="a-icon a-icon-alert"></i><div class="a-alert-content">
+                                                                    Enter a valid email address
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div id="auth-email-invalid-claim-alert" class="a-box a-alert-inline a-alert-inline-error auth-inlined-error-message a-spacing-top-mini" aria-live="assertive" role="alert"><div class="a-box-inner a-alert-container"><i class="a-icon a-icon-alert"></i><div class="a-alert-content">
+                                                                    Wrong or Invalid email address or mobile phone number. Please correct and try again.
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div id="auth-email-missing-alert-ango-email" class="a-box a-alert-inline a-alert-inline-error auth-inlined-error-message a-spacing-top-mini" aria-live="assertive" role="alert"><div class="a-box-inner a-alert-container"><i class="a-icon a-icon-alert"></i><div class="a-alert-content">
+                                                                    Enter your email
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div id="auth-email-missing-alert-ango-phone" class="a-box a-alert-inline a-alert-inline-error auth-inlined-error-message a-spacing-top-mini" aria-live="assertive" role="alert"><div class="a-box-inner a-alert-container"><i class="a-icon a-icon-alert"></i><div class="a-alert-content">
+                                                                    Enter your mobile phone number
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="auth-require-fields-match-group">
+                                                    <div class="a-row a-spacing-base">
+                                                        <label for="ap_password" class="a-form-label">
+                                                            Password
+                                                        </label>
+                                                        <input type="password" maxlength="1024" id="ap_password" autocomplete="off" placeholder="At least 6 characters" name="password" tabindex="5" class="a-input-text a-form-normal a-span12 auth-required-field auth-require-fields-match auth-require-password-validation">
+
+                                                        <div class="a-box a-alert-inline a-alert-inline-info auth-inlined-information-message a-spacing-top-mini"><div class="a-box-inner a-alert-container"><i class="a-icon a-icon-alert"></i><div class="a-alert-content">
+                                                                    Passwords must be at least 6 characters.
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div id="auth-password-missing-alert" class="a-box a-alert-inline a-alert-inline-error auth-inlined-error-message a-spacing-top-mini" aria-live="assertive" role="alert"><div class="a-box-inner a-alert-container"><i class="a-icon a-icon-alert"></i><div class="a-alert-content">
+                                                                    Enter your password
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div id="auth-password-invalid-password-alert" class="a-box a-alert-inline a-alert-inline-error auth-inlined-error-message a-spacing-top-mini" aria-live="assertive" role="alert"><div class="a-box-inner a-alert-container"><i class="a-icon a-icon-alert"></i><div class="a-alert-content">
+                                                                    Passwords must be at least 6 characters.
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="a-row a-spacing-base">
+                                                        <label for="ap_password_check" class="a-form-label">
+                                                            Re-enter password
+                                                        </label>
+                                                        <input type="password" maxlength="1024" id="ap_password_check" autocomplete="off" name="passwordCheck" tabindex="6" class="a-input-text a-form-normal a-span12 auth-required-field auth-require-fields-match">
+                                                        <div id="auth-passwordCheck-missing-alert" class="a-box a-alert-inline a-alert-inline-error auth-inlined-error-message a-spacing-top-mini" aria-live="assertive" role="alert"><div class="a-box-inner a-alert-container"><i class="a-icon a-icon-alert"></i><div class="a-alert-content">
+                                                                    Type your password again
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div id="auth-password-mismatch-alert" class="a-box a-alert-inline a-alert-inline-error auth-inlined-error-message a-spacing-top-mini" aria-live="assertive" role="alert"><div class="a-box-inner a-alert-container"><i class="a-icon a-icon-alert"></i><div class="a-alert-content">
+                                                                    Passwords must match
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="a-row a-spacing-extra-large">
+                                                    <span class="a-button a-button-normal a-button-span12 a-button-primary" id="a-autoid-0"><span class="a-button-inner"><input id="continue" tabindex="11" class="a-button-input" type="submit" aria-labelledby="a-autoid-0-announce"><span class="a-button-text" aria-hidden="true" id="a-autoid-0-announce">
+                                                                Create your Amazon account
+                                                            </span></span></span>                                                   
+                                                    <div id="legalTextRow" class="a-row a-spacing-top-medium a-size-small">
+                                                        By creating an account, you agree to Amazon's 
+                                                        <a href="javascript:void(0)">Conditions of Use</a> and <a href="javascript:void(0)">Privacy Notice</a>.
+                                                    </div>
+                                                </div>
+                                                <div class="a-divider a-divider-section">
+                                                    <div class="a-divider-inner"></div>
+                                                </div>
+                                                <div class="a-row">
+                                                    Already have an account?
+                                                    <a class="a-link-emphasis" href="javascript:void(0)">
+                                                        Sign-In
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="right-2">
+                    </div>
+                    <div class="a-section a-spacing-top-extra-large auth-footer">
+                        <div class="a-divider a-divider-section">
+                            <div class="a-divider-inner"></div>                                
+                        </div>
+                        <div class="a-section a-spacing-small a-text-center a-size-mini">
+                            <span class="auth-footer-seperator"></span>
+                            <a class="a-link-normal" target="_blank" rel="noopener" href="javascript:void(0)">
+                                Conditions of Use
+                            </a>
+                            <span class="auth-footer-seperator"></span>
+                            <a class="a-link-normal" target="_blank" rel="noopener" href="javascript:void(0)">
+                                Privacy Notice
+                            </a>
+                            <span class="auth-footer-seperator"></span>
+                            <a class="a-link-normal" target="_blank" rel="noopener" href="javascript:void(0)">
+                                Help
+                            </a>
+                            <span class="auth-footer-seperator"></span>
+                        </div>
+                        <div class="a-section a-spacing-none a-text-center">
+                            <span class="a-size-mini a-color-secondary">
+                                © 1996-2019, Amazon.com, Inc. or its affiliates
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div id="auth-external-javascript" class="auth-external-javascript" data-external-javascripts="">       
+                </div>
+            </div>
+        </div>
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+        <!-- <script>
+                $('.parallax-window').parallax({src: 'img/11.jpg'});
+                $('.parallax-window2').parallax({src: 'img/222.jpg'});
+        </script> -->
+        <script src="js/rellax.js"></script>
+        <script src="js/main.js"></script>
+
+
+    </body>
+</html>

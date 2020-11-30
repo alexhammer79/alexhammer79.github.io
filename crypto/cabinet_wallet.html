@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CryptoDiligent</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/select2.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+    <link href="css/screen.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] +
+        ':35729/livereload.js?snipver=1"></' + 'script>')
+    </script>
+    <!-- <script type="text/javascript" src="1js/jquery.pixlayout.0.9.8.js"></script> -->
+    <!-- <script type="text/javascript">
+    $(function() {
+        $.pixlayout({ clip: true, src: "cabinet_wallet.jpg", show: true, center: true, top: 0, left: 0, pervious: false });
+    });
+    </script> -->
+</head>
+
+<body>
+  
+
+
+ 
+
+  <!--  5-й дропдаун  -->
+  <div class="drop5 togle_disclosed  hidden-lg hidden-md" style="display: none;">
+    <div class="container wallet_page">
+        <div class="row head_top">
+          <div class="col-md-2 col-xs-8 col-sm-8">
+              <a href="javascript:void(0)"><img src="img/logo.png" alt="logo" class="logo"></a>
+          </div>
+          <div class="col-xs-1 col-sm-2 col-sm-offset-2 col-xs-offset-1 hidden-lg toggle">
+            <img src="img/wallet.png" alt="" class="pull-left wallet1">
+          </div>
+          <button type="button" class="exit" >
+            <img src="img/close.png" alt="">
+          </button>
+      </div>
+      <div class="inner_settings">
+       <div class="row">
+         <div class="col-md-12 bord ">                               
+           <a href="#">
+            <img src="img/settings.png" alt="" class="pull-right">
+            <p class="pull-right">Настройки</p>
+            <span class="clearfix"></span>
+           </a>
+         </div>
+       </div>
+       <div class="row">
+         <div class="col-md-12 bord ">                               
+           <a href="#">
+            <img src="img/transfers.png" alt="" class="pull-right">
+            <p class="pull-right">Сделки</p>
+            <span class="clearfix"></span>
+           </a>
+         </div>
+       </div>
+       <div class="row">
+         <div class="col-md-12 bord ">                               
+           <a href="#">
+            <img src="img/referal.png" alt="" class="pull-right">
+            <p class="pull-right">Рефералы</p>
+            <span class="clearfix"></span>
+           </a>
+         </div>
+       </div>
+       <div class="row">
+         <div class="col-md-12 bord ">                               
+           <a href="#">
+            <img src="img/help.png" alt="" class="pull-right">
+            <p class="pull-right">Помощь</p>
+            <span class="clearfix"></span>
+           </a>
+         </div>
+       </div>
+       <div class="row">
+         <div class="col-md-12 bord ">                               
+           <a href="#">
+            <img src="img/exit.png" alt="" class="pull-right">
+            <p class="pull-right">Выход</p>
+            <span class="clearfix"></span>
+           </a>
+         </div>
+       </div>
+      </div>
+    </div>         
+  </div>
+
+  <!-- конец 1-го дропдауна-->
+
+
+    <div class="global_container">
+        <header class="head_top">
+            <div class="container wallet_page">
+                <div class="row">
+                    <div class="col-md-2 col-xs-8 col-sm-8">
+                        <a href="javascript:void(0)"><img src="img/logo.png" alt="logo" class="logo"></a>
+                    </div>
+                    <div class="col-xs-1 col-sm-1 col-sm-offset-2 col-xs-offset-1 hidden-lg toggle">
+                      <img src="img/wallet.png" alt="" class="pull-left wallet1">
+                    </div>
+                    <div class="col-xs-1 col-sm-1 col-sm-offset-0 col-xs-offset-0 hidden-lg toggle">
+                      <img src="img/profile.png" alt="" class="pull-left prof1">
+                    </div>
+                    
+                    <div class="col-md-2 col-md-offset-1 lang hidden-xs hidden-sm">
+                        <ul class="nav nav-tabs ">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                                  <img src="img/ru.png" alt="ru" class="pull-left">                      
+                                  <p class="ru">Русский</p>
+                                  <div class="clearfix"></div>
+                        
+                                </a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">
+                                      <img src="img/en.png" alt="en" class="pull-left"">
+                                      <p class="lang_name">English</p>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                        
+                    </div>
+                    <div class="col-md-2 col-md-offset-3 hidden-xs hidden-sm data">
+                      <a href="">
+                        <img src="img/wallet.png" alt="" class="pull-left">
+                        <p>Кошельки</p>
+                      </a>                      
+                    </div>
+                    <!-- <div class="col-md-2 hidden-xs hidden-sm data">
+                      <a href="">
+                        <img src="img/profile.png" alt="" class="pull-left">
+                        <p>Имя Фамилия</p>
+                      </a>                  
+                    </div> -->
+                    
+                    <div class=" dropdown fio data text-center  col-md-2 hidden-xs hidden-sm">
+                        <button class="btn btn-default dropdown-toggle enter" type="button" id="dropdownMenu5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                          <a href="">
+                        <img src="img/profile.png" alt="" class="pull-left">
+                        <p class="name">Имя Фамилия</p>
+                      </a>                          
+                        </button>
+                        <ul class="dropdown-menu enter_ul3" aria-labelledby="dropdownMenu5" >
+                          <a href="#"><img src="img/close1.png" alt="" class="close1"></a>
+                          <li>
+                           <div class="row">
+                             <div class="col-md-12 bord ">                               
+                               <a href="#">
+                                <img src="img/settings.png" alt="" class="pull-right">
+                                <p class="pull-right">Настройки</p>
+                                <span class="clearfix"></span>
+                               </a>
+                             </div>
+                           </div>
+                          </li>
+                          <li>
+                           <div class="row">
+                             <div class="col-md-12 bord ">                               
+                               <a href="#">
+                                <img src="img/transfers.png" alt="" class="pull-right">
+                                <p class="pull-right">Сделки</p>
+                                <span class="clearfix"></span>
+                               </a>
+                             </div>
+                           </div>
+                          </li>
+                          <li>
+                           <div class="row">
+                             <div class="col-md-12 bord ">                               
+                               <a href="#">
+                                <img src="img/referal.png" alt="" class="pull-right">
+                                <p class="pull-right">Рефералы</p>
+                                <span class="clearfix"></span>
+                               </a>
+                             </div>
+                           </div>
+                          </li>
+                          <li>
+                           <div class="row">
+                             <div class="col-md-12 bord ">                               
+                               <a href="#">
+                                <img src="img/help.png" alt="" class="pull-right">
+                                <p class="pull-right">Помощь</p>
+                                <span class="clearfix"></span>
+                               </a>
+                             </div>
+                           </div>
+                          </li>
+                          <li>
+                           <div class="row">
+                             <div class="col-md-12 bord ">                               
+                               <a href="#">
+                                <img src="img/exit.png" alt="" class="pull-right">
+                                <p class="pull-right">Выход</p>
+                                <span class="clearfix"></span>
+                               </a>
+                             </div>
+                           </div>
+                          </li>
+
+                          
+                        </ul>
+                      </div>
+
+                </div>
+            </div>
+        </header>
+        
+        <section class="center" style="display: block;">
+          <div class="container">
+            <div class="row ">
+              <div class="col-md-12">
+                <p class="name_header">Кошельки</p>
+              </div>
+            </div>
+            <div class="row ">
+              <div class="col-md-10 inner_wallet col-xs-12">
+                <div class="row marg_action">
+                  <div class="col-md-3 currency col-xs-10">
+                    <img src="img/btc_wallet.png" alt="" class="pull-left ">
+                    <p class="btc_quantity">0.000001<span>BTC</span></p>
+                  </div>
+                  <div class="col-md-3 qr col-xs-2">
+                    <a href="#"><img src="img/qr.png" alt="" class="pull-left"></a>
+                    <p class="hidden-xs hidden-sm">37EgzmzbRsQDakC9UZ7gUYCugffB2NUkhR</p>
+                  </div>
+                  <div class="col-md-2 action col-xs-4">
+                    <a href="">
+                      <img src="img/buy.png" alt="" class="fl buy_img fc">
+                      <p class="fc">Купить</p>
+                    </a>
+                  </div>
+                  <div class="col-md-2 action col-xs-4">
+                    <a href="">
+                      <img src="img/exchange.png" alt="" class="fl fc">
+                      <p class="fc">Обменять</p>
+                    </a>
+                  </div>
+                  <div class="col-md-2 action col-xs-4">
+                    <a href="">
+                      <img src="img/withdraw.png" alt="" class="fl fc">
+                      <p class="fc" >Вывести</p>
+                    </a>
+                  </div>
+                </div>
+                <div class="row marg_action">
+                  <div class="col-md-3 currency col-xs-10">
+                    <img src="img/ETH.png" alt="" class="pull-left ">
+                    <p class="btc_quantity">0.000001 <span>ETH</span></p>
+                  </div>
+                  <div class="col-md-3 qr col-xs-2">
+                    <a href="#"><img src="img/qr.png" alt="" class="pull-left"></a>
+                    <p class="hidden-xs hidden-sm">37EgzmzbRsQDakC9UZ7gUYCugffB2NUkhR</p>
+                  </div>
+                  <div class="col-md-2 action col-xs-4">
+                    <a href="">
+                      <img src="img/buy.png" alt="" class="fl buy_img fc">
+                      <p class="fc">Купить</p>
+                    </a>
+                  </div>
+                  <div class="col-md-2 action col-xs-4">
+                    <a href="">
+                      <img src="img/exchange.png" alt="" class="fl fc">
+                      <p class="fc">Обменять</p>
+                    </a>
+                  </div>
+                  <div class="col-md-2 action col-xs-4">
+                    <a href="">
+                      <img src="img/withdraw.png" alt="" class="fl fc">
+                      <p class="fc" >Вывести</p>
+                    </a>
+                  </div>
+                </div>
+                <div class="row marg_action">
+                  <div class="col-md-3 currency">
+                    <img src="img/euro.png" alt="" class="pull-left ">
+                    <p class="btc_quantity">23.56<span>EUR</span></p>
+                  </div>
+                  <div class="col-md-3 qr">
+                    
+                  </div>
+                  <div class="col-md-2 action col-xs-4">
+                    <a href="">
+                      <img src="img/deposit.png" alt="" class="fl fc dep_img">
+                      <p class="fc">Депозит</p>
+                    </a>
+                  </div>
+                  <div class="col-md-2 action col-xs-4">
+                    <a href="">
+                      <img src="img/exchange.png" alt="" class="fl fc">
+                      <p class="fc">Обменять</p>
+                    </a>
+                  </div>
+                  <div class="col-md-2 action col-xs-4">
+                    <a href="">
+                      <img src="img/withdraw.png" alt="" class="fl fc">
+                      <p class="fc">Вывести</p>
+                    </a>
+                  </div>
+                </div>                
+              </div>
+            </div>
+            <div class="row balanse text-center">
+              <div class="col-md-10">
+                <p>Баланс:  ~  <span>€ 24.60</span></p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="score" style="display:none;">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 col-md-offset-3">
+                <p class="name_header">Вы еще не привязали банковский счет.</p>
+                <p class="info_p">Чтобы вывести средства с помощью банковского перевода, привяжите свой банковский счет к Crypto Diligent.</p>
+                <a href="javascript:void(0)">
+                  <div class="div-button text-center">
+                    <p class="top_name">Добавить счет</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>       
+        
+        
+        <footer>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-3 center_foot">
+                <img src="img/logo.png" alt="" class="logo_bottom">
+                <p class="license">© Copyright 2018</p>
+                <a href=""><img src="img/FB.png" alt=""></a>
+                <a href=""><img src="img/twitter.png" alt=""></a>
+              </div>
+              <div class="col-md-3 center_foot">
+                <p class="top_p">Сервисы</p>              
+                <a href="javascript:void(0)"><p class="bottom_p">Купить биткоины</p></a>
+                <a href="javascript:void(0)"><p class="bottom_p">Купить Ethereum</p></a>
+                <a href="javascript:void(0)"><p class="bottom_p">Продать биткоины</p></a>
+                <a href="javascript:void(0)"><p class="bottom_p">Продать Ethereum</p></a>
+                <a href="javascript:void(0)"><p class="bottom_p">Платежная система</p></a>
+              </div>
+              <div class="col-md-3 center_foot">
+                <p class="top_p">О компании</p>
+                <a href="javascript:void(0)"><p class="bottom_p">О нас</p></a>
+                <a href="javascript:void(0)"><p class="bottom_p">Легальность и безопасность</p></a>
+                <a href="javascript:void(0)"><p class="bottom_p">Terms of Use</p></a>
+                <a href="javascript:void(0)"><p class="bottom_p">Refund Policy</p></a>
+                <a href="javascript:void(0)"><p class="bottom_p">Пресса о нас</p></a>
+                <a href="javascript:void(0)"><p class="bottom_p">Блог</p></a>
+                <a href="javascript:void(0)"><p class="bottom_p">Справочный центр</p></a>
+              </div>
+              <div class="col-md-3 licen col-xs-offset-1 col-xs-10 col-sm-offset-4 col-sm-4 col-md-offset-0">
+                <div class="protect_div">
+                  <div class="prot">
+                  <img src="img/protect.png" alt="" class="">
+                  </div>              
+                  <a href=""><p class=" ">Licensed to provide virtual currency wallet services #FRK000305</p></a>
+                  <div class="clearfix"></div>
+                </div>
+                <div class="protect_div">
+                  <div class="prot">
+                  <img src="img/protect.png" alt="" class="">
+                  </div>              
+                  <a href=""><p class=" ">Licensed to provide fiat to virtual currency exchange services #FVR000365</p></a>
+                  <div class="clearfix"></div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </footer>
+        
+        
+
+    </div>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/select2.full.js"></script>    
+    <script src="js/main.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+          $("[href='#el1']").trigger("click");
+      });
+      
+    </script>
+
+  
+
+</body>
+
+</html>
+
+
+

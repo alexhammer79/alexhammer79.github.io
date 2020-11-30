@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CryptoDiligent</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/select2.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] +
+        ':35729/livereload.js?snipver=1"></' + 'script>')
+    </script>
+</head>
+
+<body>
+    <div class="global_container">
+        <header class="head_top">
+            <div class="container wallet_page">
+                <div class="row">
+                    <div class="col-md-2 col-xs-8 col-sm-8">
+                        <a href="/ru/client"><img src="img//logo.png" alt="logo" class="logo"></a>
+                    </div>
+                    <div class="col-xs-1 col-sm-1 col-sm-offset-1 col-xs-offset-1 hidden-lg hidden-md toggle">
+                        <a href="/ru/client">
+                            <img src="img/wallet.png" alt="" class="pull-left wallet1">
+                        </a>
+                    </div>
+                    <div class="col-xs-1 col-sm-1 col-sm-offset-0 col-xs-offset-0 hidden-lg hidden-md toggle js_show_modal" data-modal-name="account">
+                        <img src="img/profile.png" alt="" class="pull-left prof1">
+                    </div>
+                    <div class="col-md-2 col-md-offset-2 lang hidden-xs hidden-sm">
+                        <ul class="nav nav-tabs ">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                                    <img src="img/ru.png" class="pull-left">
+                                    <p class="ru">Русский</p>
+                                    <div class="clearfix"></div>
+                                </a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="/en/client/wallets/buy-bitcoin-new-card">
+                                        <img src="img/en.png" class="pull-left">
+                                        <p class="lang_name">English</p>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2 col-md-offset-2 hidden-xs hidden-sm data">
+                        <a href="/ru/client">
+                            <img src="img/wallet.png" alt="" class="pull-left">
+                            <p>Кошельки</p>
+                        </a>
+                    </div>
+                    <!-- <div class="col-md-2 hidden-xs hidden-sm data">
+                          <a href="">
+                            <img src="img/profile.png" alt="" class="pull-left">
+                            <p>Имя Фамилия</p>
+                          </a>                  
+                        </div> -->
+                    <div class=" dropdown fio data text-center  col-md-2 hidden-xs hidden-sm">
+                        <button class="btn btn-default dropdown-toggle enter" type="button" id="dropdownMenu5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            <a href="">
+                                <img src="img/profile.png" alt="" class="pull-left">
+                                <p class="name">Денис Листов</p>
+                            </a>
+                        </button>
+                        <ul class="dropdown-menu enter_ul3" aria-labelledby="dropdownMenu5">
+                            <!--<a href="#"><img src="img/close1.png" alt="" class="close1"></a>-->
+                            <li>
+                                <div class="row">
+                                    <div class="col-md-12 bord ">
+                                        <a href="/ru/client/main/profile">
+                                            <img src="img/settings.png" alt="" class="pull-right">
+                                            <p class="pull-right">Настройки</p>
+                                            <span class="clearfix"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row">
+                                    <div class="col-md-12 bord ">
+                                        <a href="/ru/client/main/transactions">
+                                            <img src="img/transfers.png" alt="" class="pull-right">
+                                            <p class="pull-right">Сделки</p>
+                                            <span class="clearfix"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row">
+                                    <div class="col-md-12 bord ">
+                                        <a href="/ru/client/referrals">
+                                            <img src="img/referal.png" alt="" class="pull-right">
+                                            <p class="pull-right">Рефералы</p>
+                                            <span class="clearfix"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row">
+                                    <div class="col-md-12 bord ">
+                                        <a href="#">
+                                            <img src="img/help.png" alt="" class="pull-right">
+                                            <p class="pull-right">Помощь</p>
+                                            <span class="clearfix"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row">
+                                    <div class="col-md-12 bord ">
+                                        <a href="/ru/site/logout">
+                                            <img src="img/exit.png" alt="" class="pull-right">
+                                            <p class="pull-right">Выход</p>
+                                            <span class="clearfix"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <ol class="breadcrumb">
+                            <li><a href="/ru/client/main">Кошельки</a></li>
+                            <li class="active">Купить Bitcoin</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <form id="w0" action="/ru/client/wallets/buy-bitcoin-new-card" method="post" data-pjax>
+                <input type="hidden" name="_csrf" value="m4hfdRKBpkc6cXPmgnwowbhqWMieYCy3JuQpQQhLgFzN7xsYJ_DDC0kSNIH7EB2l_iY7g_Y1RfNCjRoRQHjIPg==">
+                <input type="hidden" id="commission" name="commission" value="5"> <input type="hidden" id="ratio" name="BuyBitcoinModel[ratio]" value="0.00021005"> <input type="hidden" id="val_2" name="BuyBitcoinModel[val_2]" value="">
+                <div id="" class="" data-modal="modal_2">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <!-- Основное содержимое модального окна -->
+                            <div class="modal-body details">
+                                <div class="row text-center">
+                                    <div class="col-xs-12">
+                                        <p class="marg">1 BTC = <span>5550.38</p>
+                                    </div>
+                                </div>
+                                <div class="row marg mini_hr">
+                                    <div class="col-xs-12">
+                                        <hr>
+                                    </div>
+                                </div>
+                                <div class="row marg">
+                                    <div class="col-xs-12">
+                                        <p>Количество</p>
+                                    </div>
+                                </div>
+                                <div class="row marg">
+                                    <div class="col-xs-6 col-sm-7 col-md-7">
+                                        <div class="form-group bitcoin currency">
+                                            <div class="input-group">
+                                                <div class="form-group new_error_tips field-val_1 required ">
+                                                    <input type="number" id="val_1" class="form-control  quantity" name="BuyBitcoinModel[val_1]" value="100" style="float:none" onkeyup="changeValues()" aria-required="true">
+                                                    <p class="help-block help-block-error al_err" style="position:absolute">Минимальная сумма покупки 50 евро</p>
+                                                </div>
+                                                <div class="dropdown  text-center">
+                                                    <button class="btn btn-default  dropdown-toggle pull-left bit" type="button" id="dropdownMenu4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                                        EUR
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 more col-sm-5 col-md-5">
+                                        <p class="summ_a"><i class="fa fa-chevron-right" aria-hidden="true"></i> <span class="bitcoin_value">0.00236498 BTC</span></p>
+                                    </div>
+                                </div>
+                                <div class="row marg_big">
+                                    <div class="col-xs-12">
+                                        <p class="marg_big">Способ оплаты</p>
+                                    </div>
+                                </div>
+                                <div class="row marg">
+                                    <div class="col-xs-12 col-xs-offset-0 col-md-8 col-md-offset-2">
+                                        <div class="cart_data">
+                                            <div class="row">
+                                                <div class="col-xs-6">
+                                                    <p class="marg num">Имя</p>
+                                                    <div class="form-group new_error_tips field-buybitcoinmodel-card_number required">
+                                                        <input type="text"  class="form-control"  value="" placeholder="Имя" style="width: 86%;" aria-required="true" data-plugin-inputmask="inputmask_0f7668e0">
+                                                        <p class="help-block help-block-error" style="position:absolute"></p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-6">
+                                                    <p class="marg num">Фамилия</p>
+                                                    <div class="form-group new_error_tips field-buybitcoinmodel-card_number required">
+                                                        <input type="text"  class="form-control" placeholder="Фамилия"  style="width: 86%;" aria-required="true" data-plugin-inputmask="inputmask_0f7668e0">
+                                                        <p class="help-block help-block-error" style="position:absolute"></p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-7">
+                                                    <p class="marg num">Номер карты</p>
+                                                    <div class="form-group new_error_tips field-buybitcoinmodel-card_holder">
+                                                        <input type="text"  class="form-control" placeholder="1234 5678 1234 5678" >
+                                                        <p class="help-block help-block-error" style="position:absolute"></p>
+                                                    </div>
+                                                    <p class="cvv pull-right">CVV</p>
+                                                </div>
+                                                <div class="col-xs-4">
+                                                    <p class="marg num">Истекает</p>
+                                                    <div class="form-group new_error_tips field-buybitcoinmodel-expire required">
+                                                        <input type="text" placeholder="01/22"  class="form-control"  aria-required="true" data-plugin-inputmask="inputmask_1d4eed9f">
+                                                        <p class="help-block help-block-error" style="position:absolute"></p>
+                                                    </div>
+                                                    <div class="form-group new_error_tips field-buybitcoinmodel-cvv required">
+                                                        <input type="text" placeholder="123" class="form-control al_input_cvv"   aria-required="true" data-plugin-inputmask="inputmask_2d720c83">
+                                                        <p class="help-block help-block-error" style="position:absolute"></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row marg">
+                                    <div class="col-xs-12">
+                                        <p class="al_addres">Платежный адрес</p>
+                                    </div>
+                                </div>
+                                <div class="row marg al_country_row">
+                                  <div class="col-md-12">                                    <div class="form-group field-buybitcoinmodel-payer_country required">
+                                        <select class="al_country input-lg form-control" >
+                                            <option value="">Страна</option>
+                                            <option value="2">Австралия</option>
+                                            <option value="3">Австрия</option>
+                                        </select>
+                                        <p class="help-block help-block-error"></p>
+                                    </div>
+                                  </div> 
+                                  <br>
+                                  <div class="col-md-12">
+                                    <div class="form-group field-buybitcoinmodel-payer_address required">
+                                        <input type="text"  class="form-control" name="" placeholder="Адрес" aria-required="true">
+                                        <p class="help-block help-block-error" style="position:absolute"></p>
+                                    </div></div>
+                                    <br>
+                                    <div class="col-md-12">
+                                    <div class="form-group field-buybitcoinmodel-payer_city required">
+                                        <input type="text"  class="form-control" name="" placeholder="Город" aria-required="true">
+                                        <p class="help-block help-block-error" style="position:absolute"></p>
+                                    </div>
+                                  </div> 
+                                    <br>
+                                    <div class="col-xs-6">
+                                      <div class="form-group field-buybitcoinmodel-payer_state">
+                                        <input type="text"  class="form-control" name="" placeholder="Штат">
+                                        <p class="help-block help-block-error" style="position:absolute"></p>
+                                    </div>
+                                    </div>
+                                    
+                                    <div class="col-xs-6">
+                                      <div class="form-group field-buybitcoinmodel-payer_zip required">
+                                        <input type="text"  class="form-control" name="" placeholder="Почтовый индекс" aria-required="true">
+                                        <p class="help-block help-block-error" style="position:absolute"></p>
+                                    </div>
+                                    </div>
+                                    
+                                    <div class="col-xs-12">
+                                        <hr>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 col-md-offset-0 col-xs-6 col-xs-offset-0">
+                                        <p class="marg pull-left">Комиссия:</p>
+                                        <div class="rrr">
+                                          <a href="#" class="js_show_al">
+                                            <img src="img/question.png" alt="" class="al_question">
+                                          </a>
+                                          <div class="cloud4" style="display: none;">
+                                              <span>Комиссия платежной системы - 5%</span>
+                                          </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-md-offset-0 col-xs-6 col-xs-offset-0">
+                                        <p class="marg pull-right" id="commission_value">5 EUR<!-- <span class="percent">(5%)</span> --></p>
+                                        
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 col-md-offset-0 col-xs-6 col-xs-offset-0">
+                                        <p class="marg">Получите:</p>
+                                    </div>
+                                    <div class="col-md-6 col-md-offset-0 col-xs-6 col-xs-offset-0">
+                                        <p class="marg pull-right bitcoin_value">0.00236498 BTC</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 col-md-offset-0 col-xs-6 col-xs-offset-0">
+                                        <p class="marg">К оплате:</p>
+                                    </div>
+                                    <div class="col-md-6 col-md-offset-0 col-xs-6 col-xs-offset-0">
+                                        <p class="marg pull-right" id="total_value">105 EUR</p>
+                                    </div>
+                                </div>
+                                <div class="text-center">
+                                    <button type="submit" class="div-button ">Оплатить</button>
+                                </div>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </div>
+    <div class="drop5 togle_disclosed  hidden-lg hidden-md display-none" data-modal="account">
+        <div class="container wallet_page">
+            <div class="row head_top">
+                <div class="col-md-2 col-xs-8 col-sm-8">
+                    <a href="/ru/client"><img src="img/logo.png" alt="logo" class="logo"></a>
+                </div>
+                <div class="col-xs-1 col-sm-2 col-sm-offset-2 col-xs-offset-1 hidden-lg toggle">
+                    <a href="/ru/client">
+                        <img src="img/wallet.png" alt="" class="pull-left wallet1">
+                    </a>
+                </div>
+                <button type="button" class="exit">
+                    <img src="img/close.png" alt="">
+                </button>
+            </div>
+            <div class="inner_settings">
+                <div class="row">
+                    <div class="col-md-12 bord ">
+                        <a href="/ru/client/main/profile">
+                            <img src="img/settings.png" alt="" class="pull-right">
+                            <p class="pull-right">Настройки</p>
+                            <span class="clearfix"></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 bord ">
+                        <a href="/ru/client/main/transactions">
+                            <img src="img/transfers.png" alt="" class="pull-right">
+                            <p class="pull-right">Сделки</p>
+                            <span class="clearfix"></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 bord ">
+                        <a href="/ru/client/referrals">
+                            <img src="img/referal.png" alt="" class="pull-right">
+                            <p class="pull-right">Рефералы</p>
+                            <span class="clearfix"></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 bord ">
+                        <a href="#">
+                            <img src="img/help.png" alt="" class="pull-right">
+                            <p class="pull-right">Помощь</p>
+                            <span class="clearfix"></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 bord ">
+                        <a href="/ru/site/logout">
+                            <img src="img/exit.png" alt="" class="pull-right">
+                            <p class="pull-right">Выход</p>
+                            <span class="clearfix"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 center_foot">
+                    <img src="img/logo.png" alt="" class="logo_bottom">
+                    <p class="license">company_info_footer</p>
+                    <a href=""><img src="img/FB.png" alt=""></a>
+                    <a href=""><img src="img/twitter.png" alt=""></a>
+                </div>
+                <div class="col-md-3 center_foot">
+                    <p class="top_p">Сервисы</p>
+                    <a href="#">
+                        <p class="bottom_p">Купить биткоины</p>
+                    </a>
+                    <a href="#">
+                        <p class="bottom_p">Продать биткоины</p>
+                    </a>
+                </div>
+                <div class="col-md-3 center_foot">
+                    <p class="top_p">О компании</p>
+                    <a href="/ru/page/company_information">
+                        <p class="bottom_p">О нас</p>
+                    </a>
+                    <a href="/ru/page/risk_warning">
+                        <p class="bottom_p">Легальность и безопасность</p>
+                    </a>
+                    <a href="/ru/page/cryptocurrencies">
+                        <p class="bottom_p">Какие криптовалюты поддерживаются?</p>
+                    </a>
+                    <!--<a href=""><p class="bottom_p"></p></a>-->
+                    <a href="/ru/page/compliance_information">
+                        <p class="bottom_p">Политика AML/KYC</p>
+                    </a>
+                    <a href="/ru/page/terms_of_use">
+                        <p class="bottom_p">Пользовательское соглашение</p>
+                    </a>
+                    <a href="/ru/page/privacy_policy">
+                        <p class="bottom_p">Политика конфиденциальности</p>
+                    </a>
+                    <a href="/ru/page/refund_policy">
+                        <p class="bottom_p">refund_policy</p>
+                    </a>
+                </div>
+                <div class="col-md-3 licen col-xs-offset-1 col-xs-10 col-sm-offset-4 col-sm-4 col-md-offset-0">
+                    <div class="protect_div">
+                        <div class="prot">
+                            <img src="img/protect.png" alt="" class="">
+                        </div>
+                        <a href="https://mtr.mkm.ee/taotluse_tulemus/493041">
+                            <p class=" ">Licensed to provide virtual currency wallet services #FRK000305</p>
+                        </a>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="protect_div">
+                        <div class="prot">
+                            <img src="img/protect.png" alt="" class="">
+                        </div>
+                        <a href="https://mtr.mkm.ee/taotluse_tulemus/493038">
+                            <p class=" ">Licensed to provide fiat to virtual currency exchange services #FVR000365</p>
+                        </a>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/select2.full.js"></script>
+    <script src="js/main.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $("[href='#el1']").trigger("click");
+    });
+    </script>
+</body>
+
+</html>

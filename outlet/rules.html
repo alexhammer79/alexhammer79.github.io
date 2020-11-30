@@ -1,0 +1,533 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Outlet</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/menu.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="css/slick.css" rel="stylesheet">
+    <link href="css/default.css" rel="stylesheet">
+    <link href="css/component.css" rel="stylesheet">
+    <link href="css/slick-theme.css" rel="stylesheet">   
+    <link href="css/chat.css" rel="stylesheet">
+    <link href="css/screen.css" rel="stylesheet">
+    <script src="js/modernizr.custom.js"></script>
+   
+
+    <script>
+    document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] +
+        ':35729/livereload.js?snipver=1"></' + 'script>')
+    </script>
+</head>
+
+<body>
+    <div class="global_container">
+        <header>
+            <div class="container_inner">
+                <div class="row">
+                    <div class="col-md-3 col-xs-8 col-sm-3">
+                        <a href=""><img src="img/logo2.png" alt="" class="logo"></a>
+                    </div>
+                    <div class="col-md-2 col-md-offset-7 col-xs-3 col-xs-offset-1 col-sm-3 col-sm-offset-6">
+                        <div class="row marg_t11">
+                            <div class="col-md-3 col-xs-12 col-sm-6">
+                                <a href="">
+                                    <div class="bask_div">
+                                        <div class="basket_al"></div>
+                                        <span>1</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-6 hidden-xs col-sm-6">
+                                <a href="">
+                                    <div class="info_money">
+                                        <p>Корзина</p>
+                                        <p class="cash_al">00.00</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="top_section">
+            <div class="container_inner top_mobil">
+              <!--Мобилка -->
+              <nav class="navbar navbar-default hidden-md hidden-lg">
+                <div class="">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <div class="dropdown  user_mob">
+                          <button class="btn btn-default  dropdown-toggle" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                              <img src="img/search-icon.svg" alt="" class="search_ic">
+                          </button>
+                          <ul class="dropdown-menu" aria-labelledby="dropdownMenu3">
+                            <li>
+                              <div class="input-group search_al">
+                                <input type="text" class="form-control" placeholder="Поиск">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-default mob_lupa" type="button">
+                                        <i class="fa fa-search" aria-hidden="true"></i>
+                                    </button>
+                                </span>
+                              </div>
+                            </li>
+                                                      
+                          </ul>
+                        </div>
+                        <div class="dropdown  ">
+                          <button class="btn btn-default  " type="button">
+                              <img src="img/izbr.png" alt="">
+                          </button>
+                        </div>                         
+                        <div class="dropdown  user_mob">
+                          <button class="btn btn-default  btn_user " type="button"  data-toggle="modal" data-target="#reg">
+                              <img src="img/user.svg" alt="">
+                          </button>
+                         
+                        </div>
+
+
+                        
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <div class=" bg_purpl">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-12">
+                                    <div class="btn-group-vertical" role="group" aria-label="">
+                                        <div id="dl-menu" class="dl-menuwrapper">
+                                            <ul class="dl-menu dl-menuopen">
+                                                <li>
+                                                    <a href="javascript:void(0);">Мужщинам</a>
+                                                    <ul class="dl-submenu">
+                                                        <li class="dl-back"><a href="javascript:void(0);">назад</a></li>
+                                                        <li>
+                                                            <a href="javascript:void(0);">2-0</a>
+                                                            <ul class="dl-submenu">
+                                                                <li class="dl-back"><a href="javascript:void(0);">назад</a></li>
+                                                                <li><a href="javascript:void(0);">3</a></li>
+                                                                <li><a href="javascript:void(0);">3</a></li>
+                                                                <li><a href="javascript:void(0);">3</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0);">2-1</a>
+                                                            <ul class="dl-submenu">
+                                                                <li class="dl-back"><a href="javascript:void(0);">назад</a></li>
+                                                                <li><a href="javascript:void(0);">Бумага туалетная</a></li>
+                                                                <li><a href="javascript:void(0);">Дезодоранты</a></li>
+                                                                <li><a href="javascript:void(0);">Расходные средства гигиены</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0);">2-2</a>
+                                                            <ul class="dl-submenu">
+                                                                <li class="dl-back"><a href="javascript:void(0);">назад</a></li>
+                                                                <li><a href="javascript:void(0);">3-0</a></li>
+                                                                <li><a href="javascript:void(0);">3-1</a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0);">Женщинам</a>
+                                                    <ul class="dl-submenu">
+                                                        <li class="dl-back"><a href="javascript:void(0);">назад</a></li>
+                                                        <li>
+                                                            <a href="javascript:void(0);">1-0</a>
+                                                            <ul class="dl-submenu">
+                                                                <li class="dl-back"><a href="javascript:void(0);">назад</a></li>
+                                                                <li><a href="javascript:void(0);">2-0</a></li>
+                                                                <li><a href="javascript:void(0);">2-1</a></li>
+                                                                <li><a href="javascript:void(0);">2-1</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0);">1-1</a>
+                                                            <ul class="dl-submenu">
+                                                                <li class="dl-back"><a href="javascript:void(0);">назад</a></li>
+                                                                <li><a href="javascript:void(0);">2-0</a></li>
+                                                                <li><a href="javascript:void(0);">2-1</a></li>
+                                                                <li><a href="javascript:void(0);">2-2</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0);">Детям</a>
+                                                    <ul class="dl-submenu">
+                                                        <li class="dl-back"><a href="javascript:void(0);">назад</a></li>
+                                                        <li>
+                                                            <a href="javascript:void(0);">1-0</a>
+                                                            <ul class="dl-submenu">
+                                                                <li class="dl-back"><a href="javascript:void(0);">назад</a></li>
+                                                                <li><a href="javascript:void(0);">2-0</a></li>
+                                                                <li><a href="javascript:void(0);">2-1</a></li>
+                                                                <li><a href="javascript:void(0);">2-2</a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+              <!--Конец мобилки -->
+                <div class="row hidden-xs hidden-sm">
+                    <div class="col-md-3 col-sm-4">
+                      
+                        <!-- <a href="">
+                <div class="category">Категории товаров
+                </div>
+              </a> -->
+                        <div id="menu" class="">
+                            <ul class="menu">
+                                <li>
+                                    <a href="javascript:void(0);" class="parent"><span class="cat_top"><font class="hidden-xs "> Категории товаров</font></span></a>
+                                    <ul class="open_ul js_open_ul" style="margin-top: -5px; display: none;">
+                                      <li class="big_li">
+                                        <a href="javascript:void(0);" class="parent">
+                                          <span class="first_level ">Мужщинам</span>
+                                        </a>
+                                        <ul class="first_block">
+                                            <li><a href="javascript:void(0);" class="parent"><span>2-1</span></a>
+                                                <ul class="flex-container">
+                                                    <li class="flex-item"><a href="javascript:void(0);"><span>3-1</span></a></li>
+                                                    <li class="flex-item"><a href="javascript:void(0);"><span>3-2</span></a></li>
+                                                </ul>
+                                            </li>                     
+                                        </ul>
+                                      </li>
+                                        <li class="big_li">
+                                          <a href="javascript:void(0);" class="parent">
+                                            <span class="first_level">Женщинам</span>
+                                          </a>
+                                            <ul>
+                                                <li><a href="javascript:void(0);" class="parent"><span>2-2</span></a></li>
+                                                <li><a href="javascript:void(0);" class="parent"><span>2-2</span></a></li>
+                                                <li><a href="javascript:void(0);" class="parent"><span>2-2</span></a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="big_li">
+                                          <a href="javascript:void(0);" class="parent">
+                                            <span class="first_level">Детям</span>
+                                          </a>
+                                            <ul>
+                                                <li><a href="javascript:void(0);" class="parent"><span>3-3</span></a></li>
+                                                <li>
+                                                    <a href="javascript:void(0);" class="parent"><span>3-4</span></a>
+                                                    <ul class="dl-submenu">
+                                                        <li>
+                                                            <a href="javascript:void(0);" class="parent"><span>3-4-1</span></a>
+                                                            <ul class="dl-submenu">
+                                                                <li><a href="javascript:void(0);"><span>3-4-1-1</span></a></li>
+                                                                <li><a href="javascript:void(0);"><span>3-4-1-2</span></a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>      
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-5 col-md-offset-0 col-sm-4">
+                      <div class="input-group search_al">
+                        <input type="text" class="form-control" placeholder="Поиск">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="button">
+                                <i class="fa fa-search" aria-hidden="true"></i>
+                            </button>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="col-md-2 col-sm-2">
+                      <a href="#">
+                        <div class="service-icon"></div>
+                        <div class="service-text text1">Избранное</div>
+                      </a>
+                      
+                    </div>
+                    <div class="col-md-2 col-sm-2">
+                      <a href="#reg"  data-toggle="modal"><p class="reg">Войти</p></a>
+                      <!-- <div class="dropdown enter">
+                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                          Войти
+                          <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                          <li><a href="#">1</a></li>
+                          <li><a href="#">2</a></li>
+                          <li><a href="#">3</a></li>                          
+                        </ul>
+                      </div> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="center_section">
+          <div class="container_inner ">
+            <div class="row">
+              <div class="col-md-12">
+                <p class="head_page_al marg_b60">Правила и Условия</p>
+              </div>
+              <div class="col-md-12">                
+                <div class="offert_div">
+                  <p class="name_p">Введение</p>
+                  <p class="offert_p">• Настоящие страницы, контент и инфраструктура этих страниц, а также сервис предоставляются исключительно для вашего личного, некоммерческого (B2C) использования с учетом условий, изложенных ниже. Наше взаимодействие с Продавцами регламентированы отдельными правилами и условиями, регулирующими коммерческие отношения между нами и каждым Продавцом (B2B). [Нашими партнерами - Продавцами становятся крупные магазины и ТЦ, успешно работающие на рынке в течение продолжительного времени. ]</p>
+                  <p class="offert_p">• В дополнение к правилам и условиям и важной информации, размещенных на Сайте, Продавцы вправе применить и/или потребовать принятия и исполнения собственных дополнительных условий и правил, относящихся к купли-продаже товаров в их магазинах.</p>
+                  <p class="offert_p">• Пожалуйста, внимательно ознакомьтесь с Правилами и условиями до начала оформления заказа. Использование Сайта для заказа товаров будет рассматриваться как принятие Условий.</p>
+                 
+                </div>
+                <div class="offert_div">
+                  <p class="name_p">О нас</p>
+                  <p class="offert_p">• Skidkateka.ru является сервисом и площадкой в сети интернет (www.skidkateka.ru, «Сайт»), на которой магазины и ТЦ (далее – Продавцы) размещают товары для продажи частным лицам (далее- Покупателям). Товары, размещенные на Сайте, предназначены для личного потребления.</p>
+                  <p class="offert_p">• Сервис оказывается и Сайт принадлежит [ООО Скидкатека] , которое является компанией, зарегистрированн… в соответствии с законодательством РФ. Офис компании расположен по адресу: ….. г. Москва, Россия. Компания зарегистрирована в ЕРГЮЛ № ….. ИНН … </p>
+                  <p class="offert_p">• Skidkateka.ru оказывает в рамках настоящих Правил и условий следующие услуги потребителям: предоставление доступа к Сайту, ознакомление с описанием товаров, а также предоставление возможности приобрести товар у одного из Продавцов.</p>
+                  <p class="offert_p">• Принимая платежи за заказанные Покупателем товары, мы действуем по поручению соответствующих Продавцов, при этом договор купли- продажи заключается между Покупателем и Продавцом вне зависимости от факта приема нами денежных средств. Таким образом, Продавец, а не Skidkateka.ru, несет ответственность за исполнение договора купли-продажи своих товаров. Skidkateka.ru также предлагает дополнительные услуги, такие как организация доставки товара [и обслуживание клиентов].</p>
+                </div>
+                <div class="offert_div">
+                  <p class="name_p">Бронирование, оформление заказа и осуществление покупки</p>
+                  <p class="offert_p">• Заказ на определенный товар формируется Покупателем через сайт www.skidkateka.ru. При этом Покупатель указывает в заказе на Сайте цену и количество товара, а затемосуществляет покупку напрямую у соответствующего магазина, который указан в [строке Продавец карточки товара.]</p>
+                  <p class="offert_p">• В случае использования механизма торга на Сайте, который доступен пользователям, осуществившим регистрацию на Сайте, Покупатель вправе предложить цену отличную от цены продажи, которую продавец вправе принять или отклонить. Финальной ценой бронирования считается цена, указанная в подтвержденном Продавцом заказе Покупателя. • В случае осуществления коммуникаций между Покупателем и Продавцом через Сайт, Skidkateka.ru не несет ответственности за содержание сообщений и скорость ответа Продавца.</p>
+                  <p class="offert_p">• Бронирование при формировании заказа осуществляется на срок, определенный магазином, но не менее ХХ часов. По окончании срока бронирования магазин вправе отказать покупателю в продаже товара на условиях, указанных в заказе.</p>
+                  <p class="offert_p">• Для завершения и гарантии бронирования Покупателю необходимо указать правильный электронный адрес. Мы не несем ответственности за (и не обязаны проверять) любой неверный или написанный с ошибкой электронный адрес, некорректно указанный номер (мобильного) телефона или номер кредитной карты. • Примерка товара из оформленного заказа и оплата возможны в магазине продавца. Покупатель имеет право отказаться от покупки товара до момента оплаты без объяснения причин и уплаты неустоек, штрафов и т.п.</p>
+                  <p class="offert_p">• Покупатель вправе произвести оплату одним из безналичных способов оплаты на Сайте после подтверждения заказа. В этом случае товар будет считаться проданным по факту оплаты. Покупатель обязан забрать покупку из магазина не позднее чем в течение Х дней после оплаты. Расходы за перечисление денежных средствна счет Продавца (включая комиссии, взимаемые платежными агентами) несет Покупатель.</p>
+                  <p class="offert_p">• [Покупатель вправе оплатить Товар денежными средствами, находящимися на балансе его Личного кабинета на Сайте. При наличии денежных средств на балансе Личного кабинета на момент оформления заказа Товара, такие денежные средства автоматически списываются в счёт оплаты Товара.]</p>
+                  <p class="offert_p">• Оформляя заказ на Сайте, Покупатель соглашается на получение (i) электронных писем/push-уведомлений, которые Skidkateka.ru может направлять для уведомления о статусе заказа: после оформления заказа; в случае его изменения; перед датой доставки товара; в случае отмены заказа Продавцом; в ином случае, влияющем на исполнение заказа или своевременное информирование о его статусе, (ii) сообщений (SMS) на телефонный номер, указанный Покупателем, а также (iii) звонков с предложением оценить качество работы Skidkateka.ru на указанный Покупателем телефонный номер. При этом такие сообщения и/или звонки могут исходить как от Skidkateka.ru, так и от третьих лиц, которых Skidkateka.ru может время от времени привлекать для исполнения своих обязательств по настоящим Условиям. </p>
+                </div>
+                <div class="offert_div">
+                  <p class="name_p">Доставка и Возврат</p>
+                  <p class="offert_p">• Доставка товара возможна только после оплаты и без примерки. Стоимость доставки составляет [от 400 руб.], может быть уточнена и оплачивается на Сайте при оформлении покупки. Оформляя доставку на Сайте, Покупатель соглашается заключает договор на доставку с ООО «ХХ» и оплачивает их услуги. Skidkateka.ru передает информацию о заказе на доставку ООО «ХХ» в течение нескольких минут после подтверждения заказа на Сайтеи не несет ответственности за дальнейшие действия и коммуникации сторон.</p>
+                  <p class="offert_p">• Возврат приобретенного товара возможен только напрямую Продавцу в соответствии с нормативно-правовыми актами РФ и правилами Продавца.</p>
+                </div>
+                <div class="offert_div">
+                  <p class="name_p">Конфиденциальность</p>
+                  <p class="offert_p">Skidkateka.ru заботится о сохранности ваших персональных данных. Пожалуйста, внимательно ознакомьтесь с разделом Политика Конфиденциальности для получения дополнительной информации. Используя наш Сайт, вы соглашаетесь на использование ваших персональных данных, как указано в нашей Политике Конфиденциальности, и вы гарантируете, что вся предоставленная информация соответствует действительности. В случае выявления недостоверных персональных данных мы оставляем за собой право заблокировать учетную запись.</p>
+                </div>
+                <div class="offert_div">
+                  <p class="name_p">Ограничение ответственности</p>
+                  <p class="offert_p">Skidkateka.ru не несет ответственности за полноту и корректность информации о товарах, размещенной на Сайте Продавцами или сообщенной Покупателю продавцом в ходе обмена сообщениями через Сайт или другим образом. В случае претензий к качеству или иным характеристикам приобретенного товара, Покупателю следует обращаться напрямую к Продавцу. Контактные данные Продавца указаны в деталях заказа в Личном кабинете Покупателя.</p>   
+                </div>
+                <div class="offert_div">
+                  <p class="name_p">Жалобы и претензии</p>
+                  <p class="offert_p">Любые претензии или жалобы в отношении Skidkateka.ru должны быть поданы в кратчайший срок, но в любом случае в течение 30 суток после дня оформления бронирования или заказа на Сайте. Любые претензии или жалобы, отправленные по истечении 30-дневного периода, могут быть отклонены, и сторона, предъявляющая претензию, лишается права на любую компенсацию (за ущерб или издержки).</p>
+                </div>
+                <div class="offert_div">
+                  <p class="name_p">Права на интеллектуальную собственность</p>
+                  <p class="offert_p">• [ООО Скидкатека] является правообладателем или лицензиаром прав интеллектуальной собственности на Сайт и его содержимое (такого как текст, графика, логотипы, иконки кнопок, изображения, звуковые клипы, цифровые загрузки, сборники данных и программное обеспечение, включая воспроизведение и компиляцию такового) («Содержимое»). Права на Сайт и Содержимое защищены международными законами об авторских правах, а также любыми соответствующими местными законами, касающимися защиты авторских прав и прав на базы данных. Все права защищены.</p>
+                  <p class="offert_p">• Вы не имеете права систематически извлекать и/или использовать части Сайта или Содержимого. В частности, вы не можете использовать анализ данных, автоматические средства или схожие инструменты для сбора или извлечения данных (единожды или многократно) для дальнейшего использования любых существенных частей Сайта. Вы не имеете права создавать и/или публиковать базы данных, которые бы включали существенные части Сайта (например, наши цены или списки товаров) без нашего письменного согласия.</p>
+                  <p class="offert_p">• Кроме прямо предусмотренных случаев, все лица (включая их имена и изображения), товарные знаки третьих лиц и изображения товаров третьих лиц, услуги и/или месторасположения, фигурирующие на Сайте, никоим образом не связаны с нами, к нам не относятся и не являются аффилированными лицами по отношению к нам. Все товарные знаки/имена, появляющиеся на Сайте, принадлежат правообладателям соответствующих товарных знаков и имен.</p>
+                                   
+                </div>
+                <div class="offert_div">
+                  <p class="name_p">Применимое законодательство РФ</p>
+                  <p class="offert_p">• Закон «О защите прав потребителей». <br>• Гражданский кодекс Российской Федерации (Часть вторая), подробная информация указана в статье 497 Гражданского кодекса Российской Федерации. <br>• Постановление Правительства Российской Федерации от 27.09.2007 № 612 «Об утверждении правил продажи товаров дистанционным способом». <br>• «Перечень непродовольственных товаров надлежащего качества, не подлежащих возврату или обмену на аналогичный товар других размера, формы, габарита, фасона, расцветки или комплектации», утвержденный постановлением Правительства РФ от 19.01.1998 № 55</p>
+                </div>
+                
+              </div>
+
+            </div>  
+             
+           
+          </div>
+        </section>
+        <footer>
+          <div class="top_div_foot">
+            <div class="container_inner hidden-xs hidden-sm">
+              <img src="img/rss.png" alt="">
+              <p class="rss_al">Рассылка</p>
+              <div class="subscribe_div">
+                <p class="subscribe_p">*подпишись на новые поступления товаров </p>
+                <p class="subscribe_p2">Для зарегистрированных пользователей</p>
+              </div>
+              <input type="text" class="inp_subscribe">
+              <button type="button" class="btn btn-yelow">Подписаться</button>
+              <div class="clearfix"></div>
+            </div>
+            <div class="container_inner hidden-md hidden-lg mob_rss">
+              <div class="panel-group " id="accordion2">
+                <!-- 1 панель -->
+                <div class="panel panel-default info_footer">
+                  <!-- Заголовок 1 панели -->
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#accordion" href="#subscr">Рассылка</a>
+                    </h4>
+                  </div>
+                  <div id="subscr" class="panel-collapse collapse open_accord">
+                    <!-- Содержимое 1 панели -->
+                    <div class="panel-body">
+                      <div class="subscribe_div">
+                        <p class="subscribe_p">*подпишись на новые поступления товаров </p>
+                        <p class="subscribe_p2">Для зарегистрированных пользователей</p>
+                      </div>
+                      <input type="text" class="inp_subscribe">
+                      <button type="button" class="btn btn-yelow">Подписаться</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="clearfix"></div>
+              </div>
+            </div>
+          </div>
+            
+          <div class="bot_div_foot">
+            <div class="container_inner">
+              <!-- <div class="info_footer">
+                
+              </div> -->
+              <div class="panel-group " id="accordion">
+                <!-- 1 панель -->
+                <div class="panel panel-default info_footer">
+                  <!-- Заголовок 1 панели -->
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#accordion" href="#about_us">О нас</a>
+                    </h4>
+                  </div>
+                  <div id="about_us" class="panel-collapse collapse open_accord">
+                    <!-- Содержимое 1 панели -->
+                    <div class="panel-body">
+                      <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
+                      <a href="#">Подробнее</a>
+                    </div>
+                  </div>
+                </div>
+                <!-- 2 панель -->
+                <div class="panel panel-default info_footer">
+                  <!-- Заголовок 2 панели -->
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#accordion" href="#to_users">Пользователям</a>
+                    </h4>
+                  </div>
+                  <div id="to_users" class="panel-collapse collapse open_accord">
+                    <!-- Содержимое 2 панели -->
+                    <div class="panel-body">
+                      <p>There are many variations of passages of Lorem</p>
+                      <a href="#">Подробнее</a>
+                    </div>
+                  </div>
+                </div>
+                <!-- 3 панель -->
+                
+                <div class="panel panel-default info_footer">
+                  <!-- Заголовок 3 панели -->
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#accordion" href="#business">Бизнесу</a>
+                      
+                    </h4>
+                  </div>
+                  <div id="business" class="panel-collapse collapse open_accord">
+                    <!-- Содержимое 3 панели -->
+                    <div class="panel-body">
+                      <p>There are many variations of passages of Lorem</p>
+                      <a href="#">Подробнее</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- 4 панель -->
+                
+                <div class="panel panel-default info_footer">
+                  <!-- Заголовок 4 панели -->
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#accordion" href="#conditions">Условия и правила</a>
+                    </h4>
+                  </div>
+                  <div id="conditions" class="panel-collapse collapse open_accord">
+                    <!-- Содержимое 4 панели -->
+                    <div class="panel-body">
+                      <p>There are many variations of passages of Lorem</p>
+                      <a href="#">Подробнее</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- 5 панель -->
+                
+                <div class="panel panel-default info_footer">
+                  <!-- Заголовок 5 панели -->
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#accordion" href="#contacts">Контакты</a>
+                    </h4>
+                  </div>
+                  <div id="contacts" class="panel-collapse collapse open_accord">
+                    <!-- Содержимое 5 панели -->
+                    <div class="panel-body">
+                      <p class="adres">60, 29th Street, San Francisco, CA<br>94110, United States<br> (+00) 123-456-789<br> <a href="mailto:demo@example.com">demo@example.com</a></p>
+                      
+                    </div>
+                  </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="soc_block">
+                  <a href="#" class="facebook"><div class="soc "></div></a>
+                  <a href="#" class="vk"><div class="soc "></div></a>
+                  <a href="#" class="inst"><div class="soc "></div></a>
+                  <a href="#" class="teleg"><div class="soc "></div></a>
+                  <a href="#" class="yout"><div class="soc "></div></a>
+                </div>
+                
+              </div>
+            </div>            
+          </div>
+          <div class="bot_div2">
+            <div class="container_inner">
+              <div class="copyright_al">
+                <p>Copyright © 2019 Cazila</p>
+              </div>
+            </div>
+            
+          </div>
+        </footer>   
+        <div class="chat_al">
+            <a href="#chat_modal" class="" data-toggle="modal">
+              <button class="pull-left close_chat"><img src="img/chat_close.png" alt="" ></button>
+              <p>Консультант онлайн</p>
+              <img src="img/chat_mini.png" alt="" class="pull-right img_chat_mini">
+            </a>
+          </div>             
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- <script src="js/menu.js"></script> -->
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.dlmenu.js"></script>
+    <script src="js/jquery.countdown.js"></script>
+    <script src="js/jquery.maskedinput.js"></script>
+
+    <script src="js/main.js" defer></script>
+</body>
+
+</html>

@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>CryptoSupervise</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="css/slick-theme.css" rel="stylesheet">
+    <link href="css/slick.css" rel="stylesheet">
+    <link href="css/screen.css" rel="stylesheet">
+
+
+
+    <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] +
+        ':35729/livereload.js?snipver=1"></' + 'script>')</script>﻿
+
+    
+  </head>
+  <body>
+    <div id="modal1" class="modal fade">
+      <div class="modal-dialog">
+        <div class="modal-content">          
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><img src="img/close.png" alt=""></button>
+            <p>Вход</p>
+          </div>
+          <!-- Основное содержимое модального окна -->
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-6 col-xs-6">
+                <a href="">
+                  <div class="soc">
+                    <img src="img/F.png" alt="">
+                    <p>Facebook</p>
+                  </div>
+                </a>                
+              </div>
+              <div class="col-md-6 col-xs-6">
+                <a href="">
+                  <div class="soc">
+                    <img src="img/g.png" alt="">
+                    <p>Google</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="row oder">
+              <div class="col-md-5 col-xs-5">
+                <hr>
+              </div>
+              <div class="col-md-2 col-xs-2">
+                <p>или</p>
+              </div>
+              <div class="col-md-5 col-xs-5">
+                <hr>
+              </div>              
+            </div>
+            <div class="row inp">
+              <div class="col-md-12">
+                <input type="text" class="" name="" placeholder="Эл. почта" value="" >
+              </div>
+              <div class="col-md-12">
+                <input type="password" class="" name="" placeholder="Пароль" value="" >
+              </div>
+              <div class="col-md-12">
+                <button class="butt_back pull-right lost_password js_modal_open" modal_name="modal3" >Забыли пароль?</button>
+              </div>
+            </div>
+            <div class="row marg_top">
+              <div class="col-md-12">
+                <a href="#" class="no_decor">
+                  <div class="butt_info">
+                    <p>Войти</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="row marg_top">
+              <div class="col-md-10 col-md-offset-1">
+                <p class="bottom_p">Еще нет учетной записи? <a href=""><span>Регистрация</span></a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="modal2" class="modal fade">
+      <div class="modal-dialog">
+        <div class="modal-content">          
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><img src="img/close.png" alt=""></button>
+            <p>Регистрация</p>
+          </div>
+          <!-- Основное содержимое модального окна -->
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-6 col-xs-6">
+                <a href="">
+                  <div class="soc">
+                    <img src="img/F.png" alt="">
+                    <p>Facebook</p>
+                  </div>
+                </a>                
+              </div>
+              <div class="col-md-6 col-xs-6">
+                <a href="">
+                  <div class="soc">
+                    <img src="img/g.png" alt="">
+                    <p>Google</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="row oder">
+              <div class="col-md-5 col-xs-5">
+                <hr>
+              </div>
+              <div class="col-md-2 col-xs-2">
+                <p>или</p>
+              </div>
+              <div class="col-md-5 col-xs-5">
+                <hr>
+              </div>              
+            </div>
+            <div class="row inp">
+              <div class="col-md-6">
+                <input type="text" class="" name="" placeholder="Имя" value="" >
+              </div>
+              <div class="col-md-6">
+                <input type="text" class="" name="" placeholder="Фамилия" value="" >
+              </div>              
+            </div>
+            <div class="row inp">
+              <div class="col-md-12">
+                <input type="text" class="" name="" placeholder="Эл. почта" value="" >
+              </div>
+              <div class="col-md-12">
+                <input type="password" class="" name="" placeholder="Пароль" value="" >
+              </div>
+              <div class="col-md-12 col-xs-12">
+                <span class="dropdown-el">
+                  <input type="radio" name="sortType" value="" checked="checked" id="sort-relevance"><label for="sort-relevance"><img src="img/Latvia.png" alt="">Латвия</label>
+                  <input type="radio" name="sortType" value="" id="sort-best"><label for="sort-best"><img src="img/Latvia.png" alt="">Латвия</label>
+                  <input type="radio" name="sortType" value="" id="sort-low"><label for="sort-low"><img src="img/Latvia.png" alt="">Латвия</label>
+                  <input type="radio" name="sortType" value="" id="sort-high"><label for="sort-high"><img src="img/Latvia.png" alt="">Латвия</label>
+                  
+               </span>
+              </div>
+              <div class="col-md-2 col-xs-3">
+                <span class="dropdown-el2">
+                  <input type="radio" name="sortType2" value="" checked="checked" id="sort-relevance2"><label for="sort-relevance2">+371</label>
+                  <input type="radio" name="sortType2" value="" id="sort-best2"><label for="sort-best2">+371</label>
+                  <input type="radio" name="sortType2" value="" id="sort-low2"><label for="sort-low2">+371</label>
+                  <input type="radio" name="sortType2" value="" id="sort-high2"><label for="sort-high2">+371</label>
+               </span>
+              </div>
+              <div class="col-md-10 col-xs-9">
+                <input type="text" class="" name="" placeholder="Телефон" value="" >
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12 confirm col-md-offset-0">
+                <div class="checkbox ">
+                  <label>
+                  <input type="checkbox" checked="checked">
+                  <span>Я ознакомился с <a href="#" target="_blank">Условиями и Положениями</a> и <a href="#" target="_blank">Политикой Конфиденциальности</a> CryptoSupervise</span>
+                </label>                
+                </div>
+                
+              </div>
+            </div>
+            <div class="row marg_top">
+              <div class="col-md-12">
+                <a href="#" class="no_decor">
+                  <div class="butt_info">
+                    <p>Зарегистрироваться</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="row marg_top">
+              <div class="col-md-10 col-md-offset-1">
+                <p class="bottom_p">У вас уже есть учетная запись? <a href=""><span>Вход</span></a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="modal3" class="modal fade">
+      <div class="modal-dialog">
+        <div class="modal-content">          
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><img src="img/close.png" alt=""></button>
+            <p>Восстановить пароль</p>
+          </div>
+          <!-- Основное содержимое модального окна -->
+          <div class="modal-body">   
+            <div class="row inp">
+              <div class="col-md-12">
+                <input type="text" class="" name="" placeholder="Эл. почта" value="" >
+              </div>  
+            </div>
+            <div class="row marg_top">
+              <div class="col-md-12">
+                <a href="#" class="no_decor">
+                  <div class="butt_info">
+                    <p>Восстановить</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="row marg_top">
+              <div class="col-md-10 col-md-offset-1">
+                <a href=""><span>Назад</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="global_container">
+      <header>
+        <div class="container">
+          <div class="row hidden-lg hidden-md hidden-sm">
+            <div class="col-md-12">
+              <nav class="navbar navbar-default ">
+                <div class="container-fluid">
+                  <!-- Brand and toggle get grouped for better mobile display -->
+                  <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#"><img src="img/logo.png" alt="" class="logo"></a>
+                  </div>
+
+                  <!-- Collect the nav links, forms, and other content for toggling -->
+                  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav top_div">
+                      <li class="active"><a href="#">О нас<span class="sr-only">(current)</span></a></li>
+                      <li><a href="#">Возможности</a></li>
+                      <li><a href="#">Блог</a></li>
+                      <li><hr></li>
+                      <li>
+                        <button class="butt">Регистрация</button>
+                        <button class="butt_top">Вход</button>
+                        <div class="row">
+                          <div class="col-xs-4 col-xs-offset-4 ">
+                            <a href="">
+                              <img src="img/en1.png" alt="" class="lang_modal">
+                            </a>
+                            <a href="">
+                              <img src="img/ru.png" alt="">
+                            </a>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                    
+                   
+                  </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+              </nav>
+            </div>
+          </div>
+          <div class="row hidden-xs adaptiv">
+            <div class="col-md-4 col-sm-3">
+              <a href="#"><img src="img/logo.png" alt="" class="logo"></a>
+            </div>
+            <div class="col-md-4 head col-sm-5">
+              <a href="" class="is_active">О нас</a>
+              <a href="" class="">Возможности</a>
+              <a href="" class="">Блог</a>
+            </div>
+            <div class="col-md-4 right_div col-sm-4">
+              <button class="butt_top">Вход</button>
+              <button class="butt">Регистрация</button>
+              <div class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="img/en.png" alt="" class="lang_img"> </a>
+                <ul class="dropdown-menu">
+                  <li><a href="#"><img src="img/en.png" alt="" class="lang_img"></a></li>
+                  <li><a href="#"><img src="img/en.png" alt="" class="lang_img"></a></li>                          
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <section class="top_name">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <p>О нас</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="about">
+        <div class="container">
+          <div class="row">
+                  <div class="col-md-4 col-md-offset-4 team text-center col-xs-12 col-sm-12">
+                    <ul class="nav nav-pills myTabExample" role="tablist" >
+                      <li >
+                        <a href="#team" role="tab" data-toggle="tab">Наша команда</a>
+                      </li>
+                      <li class="active">
+                        <a href="#vision" role="tab" data-toggle="tab">Наше видение</a>
+                      </li>    
+                    </ul>
+                  </div>
+                </div>
+                
+
+              <!-- Содержимое вкладок -->
+              <div class="tab-content tab_inner">
+                <!-- Содержимое 1 вкладки -->
+                <div class="tab-pane " id="team">   
+                  <div class="row row_foto">
+                    <div class="col-md-3 text-center">
+                      <div class="div_bg">
+                        <div class="foto_team">
+                          <img src="img/yoni.png" alt="">
+                        </div>
+                        <p class="name">Йони Ассия</p>
+                        <p class="descript">ОСНОВАТЕЛЬ И ГЕНЕРАЛЬНЫЙ ДИРЕКТОР</p>
+                        <img src="img/in.png" alt="" class="in">
+                      </div>                      
+                    </div>
+                    <div class="col-md-3 text-center">
+                      <div class="div_bg">
+                        <div class="foto_team">
+                          <img src="img/yoni.png" alt="">
+                        </div>
+                        <p class="name">Йони Ассия</p>
+                        <p class="descript">ОСНОВАТЕЛЬ И ГЕНЕРАЛЬНЫЙ ДИРЕКТОР</p>
+                        <img src="img/in.png" alt="" class="in">
+                      </div>                      
+                    </div>
+                    <div class="col-md-3 text-center">
+                      <div class="div_bg">
+                        <div class="foto_team">
+                          <img src="img/yoni.png" alt="">
+                        </div>
+                        <p class="name">Йони Ассия</p>
+                        <p class="descript">ОСНОВАТЕЛЬ И ГЕНЕРАЛЬНЫЙ ДИРЕКТОР</p>
+                        <img src="img/in.png" alt="" class="in">
+                      </div>                      
+                    </div>
+                    <div class="col-md-3 text-center">
+                      <div class="div_bg">
+                        <div class="foto_team">
+                          <img src="img/yoni.png" alt="">
+                        </div>
+                        <p class="name">Йони Ассия</p>
+                        <p class="descript">ОСНОВАТЕЛЬ И ГЕНЕРАЛЬНЫЙ ДИРЕКТОР</p>
+                        <img src="img/in.png" alt="" class="in">
+                      </div>                      
+                    </div>
+                    <div class="col-md-3 text-center">
+                      <div class="div_bg">
+                        <div class="foto_team">
+                          <img src="img/yoni.png" alt="">
+                        </div>
+                        <p class="name">Йони Ассия</p>
+                        <p class="descript">ОСНОВАТЕЛЬ И ГЕНЕРАЛЬНЫЙ ДИРЕКТОР</p>
+                        <img src="img/in.png" alt="" class="in">
+                      </div>                      
+                    </div>
+                    <div class="col-md-3 text-center">
+                      <div class="div_bg">
+                        <div class="foto_team">
+                          <img src="img/yoni.png" alt="">
+                        </div>
+                        <p class="name">Йони Ассия</p>
+                        <p class="descript">ОСНОВАТЕЛЬ И ГЕНЕРАЛЬНЫЙ ДИРЕКТОР</p>
+                        <img src="img/in.png" alt="" class="in">
+                      </div>                      
+                    </div>
+                    <div class="col-md-3 text-center">
+                      <div class="div_bg">
+                        <div class="foto_team">
+                          <img src="img/yoni.png" alt="">
+                        </div>
+                        <p class="name">Йони Ассия</p>
+                        <p class="descript">ОСНОВАТЕЛЬ И ГЕНЕРАЛЬНЫЙ ДИРЕКТОР</p>
+                        <img src="img/in.png" alt="" class="in">
+                      </div>                      
+                    </div>
+                    <div class="col-md-3 text-center">
+                      <div class="div_bg">
+                        <div class="foto_team">
+                          <img src="img/yoni.png" alt="">
+                        </div>
+                        <p class="name">Йони Ассия</p>
+                        <p class="descript">ОСНОВАТЕЛЬ И ГЕНЕРАЛЬНЫЙ ДИРЕКТОР</p>
+                        <img src="img/in.png" alt="" class="in">
+                      </div>                      
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12 text_long">
+                      <img src="img/span.png" alt="" class="span">
+                      <p class="head_name">Наши партнеры</p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-3 text-center">
+                      <div class="div_bg">                        
+                      </div>                      
+                    </div>
+                    <div class="col-md-3 text-center">
+                      <div class="div_bg">                        
+                      </div>                      
+                    </div>
+                    <div class="col-md-3 text-center">
+                      <div class="div_bg">                        
+                      </div>                      
+                    </div>
+                    <div class="col-md-3 text-center">
+                      <div class="div_bg">                        
+                      </div>                      
+                    </div>
+                    <div class="col-md-3 text-center">
+                      <div class="div_bg">                        
+                      </div>                      
+                    </div>
+                    <div class="col-md-3 text-center">
+                      <div class="div_bg">                        
+                      </div>                      
+                    </div>
+                    <div class="col-md-3 text-center">
+                      <div class="div_bg">                        
+                      </div>                      
+                    </div>
+                    <div class="col-md-3 text-center">
+                      <div class="div_bg">                        
+                      </div>                      
+                    </div>
+
+                  </div>
+                </div>
+                <!-- Содержимое 2 вкладки -->
+                <div class="tab-pane active" id="vision"> 
+                  <div class="row">
+                    <div class="col-md-12 text_long col-xs-12 ">
+                      <img src="img/span.png" alt="" class="span">
+                      <p class="head_name">Наши ценности</p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12 col-md-offset-0 col-xs-12">
+                      <div class="div_cennosty inner_values">
+                        <div class="div_img_left">
+                          <img src="img/prost.png" alt="">
+                          <p class="text_img">Простота</p>
+                        </div>
+                        <div class="div_text_right pull-right">
+                          <img src="img/litle_strip.png" alt="" class="litle_strip">
+                          <p class="inner_descr">Одна из главных целей eToro заключается в том, чтобы убрать барьеры и сделать торгово-инвестиционную деятельность в глобальной сети более доступной для обычного пользователя. Мы стремимся дать возможность каждому клиенту eToro почувствовать себя на нашей платформе как дома с самого начала. Мы понимаем, что многие используют различные онлайн-системы для управления своим капиталом. Именно поэтому мы постоянно расширяем свою линейку продуктов, что в конечном счете позволит вам удовлетворить все финансовые потребности на одной платформе.</p>
+                        </div> 
+                        <img src="img/long_strip.png" alt="" class="long_strip">
+                      </div>
+                    </div>
+                    <div class="col-md-12 col-md-offset-0 col-xs-12">
+                      <div class="div_novat inner_values">
+                        <div class="div_img_right hidden-md hidden-lg">
+                          <img src="img/novat.png" alt="">
+                          <p class="text_img">Новаторство</p>
+                        </div>
+                        <div class="div_text_left pull-left">
+                          <img src="img/litle_strip.png" alt="" class="litle_strip">
+                          <p class="inner_descr">Мы гордимся тем, что были участниками революции в сфере финансовых технологий с самых первых дней. Независимо от того, создаем ли мы новые интересные возможности для торговли и инвестирования в Интернете или разрабатываем современные финансовые продукты — мы были, есть и будем новаторами и революционерами в нашей отрасли.</p>
+                        </div> 
+                        <img src="img/midi_strip.png" alt="" class="midi_strip">
+                        <div class="div_img_right hidden-xs hidden-sm">
+                          <img src="img/novat.png" alt="">
+                          <p class="text_img">Новаторство</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-12 col-md-offset-0 col-xs-12">
+                      <div class="div_udov inner_values">
+                        <div class="div_img_left">
+                          <img src="img/udovol.png" alt="">
+                          <p class="text_img">Удовольствие</p>
+                        </div>
+                        <div class="div_text_right pull-right">
+                          <img src="img/litle_strip.png" alt="" class="litle_strip">
+                          <p class="inner_descr">Мы убеждены в том, что люди должны иметь возможность обмениваться не только финансовыми активами, но и, например, мыслями и ощущениями. На платформе eToro пользователи могут общаться и использовать опыт друг друга. Наша платформа интуитивно понятна и удобна в использовании и может превратить даже самые сложные действия, такие как торговля акциями, в понятный и динамичный процесс.</p>
+                        </div> 
+                        <img src="img/midi_strip.png" alt="" class="midi_strip">
+                      </div>
+                    </div>
+                    <div class="col-md-12 col-md-offset-0 col-xs-12">
+                      <div class="div_otkryt inner_values">
+                        <div class="div_img_right hidden-md hidden-lg">
+                          <img src="img/otkryt.png" alt="">
+                          <p class="text_img">Открытость</p>
+                        </div>
+                        <div class="div_text_left pull-left">
+                          <img src="img/litle_strip.png" alt="" class="litle_strip">
+                          <p class="inner_descr">Открытость и прозрачность являются важнейшими принципами взаимодействия пользователей на платформе eToro. Будь то возможность начать разговор с любым пользователем системы, включая главу нашей компании, или тот факт, что мы не взимаем никаких скрытых сборов и даем четкую информацию о своих тарифах — мы стремимся к тому, чтобы наши пользователи чувствовали, что располагают всеми данными, необходимыми для ведения своих финансовых операций на платформе eToro.</p>
+                        </div> 
+                        <img src="img/long_strip.png" alt="" class="long_strip">
+                        <div class="div_img_right hidden-xs hidden-sm">
+                          <img src="img/otkryt.png" alt="">
+                          <p class="text_img">Открытость</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-12 col-md-offset-0 col-xs-12">
+                      <div class="div_udov inner_values quality">
+                        <div class="div_img_left">
+                          <img src="img/udovol.png" alt="">
+                          <p class="text_img">Качество</p>
+                        </div>
+                        <div class="div_text_right pull-right">
+                          <img src="img/litle_strip.png" alt="" class="litle_strip">
+                          <p class="inner_descr">Всесторонний анализ перед принятием каждого решения и постоянное стремление к совершенству являются залогом того, что платформа eToro предоставляет всем своим пользователям максимальные возможности. Мы хотим, чтобы с самого первого знакомства с нами клиенты всегда чувствовали наше внимание и заботу даже в малейших деталях.</p>
+                        </div> 
+                        <img src="img/midi_strip.png" alt="" class="midi_strip">
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+                
+                
+          
+                
+                 
+
+                 
+                  
+              </div>
+             
+        </div>
+        
+      </section>
+         
+      
+      <footer>
+        <div class="container">
+          <div class="row text-center">
+            <div class="col-md-6 col-md-offset-3 col-xs-12">  
+                  <img src="img/visa1.png" alt=""> 
+                  <img src="img/mastercard.png" alt="">  
+                  <img src="img/wire.png" alt="">   
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <p>Вы рискуете своим капиталом. Рискуйте только тем капиталом, который готовы потерять. Мы обращаем ваше внимание на то, что использование машин услуг целесообразно для инвесторов, стремящихся получить прибыль от краткосрочных инвестиций в финансовые инструменты (включая инструменты, торryемые с привлечением кредитного плеча), которые хотят иметь диверсифицированный портфель и хорошо понимают риски, связанные с такими инструментами. Размер потерь по любой сделке может превысить инвестированную в нее сумму, однако вы ни при каких обстоятельствах не сможете потерять сумму, превышающую полный объем ваших собственных средств.</p>
+            </div>
+          </div>
+        </div>
+        
+      </footer>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/slick.js"></script>
+    <script>
+      $('.slider').slick({
+          infinite: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 2000,
+          dots:false,
+          arrows:false
+        });  
+    </script>
+    <script>
+      $(function() {
+        $('.myTabExample #vision').tab('show')
+      });
+    </script> 
+    <script src="js/main.js"></script>
+  </body>
+</html>

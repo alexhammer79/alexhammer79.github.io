@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CryptoSupervise</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="css/screen.css" rel="stylesheet">
+
+   <!--  <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] +
+        ':35729/livereload.js?snipver=1"></' + 'script>')</script>﻿ -->
+
+  </head>
+  <body>
+
+    <div id="modal4" class="modal fade" >
+      <div class="modal-dialog big_modal">
+        <div class="modal-content">          
+          <div class="modal-header">
+            <button type="button" class="close hidden-md hidden-lg" data-dismiss="modal" aria-hidden="true"><img src="img/close.png" alt=""></button>
+          </div>         
+          <div class="modal-body buy_bodal">
+            <div class="row">
+              <div class="col-md-12 col-xs-12">
+                <ul class="nav nav-pills" role="tablist" class="myTabExample">
+                <li class="active">
+                  <a href="#buy" role="tab" data-toggle="tab">Купить</a>
+                </li>
+                <li class="">
+                  <a href="#sale" role="tab" data-toggle="tab">Продать</a>
+                </li> 
+              </ul>              
+              <div class="tab-content">                
+                <div class="tab-pane active" id="buy"> 
+                  <div class="row">
+                    <div class="col-md-6">
+                      <p>Оплата с: </p>
+                    </div>
+                  </div>                  
+                  <div class="row ">
+                    <div class="col-md-12">
+                      <span class="dropdown-el5">
+                        <input type="radio" name="sortType" value="" checked="checked" id="sort-relevance5"><label for="sort-relevance5">EUR кошелек<span>EUR 232.02</span></label>
+                        <input type="radio" name="sortType" value="" id="sort-best5"><label for="sort-best5">EUR кошелек<span>EUR 232.02</span></label>
+                        <input type="radio" name="sortType" value="" id="sort-low5"><label for="sort-low5">EUR кошелек<span>EUR 232.02</span></label>
+                      </span>
+                    </div>                    
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <p>Сумма покупки: </p>
+                      <div class="posit">
+                        <input type="text" class="" name="" placeholder="100" value="" >
+                        <p class="eur">EUR</p>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <p>Цель покупки:</p>
+                      <span class="dropdown-el6">
+                        <input type="radio" name="sortType" value="" checked="checked" id="sort-relevance6"><label for="sort-relevance6">0.01390035<span>BTC</span></label>
+                        <input type="radio" name="sortType" value="" id="sort-best6"><label for="sort-best6">0.01390035<span>BTC</span></label>
+                        <input type="radio" name="sortType" value="" id="sort-low6"><label for="sort-low6">0.01390035<span>BTC</span></label>
+                      </span>
+                    </div>                    
+                  </div>                  
+                  <div class="row">
+                    <div class="col-md-12">
+                      <p>Вы покупаете 0.01390035 BTC за 100 EUR по курсу 6,800 EUR за 1 BTC.</p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12 ">
+                      <button class="butt invest js_modal_open" modal_name="modal5">Купить</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- Содержимое 2 вкладки -->
+                <div class="tab-pane" id="sale"> 
+                  <p>Продажа с: </p>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <span class="dropdown-el7">
+                        <input type="radio" name="sortType" value="" checked="checked" id="sort-relevance7"><label for="sort-relevance7">BTC кошелек<span>BTC 232.02</span></label>
+                        <input type="radio" name="sortType" value="" id="sort-best7"><label for="sort-best7">BTC кошелек<span>BTC 232.02</span></label>
+                        <input type="radio" name="sortType" value="" id="sort-low7"><label for="sort-low7">BTC кошелек<span>BTC 232.02</span></label>
+                      </span>
+                    </div>                    
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6 col-xs-12">
+                      <p>Продать:</p>
+                      <a href="">
+                        <div class="max hidden-xs">
+                        максимум
+                        </div>
+                      </a>
+                      <div class="posit">
+                        <input type="text" class="" name="" placeholder="0.01390035" value="" >
+                        <p class="eur">BTC</p>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-xs-12">
+                      <p>Получить:</p>
+                      <div class="posit">
+                        <input type="text" class="" name="" placeholder="100" value="" >
+                        <p class="eur">EUR</p>
+                      </div>
+                    </div>
+                  </div>     
+                  <div class="row">
+                    <div class="col-md-12">
+                      <p>Вы продаете 0.01390035 BTC и получаете 100 EUR по курсу 6,800 EUR за 1 BTC.</p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12 ">
+                      <button class="butt" >Продать</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </div>              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="modal5" class="modal fade" >
+      <div class="modal-dialog big_modal">
+        <div class="modal-content">          
+          <div class="modal-header">
+            <button type="button" class="close hidden-md hidden-lg" data-dismiss="modal" aria-hidden="true"><img src="img/close.png" alt=""></button>
+          </div>         
+          <div class="modal-body buy_bodal">
+            <div class="row">
+              <div class="col-md-12 col-xs-12">
+                <ul class="nav nav-pills" role="tablist" class="myTabExample">
+                <li class="active">
+                  <a href="#buy" role="tab" data-toggle="tab">Купить</a>
+                </li>
+                <li class="">
+                  <a href="#sale" role="tab" data-toggle="tab">Продать</a>
+                </li> 
+              </ul>              
+              <div class="tab-content">                
+                <div class="tab-pane active" id="buy"> 
+                  <div class="row">
+                    <div class="col-md-6">
+                      <p>Оплата с: </p>
+                    </div>
+                  </div>                  
+                  <div class="row ">
+                    <div class="col-md-12">
+                      <span class="dropdown-el5">
+                        <input type="radio" name="sortType" value="" checked="checked" id="sort-relevance5"><label for="sort-relevance5">EUR кошелек<span>EUR 232.02</span></label>
+                        <input type="radio" name="sortType" value="" id="sort-best5"><label for="sort-best5">EUR кошелек<span>EUR 232.02</span></label>
+                        <input type="radio" name="sortType" value="" id="sort-low5"><label for="sort-low5">EUR кошелек<span>EUR 232.02</span></label>
+                      </span>
+                    </div>                    
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="no_money">
+                        <p>У вас недостаточно средств. Чтобы совершить покупку, пожалуйста, пополните свой счет. </p>
+                        <div class="row">
+                          <div class="col-md-12 ">
+                            <button class="butt">Пополнить счет</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <p>Сумма покупки: </p>
+                      <div class="posit">
+                        <input type="text" class="" name="" placeholder="100" value="" >
+                        <p class="eur">EUR</p>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <p>Цель покупки:</p>
+                      <span class="dropdown-el6">
+                        <input type="radio" name="sortType" value="" checked="checked" id="sort-relevance6"><label for="sort-relevance6">0.01390035<span>BTC</span></label>
+                        <input type="radio" name="sortType" value="" id="sort-best6"><label for="sort-best6">0.01390035<span>BTC</span></label>
+                        <input type="radio" name="sortType" value="" id="sort-low6"><label for="sort-low6">0.01390035<span>BTC</span></label>
+                      </span>
+                    </div>                    
+                  </div>                  
+                  <div class="row">
+                    <div class="col-md-12">
+                      <p>Вы покупаете 0.01390035 BTC за 100 EUR по курсу 6,800 EUR за 1 BTC.</p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12 ">
+                      <button class="butt no_but">Купить</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- Содержимое 2 вкладки -->
+                <div class="tab-pane" id="sale"> 
+                  <p>Продажа с: </p>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <span class="dropdown-el7">
+                        <input type="radio" name="sortType" value="" checked="checked" id="sort-relevance7"><label for="sort-relevance7">BTC кошелек<span>BTC 232.02</span></label>
+                        <input type="radio" name="sortType" value="" id="sort-best7"><label for="sort-best7">BTC кошелек<span>BTC 232.02</span></label>
+                        <input type="radio" name="sortType" value="" id="sort-low7"><label for="sort-low7">BTC кошелек<span>BTC 232.02</span></label>
+                      </span>
+                    </div>                    
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6 col-xs-12">
+                      <p>Продать:</p>
+                      <a href="">
+                        <div class="max hidden-xs">
+                        максимум
+                        </div>
+                      </a>
+                      <div class="posit">
+                        <input type="text" class="" name="" placeholder="0.01390035" value="" >
+                        <p class="eur">BTC</p>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-xs-12">
+                      <p>Получить:</p>
+                      <div class="posit">
+                        <input type="text" class="" name="" placeholder="100" value="" >
+                        <p class="eur">EUR</p>
+                      </div>
+                    </div>
+                  </div>     
+                  <div class="row">
+                    <div class="col-md-12">
+                      <p>Вы продаете 0.01390035 BTC и получаете 100 EUR по курсу 6,800 EUR за 1 BTC.</p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12 ">
+                      <button class="butt">Продать</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </div>              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="global_container cabinet">
+      <section class="top">
+        <!--Для мобилки -->
+        <div class=" hidden-lg hidden-md hidden-sm top_mobil">
+          <div class="">
+            <nav class="navbar navbar-default ">
+              <div class="">                
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <div class="dropdown prof ">
+                    <button class="btn btn-default dropdown-toggle " type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                      <img src="img/profile2.png" alt="">               
+                    </button>
+                    <ul class="dropdown-menu " aria-labelledby="dropdownMenu1">
+                      <li>
+                        <div class=" bg_purpl">
+                          <div class="row">
+                            <div class="col-xs-12">
+                              <div class="btn-group-vertical" role="group" aria-label="">
+                                <div class="top_info_user">
+                                  <div class="row marg_bot">
+                                    <div class="col-xs-6 ">
+                                      <p class="name_user">Name Surname</p>
+                                    </div>
+                                    <div class="col-xs-6 ">
+                                      <div class="id_name">
+                                        142342
+                                      </div>
+                                    </div>                              
+                                  </div>
+                                  <div class="row ">
+                                    <div class="col-xs-4 ">
+                                      <p class="name_user padd_top">€ 123,00</p>
+                                    </div>
+                                    <div class="col-xs-8 ">
+                                      <div class="replenish text-center">
+                                        <button class="butt">Пополнить счет</button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <button type="button" class="btn btn-default "><img src="img/anketa.png" alt="">Анкета</button>
+                                <button type="button" class="btn btn-default"><img src="img/support.png" alt="">Служба поддержки</button>
+                                <button type="button" class="btn btn-default"><img src="img/friend.png" alt="">Пригласи друга</button>
+                                <button type="button" class="btn btn-default "><img src="img/exit.png" alt="">Выход</button>                          
+                              </div>                      
+                            </div>
+                          </div>                    
+                        </div>
+                      </li>                          
+                    </ul>
+                  </div>
+                   <div class="dropdown  ">
+                    <button class="btn btn-default dropdown-toggle " type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                      <img src="img/col3.png" alt="">
+                      <div class="red_eclip">
+                        12
+                      </div>               
+                    </button>
+                    <ul class="dropdown-menu " aria-labelledby="dropdownMenu2">
+                      <li>
+                       <div class=" bg_purpl">
+                          <div class="row">
+                            <div class="col-xs-12">
+                              <div class="btn-group-vertical" role="group" aria-label="">
+                                <div class="top_info_user">   
+                                  <p class="growth"><a href="">Bitcoin</a> вырос на <span>12.32</span>%</p>
+                                </div>
+                                <div class="top_info_user">   
+                                  <p class="growth"><a href="">Ethereum</a> упал на <span>7.32</span>%</p>
+                                </div>        
+                              </div>                      
+                            </div>
+                          </div>                    
+                        </div>
+                      </li>                          
+                    </ul>
+                  </div>
+                  <div class="dropdown  ">
+                    <button class="btn btn-default  " type="button" >
+                      <img src="img/edit2.png" alt="">               
+                    </button>
+                  </div>
+                  <div class="dropdown  ">
+                    <button class="btn btn-default dropdown-toggle " type="button" >
+                      <img src="img/search2.png" alt="">               
+                    </button>
+                  </div>
+                  <a class="navbar-brand" href="#"><img src="img/logo2.png" alt="" class="logo2"></a>
+                  <div class="clearfix"></div>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <div class=" bg_purpl">
+                    <div class="row">
+                      <div class="col-xs-12">
+                        <div class="btn-group-vertical" role="group" aria-label="">
+                          <div class="litle_p">Инвестируйте</div>
+                          <button type="button" class="btn btn-default "><img src="img/val.png" alt="">Криптовалюта</button>
+                          <button type="button" class="btn btn-default"><img src="img/doverit.png" alt="">Доверительное управление</button>
+                          <button type="button" class="btn btn-default"><img src="img/maining.png" alt="">Майнинг</button>
+                          <div class="litle_p">Исследуйте</div>
+                          <button type="button" class="btn btn-default"><img src="img/moi_activy.png" alt="">Мои активы</button>
+                          <button type="button" class="btn btn-default"><img src="img/news.png" alt="">Новости</button>
+                          <button type="button" class="btn btn-default"><img src="img/bonus.png" alt="">Бонусы</button>
+                          <button type="button" class="btn btn-default"><img src="img/vivod.png" alt="">Вывод</button>
+                          <div class="litle_p">Информация</div>
+                          <button type="button" class="btn btn-default"><img src="img/help.png" alt="">Помощь</button>
+                          <button type="button" class="btn btn-default"><img src="img/edit.png" alt="">Настройки</button>
+                        </div>
+                    <div class="bottom_button text-center">
+                      <button class="butt">Сделать депозит</button>
+                    </div>
+                      </div>
+                    </div>
+                  </div> 
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <!-- для десктопа -->
+          <div class="row hidden-xs">
+            <div class="col-md-3 col-sm-3">
+              <div class="logo_cabinet text-center">
+                <img src="img/logo.png" alt="">
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-3">              
+              <div class="form-group">
+                <input type="text" class="form-control search" placeholder="" >
+              </div>
+              <button type="submit" class="btn sear"><img src="img/search.png" alt=""></button>              
+            </div>
+            <div class="col-md-2 col-sm-2">
+              <div class="prof_persent">
+                <button class="edit_prof">Заполните Ваш профиль</button>
+                <div class="progress sm hidden-xs hidden-sm">
+                  <div class="progress-bar progress-bar-aqua" style="width: 30%">
+                  </div>
+                </div>
+              </div>              
+            </div>
+            <div class="col-md-2 col-sm-2">
+              <span class="dropdown-el3">
+                  <input type="radio" name="sortType3" value="" checked="checked" id="sort-relevance3"><label for="sort-relevance3">Name Surname</label>
+                  <input type="radio" name="sortType3" value="" id="sort-best3"><label for="sort-best3">Name Surname</label>
+                  <input type="radio" name="sortType3" value="" id="sort-low3"><label for="sort-low3">Name Surname</label>
+                  <input type="radio" name="sortType3" value="" id="sort-high3"><label for="sort-high3">Name Surname</label>
+               </span>
+            </div>
+            <div class="col-md-2 padd col-sm-2">
+              <a href=""><img src="img/colocol2.png" alt="" class="pull-left coloc">
+                <img src="img/colocol1.png" alt="" class="pull-left coloc" style="display: none;">
+              </a>              
+              <a href=""><p class="pull-left exit">Выход</p>             
+              <img src="img/exit.png" alt="" class="pull-left hidden-sm"></a>
+            </div>  
+          </div>
+        </div>
+      </section>
+      <section class="center ">
+        <div class="container-fluid">
+          <div class="">
+            <div class="bg_purpl hidden-xs ">
+              <div class="btn-group-vertical" role="group" aria-label="">
+                <div class="litle_p">Инвестируйте</div>
+                <button type="button" class="btn btn-default is_active"><img src="img/val.png" alt="">Криптовалюта</button>
+                <button type="button" class="btn btn-default" >
+                  <div class="www">
+                    <img src="img/doverit.png" alt="">
+                  </div>
+                  <p class="eee">Доверительное <br>управление</p></button>
+                  <div class="clearfix"></div>
+                <button type="button" class="btn btn-default"><img src="img/maining.png" alt="">Майнинг</button>
+                <div class="litle_p">Исследуйте</div>
+                <button type="button" class="btn btn-default"><img src="img/moi_activy.png" alt="">Мои активы</button>
+                <button type="button" class="btn btn-default"><img src="img/news.png" alt="">Новости</button>
+                <button type="button" class="btn btn-default"><img src="img/bonus.png" alt="">Бонусы</button>
+                <button type="button" class="btn btn-default"><img src="img/vivod.png" alt="">Вывод</button>
+                <div class="litle_p">Информация</div>
+                <button type="button" class="btn btn-default"><img src="img/help.png" alt="">Помощь</button>
+                <button type="button" class="btn btn-default"><img src="img/edit.png" alt="">Настройки</button>                
+              </div>
+              <div class="bottom_button text-center">
+                <button class="butt">Сделать депозит</button>
+              </div>
+            </div>
+            <div class="right_big">
+              <div class="big_div">
+                <p class="top_invest">Помощь</p>
+                <div class="row">
+                  <div class="col-md-12">
+                    <hr>
+                  </div>
+                </div>
+                <div class="panel-group" id="collapse-group">
+                      <div class="panel panel-default">
+                          <div class="panel-heading">
+                              <h4 class="panel-title">
+               <a data-toggle="collapse" data-parent="#collapse-group" href="#el1"><span>Как внести средства на счет?</span></a>
+               </h4>
+                          </div>
+                          <div id="el1" class="panel-collapse collapse ">
+                              <div class="panel-body">Да, перевод средств на счет eToro — это абсолютно надежный и безопасный процесс, предусматривающий защиту данных пользователя. Все операции выполняются с использованием протокола защиты информации Secure Socket Layer, гарантирующего безопасность ваших персональных данных.</div>
+                          </div>
+                      </div>
+                      <div class="panel panel-default">
+                          <div class="panel-heading">
+                              <h4 class="panel-title">
+               <a data-toggle="collapse" data-parent="#collapse-group" href="#el2"><span>Безопасен ли процесс пополнения счета?</span></a>
+               </h4>
+                          </div>
+                          <div id="el2" class="panel-collapse collapse">
+                              <div class="panel-body">Да, перевод средств на счет eToro — это абсолютно надежный и безопасный процесс, предусматривающий защиту данных пользователя. Все операции выполняются с использованием протокола защиты информации Secure Socket Layer, гарантирующего безопасность ваших персональных данных.</div>
+                          </div>
+                      </div>
+                      <div class="panel panel-default">
+                          <div class="panel-heading">
+                              <h4 class="panel-title">
+               <a data-toggle="collapse" data-parent="#collapse-group" href="#el3"><span>Способы оплаты и ограничения</span></a>
+               </h4>
+                          </div>
+                          <div id="el3" class="panel-collapse collapse">
+                              <div class="panel-body">Да, перевод средств на счет eToro — это абсолютно надежный и безопасный процесс, предусматривающий защиту данных пользователя. Все операции выполняются с использованием протокола защиты информации Secure Socket Layer, гарантирующего безопасность ваших персональных данных.</div>
+                          </div>
+                      </div>
+                  </div>
+
+
+
+
+
+
+
+
+
+
+                
+              </div>             
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>   
+    <script src="js/bootstrap.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/main.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+          $("[href='#el2']").trigger("click");
+      });
+      
+    </script>
+  </body>
+</html>
